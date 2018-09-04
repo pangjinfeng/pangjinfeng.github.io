@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="data science foll">
 <meta property="og:description" content="数据来源mtcars {datasets}    R Documentation Motor Trend Car Road Tests The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-04T00:56:45.297Z">
+<meta property="og:image" content="https://pangjinfeng.github.io/images/SPSS_means%20plot.png">
+<meta property="og:updated_time" content="2018-09-04T14:14:55.626Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于SPSS的相关分析、方差分析、回归分析">
 <meta name="twitter:description" content="数据来源mtcars {datasets}    R Documentation Motor Trend Car Road Tests The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and">
+<meta name="twitter:image" content="https://pangjinfeng.github.io/images/SPSS_means%20plot.png">
   
     <link rel="alternative" href="/atom.xml" title="data science foll" type="application/atom+xml">
   
@@ -868,30 +870,1122 @@
 </tr>
 </tbody>
 </table>
-<p>在0.01水平上：<br>mpg与 wt、qsec、disp、hp、drat 相关性显著；<br>wt 与 mpg、disp、hp、drat相关性显著；<br>sqec 与 mpg、disp、hp、drat 相关性显著；<br>disp 与 mpg、wt、qsec、hp、drat 相关性显著；<br>hp 与 mpg、wt、qsec、disp、drat 相干性显著；<br>drat 与 mpg、wt、qsec、disp、hp 相关性显著；<br>单因素方差分析（cyl~mpg）<br>Oneway<br>描述<br>mpg<br>    N    均值    标准差    标准误    均值的 95% 置信区间    极小值    极大值<br>                    下限    上限<br>4    11    26.664    4.5098    1.3598    23.634    29.693    21.4    33.9<br>6    7    19.743    1.4536    .5494    18.399    21.087    17.8    21.4<br>8    14    15.100    2.5600    .6842    13.622    16.578    10.4    19.2<br>总数    32    20.091    6.0269    1.0654    17.918    22.264    10.4    33.9</p>
-<p>方差齐性检验<br>mpg<br>Levene 统计量    df1    df2    显著性<br>6.484    2    29    .005</p>
-<p>单因素方差分析<br>mpg<br>    平方和    df    均方    F    显著性<br>组间    824.785    2    412.392    39.698    .000<br>组内    301.263    29    10.388<br>总数    1126.047    31            </p>
+<p>在0.01水平上：</p>
+<p>mpg与 wt、qsec、disp、hp、drat 相关性显著；<br>wt 与 mpg、disp、hp、drat相关性显著；<br>sqec 与 mpg、disp、hp、drat 相关性显著；<br>disp 与 mpg、wt、qsec、hp、drat 相关性显著；<br>hp 与 mpg、wt、qsec、disp、drat 相干性显著；<br>drat 与 mpg、wt、qsec、disp、hp 相关性显著；  </p>
+<h5 id="单因素方差分析（cyl-mpg）"><a href="#单因素方差分析（cyl-mpg）" class="headerlink" title="单因素方差分析（cyl~mpg）"></a>单因素方差分析（cyl~mpg）</h5><p>Oneway   </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">描述 mpg</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">均值</td>
+<td style="text-align:left">标准差</td>
+<td style="text-align:left">标准误</td>
+<td style="text-align:left">均值的 95% 置信区间</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">极小值</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">下限</td>
+<td style="text-align:left">上限</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">26.664</td>
+<td style="text-align:left">4.5098</td>
+<td style="text-align:left">1.3598</td>
+<td style="text-align:left">23.634</td>
+<td style="text-align:left">29.693</td>
+<td style="text-align:left">21.4</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">19.743</td>
+<td style="text-align:left">1.4536</td>
+<td style="text-align:left">0.5494</td>
+<td style="text-align:left">18.399</td>
+<td style="text-align:left">21.087</td>
+<td style="text-align:left">17.8</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">15.1</td>
+<td style="text-align:left">2.56</td>
+<td style="text-align:left">0.6842</td>
+<td style="text-align:left">13.622</td>
+<td style="text-align:left">16.578</td>
+<td style="text-align:left">10.4</td>
+</tr>
+<tr>
+<td style="text-align:left">总数</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">20.091</td>
+<td style="text-align:left">6.0269</td>
+<td style="text-align:left">1.0654</td>
+<td style="text-align:left">17.918</td>
+<td style="text-align:left">22.264</td>
+<td style="text-align:left">10.4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">方差齐性检验 mpg</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Levene 统计量</td>
+<td style="text-align:left">df1</td>
+<td style="text-align:left">df2</td>
+<td style="text-align:left">显著性</td>
+</tr>
+<tr>
+<td style="text-align:left">6.484</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">0.005</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">单因素方差分析 mpg</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">平方和</td>
+<td style="text-align:left">df</td>
+<td style="text-align:left">均方</td>
+<td>F</td>
+<td>显著性</td>
+</tr>
+<tr>
+<td style="text-align:left">组间</td>
+<td style="text-align:left">824.785</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">412.392</td>
+<td>39.698</td>
+<td>.000</td>
+</tr>
+<tr>
+<td style="text-align:left">组内</td>
+<td style="text-align:left">301.263</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">10.388</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">总数</td>
+<td style="text-align:left">1126.047</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>由于Levene检验没有证据说明三种 cyl 的方差相等，参照两种不同的两两比较的结果是必要的。</p>
-<p>Post Hoc Tests<br>多重比较<br>因变量:   mpg<br>(I) cyl   (J) cyl    均值差 (I-J)    标准误    显著性    95% 置信区间<br>                下限    上限<br>Bonferroni    4    6    6.9208<em>    1.5583    .000    2.961    10.880<br>        8    11.5636</em>    1.2986    .000    8.264    14.863<br>    6    4    -6.9208<em>    1.5583    .000    -10.880    -2.961<br>        8    4.6429</em>    1.4920    .012    .852    8.434<br>    8    4    -11.5636<em>    1.2986    .000    -14.863    -8.264<br>        6    -4.6429</em>    1.4920    .012    -8.434    -.852<br>Tamhane    4    6    6.9208<em>    1.4666    .001    2.905    10.937<br>        8    11.5636</em>    1.5222    .000    7.475    15.652<br>    6    4    -6.9208<em>    1.4666    .001    -10.937    -2.905<br>        8    4.6429</em>    .8775    .000    2.340    6.945<br>    8    4    -11.5636<em>    1.5222    .000    -15.652    -7.475<br>        6    -4.6429</em>    .8775    .000    -6.945    -2.340<br>*. 均值差的显著性水平为 0.05。</p>
+<p>Post Hoc Tests  </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">多重比较</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">因变量:   mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">(I) cyl   (J) cyl</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">均值差 (I-J)</td>
+<td style="text-align:left">标准误</td>
+<td style="text-align:left">显著性</td>
+<td style="text-align:left">95% 置信区间</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">下限</td>
+<td style="text-align:left">上限</td>
+</tr>
+<tr>
+<td style="text-align:left">Bonferroni</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">6.9208*</td>
+<td style="text-align:left">1.5583</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2.961</td>
+<td style="text-align:left">10.88</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">11.5636*</td>
+<td style="text-align:left">1.2986</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">8.264</td>
+<td style="text-align:left">14.863</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">-6.9208*</td>
+<td style="text-align:left">1.5583</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">-10.88</td>
+<td style="text-align:left">-2.961</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">4.6429*</td>
+<td style="text-align:left">1.492</td>
+<td style="text-align:left">0.012</td>
+<td style="text-align:left">0.852</td>
+<td style="text-align:left">8.434</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">-11.5636*</td>
+<td style="text-align:left">1.2986</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">-14.863</td>
+<td style="text-align:left">-8.264</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">-4.6429*</td>
+<td style="text-align:left">1.492</td>
+<td style="text-align:left">0.012</td>
+<td style="text-align:left">-8.434</td>
+<td style="text-align:left">-0.852</td>
+</tr>
+<tr>
+<td style="text-align:left">Tamhane</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">6.9208*</td>
+<td style="text-align:left">1.4666</td>
+<td style="text-align:left">0.001</td>
+<td style="text-align:left">2.905</td>
+<td style="text-align:left">10.937</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">11.5636*</td>
+<td style="text-align:left">1.5222</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">7.475</td>
+<td style="text-align:left">15.652</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">-6.9208*</td>
+<td style="text-align:left">1.4666</td>
+<td style="text-align:left">0.001</td>
+<td style="text-align:left">-10.937</td>
+<td style="text-align:left">-2.905</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">4.6429*</td>
+<td style="text-align:left">0.8775</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2.34</td>
+<td style="text-align:left">6.945</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">-11.5636*</td>
+<td style="text-align:left">1.5222</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">-15.652</td>
+<td style="text-align:left">-7.475</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">-4.6429*</td>
+<td style="text-align:left">0.8775</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">-6.945</td>
+<td style="text-align:left">-2.34</td>
+</tr>
+<tr>
+<td style="text-align:left">*. 均值差的显著性水平为 0.05。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p>Bonferroni和Tamhane多重比较的结果是一致的, cyl 的数量 4、6和8有显著区别。</p>
-<p>Homogeneous Subsets<br>mpg<br>cyl    N    alpha = 0.05 的子集<br>        1    2    3<br>Tukey Ba,b    8    14    15.100<br>    6    7        19.743<br>    4    11            26.664<br>将显示同类子集中的组均值。<br>a. 将使用调和均值样本大小 = 9.830。<br>b. 组大小不相等。将使用组大小的调和均值。将不保证 I 类错误级别。</p>
+<p>Homogeneous Subsets</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">mpg</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cyl</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">alpha = 0.05 的子集</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">Tukey Ba,b</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">15.1</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">19.743</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">26.664</td>
+</tr>
+<tr>
+<td style="text-align:left">将显示同类子集中的组均值。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">a. 将使用调和均值样本大小 = 9.830。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 组大小不相等。将使用组大小的调和均值。将不保证 I 类错误级别。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <p>Tukey B两两比较输出的结果，它把在5%的显著性水平下没有区别的总体放在同一列，作为同类子集。Cyl 数量为4，Cyl 数量为6，Cyl 数量为8有显著区别，各自单独分为一类</p>
-<p>Means Plots</p>
-<p>轮廓图为各个总体的均值的折线图，从中可以直观的看出各个总体均值的趋势。</p>
-<p>回归分析<br>一元线性回归模型（mpg~wt，前进法）<br>Regression</p>
-<p>输入／移去的变量a<br>模型    输入的变量    移去的变量    方法<br>1    wtb    .    输入<br>a. 因变量: mpg<br>b. 已输入所有请求的变量。</p>
-<p>模型汇总b<br>模型    R    R 方    调整 R 方    标准 估计的误差<br>1    .868a    .753    .745    3.0459<br>a. 预测变量: (常量), wt。<br>b. 因变量: mpg</p>
-<p>Anovaa<br>模型    平方和    df    均方    F    Sig.<br>1    回归    847.725    1    847.725    91.375    .000b<br>    残差    278.322    30    9.277<br>    总计    1126.047    31<br>a. 因变量: mpg<br>b. 预测变量: (常量), wt。</p>
-<p>系数a<br>模型    非标准化系数    标准系数    t    Sig.<br>    B    标准 误差    试用版<br>1    (常量)    37.285    1.878        19.858    .000<br>    wt    -5.344    .559    -.868    -9.559    .000<br>a. 因变量: mpg</p>
-<p>残差统计量a<br>    极小值    极大值    均值    标准 偏差    N<br>预测值    8.297    29.199    20.091    5.2293    32<br>残差    -4.5432    6.8727    .0000    2.9964    32<br>标准 预测值    -2.255    1.742    .000    1.000    32<br>标准 残差    -1.492    2.256    .000    .984    32<br>a. 因变量: mpg</p>
-<p>判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.344*wt + 37.285</p>
-<p>多元线性回归模型（mpg~disp+drat+wt+qsec，逐步回归）<br>Regression<br>输入／移去的变量a<br>模型    输入的变量    移去的变量    方法<br>1    wt    .    步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。<br>2    qsec    .    步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。<br>a. 因变量: mpg</p>
-<p>模型汇总c<br>模型    R    R 方    调整 R 方    标准 估计的误差<br>1    .868a    .753    .745    3.0459<br>2    .909b    .826    .814    2.5962<br>a. 预测变量: (常量), wt。<br>b. 预测变量: (常量), wt, qsec。<br>c. 因变量: mpg</p>
-<p>Anovaa<br>模型    平方和    df    均方    F    Sig.<br>1    回归    847.725    1    847.725    91.375    .000b<br>    残差    278.322    30    9.277<br>    总计    1126.047    31<br>2    回归    930.584    2    465.292    69.033    .000c<br>    残差    195.464    29    6.740<br>    总计    1126.047    31<br>a. 因变量: mpg<br>b. 预测变量: (常量), wt。<br>c. 预测变量: (常量), wt, qsec。</p>
-<p>系数a<br>模型    非标准化系数    标准系数    t    Sig.<br>    B    标准 误差    试用版<br>1    (常量)    37.285    1.878        19.858    .000<br>    wt    -5.344    .559    -.868    -9.559    .000<br>2    (常量)    19.746    5.252        3.760    .001<br>    wt    -5.048    .484    -.820    -10.430    .000<br>    qsec    .929    .265    .275    3.506    .001<br>a. 因变量: mpg</p>
-<p>已排除的变量a<br>模型    Beta In    t    Sig.    偏相关    共线性统计量<br>                    容差<br>1    disp    -.364b    -1.929    .064    -.337    .211<br>    drat    .128b    .989    .331    .181    .492<br>    qsec    .275b    3.506    .001    .546    .969<br>2    disp    -.003c    -.012    .990    -.002    .131<br>    drat    .147c    1.350    .188    .247    .491<br>a. 因变量: mpg<br>b. 模型中的预测变量: (常量), wt。<br>c. 模型中的预测变量: (常量), wt, qsec。</p>
-<p>残差统计量a<br>    极小值    极大值    均值    标准 偏差    N<br>预测值    8.924    28.974    20.091    5.4789    32<br>残差    -4.3962    5.7486    .0000    2.5110    32<br>标准 预测值    -2.038    1.621    .000    1.000    32<br>标准 残差    -1.693    2.214    .000    .967    32<br>a. 因变量: mpg</p>
-<p>ss回归方程1：<br>判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.344<em>wt + 37.285<br>回归方程2：<br>判定系数 R ̅^2 = 0.814，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.01&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于sqec，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.048</em>wt + 0.929*qsec + 19.746</p>
+<p>Means Plots<br> <img src="/images/SPSS_means plot.png" alt="Means Plots"><br>轮廓图为各个总体的均值的折线图，从中可以直观的看出各个总体均值的趋势。</p>
+<h5 id="回归分析"><a href="#回归分析" class="headerlink" title="回归分析"></a>回归分析</h5><h5 id="一元线性回归模型（mpg-wt，前进法）"><a href="#一元线性回归模型（mpg-wt，前进法）" class="headerlink" title="一元线性回归模型（mpg~wt，前进法）"></a>一元线性回归模型（mpg~wt，前进法）</h5><p>Regression</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">输入／移去的变量a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left">输入的变量</td>
+<td style="text-align:left">移去的变量</td>
+<td style="text-align:left">方法</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">wtb</td>
+<td style="text-align:left">.</td>
+<td style="text-align:left">输入</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 已输入所有请求的变量。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">模型汇总b</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left">R</td>
+<td style="text-align:left">R 方</td>
+<td style="text-align:left">调整 R 方</td>
+<td style="text-align:left">标准 估计的误差</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">.868a</td>
+<td style="text-align:left">0.753</td>
+<td style="text-align:left">0.745</td>
+<td style="text-align:left">3.0459</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 预测变量: (常量), wt。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Anovaa</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">平方和</td>
+<td style="text-align:left">df</td>
+<td style="text-align:left">均方</td>
+<td style="text-align:left">F</td>
+<td style="text-align:left">Sig.</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">回归</td>
+<td style="text-align:left">847.725</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">847.725</td>
+<td style="text-align:left">91.375</td>
+<td style="text-align:left">.000b</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">残差</td>
+<td style="text-align:left">278.322</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">9.277</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">总计</td>
+<td style="text-align:left">1126.047</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 预测变量: (常量), wt。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">系数a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">非标准化系数</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">标准系数</td>
+<td style="text-align:left">t</td>
+<td style="text-align:left">Sig.</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">B</td>
+<td style="text-align:left">标准 误差</td>
+<td style="text-align:left">试用版</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">(常量)</td>
+<td style="text-align:left">37.285</td>
+<td style="text-align:left">1.878</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">19.858</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">wt</td>
+<td style="text-align:left">-5.344</td>
+<td style="text-align:left">0.559</td>
+<td style="text-align:left">-0.868</td>
+<td style="text-align:left">-9.559</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">残差统计量a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">极小值</td>
+<td style="text-align:left">极大值</td>
+<td style="text-align:left">均值</td>
+<td style="text-align:left">标准 偏差</td>
+<td style="text-align:left">N</td>
+</tr>
+<tr>
+<td style="text-align:left">预测值</td>
+<td style="text-align:left">8.297</td>
+<td style="text-align:left">29.199</td>
+<td style="text-align:left">20.091</td>
+<td style="text-align:left">5.2293</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">残差</td>
+<td style="text-align:left">-4.5432</td>
+<td style="text-align:left">6.8727</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2.9964</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">标准 预测值</td>
+<td style="text-align:left">-2.255</td>
+<td style="text-align:left">1.742</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">标准 残差</td>
+<td style="text-align:left">-1.492</td>
+<td style="text-align:left">2.256</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0.984</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p>判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.344*wt + 37.285  </p>
+<h5 id="多元线性回归模型（mpg-disp-drat-wt-qsec，逐步回归）"><a href="#多元线性回归模型（mpg-disp-drat-wt-qsec，逐步回归）" class="headerlink" title="多元线性回归模型（mpg~disp+drat+wt+qsec，逐步回归）"></a>多元线性回归模型（mpg~disp+drat+wt+qsec，逐步回归）</h5><p>Regression</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">输入／移去的变量a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left">输入的变量</td>
+<td style="text-align:left">移去的变量</td>
+<td style="text-align:left">方法</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">wt</td>
+<td style="text-align:left">.</td>
+<td style="text-align:left">步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">qsec</td>
+<td style="text-align:left">.</td>
+<td style="text-align:left">步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">模型汇总c</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left">R</td>
+<td style="text-align:left">R 方</td>
+<td style="text-align:left">调整 R 方</td>
+<td style="text-align:left">标准 估计的误差</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">.868a</td>
+<td style="text-align:left">0.753</td>
+<td style="text-align:left">0.745</td>
+<td style="text-align:left">3.0459</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">.909b</td>
+<td style="text-align:left">0.826</td>
+<td style="text-align:left">0.814</td>
+<td style="text-align:left">2.5962</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 预测变量: (常量), wt。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 预测变量: (常量), wt, qsec。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">c. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Anovaa</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">平方和</td>
+<td style="text-align:left">df</td>
+<td style="text-align:left">均方</td>
+<td style="text-align:left">F</td>
+<td style="text-align:left">Sig.</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">回归</td>
+<td style="text-align:left">847.725</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">847.725</td>
+<td style="text-align:left">91.375</td>
+<td style="text-align:left">.000b</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">残差</td>
+<td style="text-align:left">278.322</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">9.277</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">总计</td>
+<td style="text-align:left">1126.047</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">回归</td>
+<td style="text-align:left">930.584</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">465.292</td>
+<td style="text-align:left">69.033</td>
+<td style="text-align:left">.000c</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">残差</td>
+<td style="text-align:left">195.464</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">6.74</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">总计</td>
+<td style="text-align:left">1126.047</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 预测变量: (常量), wt。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">c. 预测变量: (常量), wt, qsec。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">系数a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">非标准化系数</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">标准系数</td>
+<td style="text-align:left">t</td>
+<td style="text-align:left">Sig.</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">B</td>
+<td style="text-align:left">标准 误差</td>
+<td style="text-align:left">试用版</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">(常量)</td>
+<td style="text-align:left">37.285</td>
+<td style="text-align:left">1.878</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">19.858</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">wt</td>
+<td style="text-align:left">-5.344</td>
+<td style="text-align:left">0.559</td>
+<td style="text-align:left">-0.868</td>
+<td style="text-align:left">-9.559</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">(常量)</td>
+<td style="text-align:left">19.746</td>
+<td style="text-align:left">5.252</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">3.76</td>
+<td style="text-align:left">0.001</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">wt</td>
+<td style="text-align:left">-5.048</td>
+<td style="text-align:left">0.484</td>
+<td style="text-align:left">-0.82</td>
+<td style="text-align:left">-10.43</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">qsec</td>
+<td style="text-align:left">0.929</td>
+<td style="text-align:left">0.265</td>
+<td style="text-align:left">0.275</td>
+<td style="text-align:left">3.506</td>
+<td style="text-align:left">0.001</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">已排除的变量a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">模型</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Beta In</td>
+<td style="text-align:left">t</td>
+<td style="text-align:left">Sig.</td>
+<td style="text-align:left">偏相关</td>
+<td style="text-align:left">共线性统计量</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">容差</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">disp</td>
+<td style="text-align:left">-.364b</td>
+<td style="text-align:left">-1.929</td>
+<td style="text-align:left">0.064</td>
+<td style="text-align:left">-0.337</td>
+<td style="text-align:left">0.211</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">drat</td>
+<td style="text-align:left">.128b</td>
+<td style="text-align:left">0.989</td>
+<td style="text-align:left">0.331</td>
+<td style="text-align:left">0.181</td>
+<td style="text-align:left">0.492</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">qsec</td>
+<td style="text-align:left">.275b</td>
+<td style="text-align:left">3.506</td>
+<td style="text-align:left">0.001</td>
+<td style="text-align:left">0.546</td>
+<td style="text-align:left">0.969</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">disp</td>
+<td style="text-align:left">-.003c</td>
+<td style="text-align:left">-0.012</td>
+<td style="text-align:left">0.99</td>
+<td style="text-align:left">-0.002</td>
+<td style="text-align:left">0.131</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">drat</td>
+<td style="text-align:left">.147c</td>
+<td style="text-align:left">1.35</td>
+<td style="text-align:left">0.188</td>
+<td style="text-align:left">0.247</td>
+<td style="text-align:left">0.491</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">b. 模型中的预测变量: (常量), wt。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">c. 模型中的预测变量: (常量), wt, qsec。</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">残差统计量a</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">极小值</td>
+<td style="text-align:left">极大值</td>
+<td style="text-align:left">均值</td>
+<td style="text-align:left">标准 偏差</td>
+<td style="text-align:left">N</td>
+</tr>
+<tr>
+<td style="text-align:left">预测值</td>
+<td style="text-align:left">8.924</td>
+<td style="text-align:left">28.974</td>
+<td style="text-align:left">20.091</td>
+<td style="text-align:left">5.4789</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">残差</td>
+<td style="text-align:left">-4.3962</td>
+<td style="text-align:left">5.7486</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2.511</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">标准 预测值</td>
+<td style="text-align:left">-2.038</td>
+<td style="text-align:left">1.621</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">标准 残差</td>
+<td style="text-align:left">-1.693</td>
+<td style="text-align:left">2.214</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0.967</td>
+<td style="text-align:left">32</td>
+</tr>
+<tr>
+<td style="text-align:left">a. 因变量: mpg</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p>ss回归方程1：<br>判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.344<em>wt + 37.285<br>回归方程2：<br>判定系数 R ̅^2 = 0.814，拟合优度较高，不被解释变量较少；<br>对于常系数， sig.=0.01&lt;0.05，回归系数显著不为0；<br>对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；<br>对于sqec，sig.=0.00&lt;0.05，回归系数显著不为0；<br>在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著<br>回归方程为：mpg = -5.048</em>wt + 0.929*qsec + 19.746  </p>
 
       
 
