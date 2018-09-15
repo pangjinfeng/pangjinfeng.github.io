@@ -171,7 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>%%  圆柱<br>R=0.1;<br>a=1.7;<br>m=100;<br>[x,y,z]=cylinder(R,m);%创建以(0,0)为圆心，高度为[0,1]，半径为R的圆柱<br>% h = z*a  %高度为a<br>meshz(x,y,z)<br><img src="/images/圆柱.jpg" alt="圆柱"></p>
+        <p>%%  圆柱<br>R=0.1;<br>h=1.7;<br>m=100;<br>[x,y,z]=cylinder(R,m);%创建以(0,0)为圆心，高度为[0,1]，半径为R的圆柱<br>% z = z*h  %高度为h<br>meshz(x,y,z)<br><img src="/images/圆柱.jpg" alt="圆柱"></p>
 <hr>
 <p>%%  增加两条直线 （增加图层方法一致）<br>hold on<br>x1 = [-0.11,-0.11];<br>x2 = [-0.12,-0.17];<br>y = [0.1,0.1];<br>z = [0,1.7];<br>plot3(x1,y,z);<br>plot3(x2,y,z);<br>hold off<br>%%<br><img src="/images/hold on.jpg" alt="hold on"></p>
 
