@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="R," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -81,18 +81,17 @@
 
 
 
-<meta name="description" content="gganimate简介gganimate是一款基于ggplot2的动态可视化扩展包，简单就是将ggplot2绘图对象转为gif动图的形式， 需要本地提前安装好ImageMagick这个软件，ImageMagick是一款功能强大且开源的图片处理和开发的软件包，安装的时候总是莫名其妙的报错，能不能一次性安装成功随缘。 下载安装1devtools::install_github(&quot;dgrtwo/ggan">
-<meta name="keywords" content="R">
+<meta name="description" content="今天新换的一个主题　　theme：next">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gganimate：构建R语言可视化gif动图">
-<meta property="og:url" content="https://pangjinfeng.github.io/2018/09/02/gganimate：构建R语言可视化gif动图/index.html">
+<meta property="og:title" content="theme：next">
+<meta property="og:url" content="https://pangjinfeng.github.io/2018/09/15/theme：next/index.html">
 <meta property="og:site_name" content="data science foll">
-<meta property="og:description" content="gganimate简介gganimate是一款基于ggplot2的动态可视化扩展包，简单就是将ggplot2绘图对象转为gif动图的形式， 需要本地提前安装好ImageMagick这个软件，ImageMagick是一款功能强大且开源的图片处理和开发的软件包，安装的时候总是莫名其妙的报错，能不能一次性安装成功随缘。 下载安装1devtools::install_github(&quot;dgrtwo/ggan">
+<meta property="og:description" content="今天新换的一个主题　　theme：next">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-15T14:20:19.675Z">
+<meta property="og:updated_time" content="2018-09-15T15:32:14.899Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gganimate：构建R语言可视化gif动图">
-<meta name="twitter:description" content="gganimate简介gganimate是一款基于ggplot2的动态可视化扩展包，简单就是将ggplot2绘图对象转为gif动图的形式， 需要本地提前安装好ImageMagick这个软件，ImageMagick是一款功能强大且开源的图片处理和开发的软件包，安装的时候总是莫名其妙的报错，能不能一次性安装成功随缘。 下载安装1devtools::install_github(&quot;dgrtwo/ggan">
+<meta name="twitter:title" content="theme：next">
+<meta name="twitter:description" content="今天新换的一个主题　　theme：next">
 
 
 
@@ -122,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://pangjinfeng.github.io/2018/09/02/gganimate：构建R语言可视化gif动图/"/>
+  <link rel="canonical" href="https://pangjinfeng.github.io/2018/09/15/theme：next/"/>
 
 
 
 
 
-  <title>gganimate：构建R语言可视化gif动图 | data science foll</title>
+  <title>theme：next | data science foll</title>
   
 
 
@@ -265,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/02/gganimate：构建R语言可视化gif动图/">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/15/theme：next/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="庞锦烽">
@@ -282,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">gganimate：构建R语言可视化gif动图</h1>
+          <h1 class="post-title" itemprop="name headline">theme：next</h1>
         
 
         <div class="post-meta">
@@ -294,8 +293,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-02T21:56:00+08:00">
-                2018-09-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T23:26:51+08:00">
+                2018-09-15
               </time>
             
 
@@ -332,12 +331,7 @@
       
 
       
-        <h4 id="gganimate简介"><a href="#gganimate简介" class="headerlink" title="gganimate简介"></a>gganimate简介</h4><p>gganimate是一款基于ggplot2的动态可视化扩展包，简单就是将ggplot2绘图对象转为gif动图的形式， 需要本地提前安装好ImageMagick这个软件，ImageMagick是一款功能强大且开源的图片处理和开发的软件包，安装的时候总是莫名其妙的报错，能不能一次性安装成功随缘。</p>
-<h6 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">devtools::install_github(<span class="string">"dgrtwo/gganimate"</span>)</span><br></pre></td></tr></table></figure>
-<h6 id="绘图实例"><a href="#绘图实例" class="headerlink" title="绘图实例"></a>绘图实例</h6><p>使用的是 gapminder的包中的全球主要国家在1952-2007年的GDP增长、人口变化以及预期寿命等方面的数据。现在我们想用 gganimate探索一下各大洲各主要国家GDP增长、预期寿命和人口增长是如何随时间变化的。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">library(gapminder)</span><br><span class="line">library(ggplot2)</span><br><span class="line">theme_set(theme_bw())</span><br></pre></td></tr></table></figure></p>
-<p>包下载太慢了，待更新……</p>
-<hr>
-<p>噗~ 包下载不成功<br>详细步骤如下 ↓<br><a href="https://mp.weixin.qq.com/s/zQnQGbYHz1Iv0gAPV_9pTg" target="_blank" rel="noopener">查看原文</a></p>
+        <p>今天新换的一个主题　　<br><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">theme：next</a></p>
 
       
     </div>
@@ -353,12 +347,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/R/" rel="tag"># R</a>
-          
-        </div>
-      
 
       
       
@@ -368,8 +356,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/21/Abela-s-folly/" rel="next" title="Abela's folly">
-                <i class="fa fa-chevron-left"></i> Abela's folly
+              <a href="/2018/09/15/Matlab三维图形增加图层/" rel="next" title="Matlab三维图形增加图层">
+                <i class="fa fa-chevron-left"></i> Matlab三维图形增加图层
               </a>
             
           </div>
@@ -377,10 +365,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/02/gganimate：构建R语言可视化gif动图-1/" rel="prev" title="markdown基本语法">
-                markdown基本语法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -432,17 +416,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -520,22 +495,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#gganimate简介"><span class="nav-number">1.</span> <span class="nav-text">gganimate简介</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#下载安装"><span class="nav-number">1.0.1.</span> <span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#绘图实例"><span class="nav-number">1.0.2.</span> <span class="nav-text">绘图实例</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
