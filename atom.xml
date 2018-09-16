@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-16T11:30:26.207Z</updated>
+  <updated>2018-09-16T15:06:58.262Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Power BI 的咖啡销售报表</title>
+    <link href="https://pangjinfeng.github.io/2018/09/16/%E5%9F%BA%E4%BA%8EPower-BI-%E7%9A%84%E5%92%96%E5%95%A1%E9%94%80%E5%94%AE%E6%8A%A5%E8%A1%A8/"/>
+    <id>https://pangjinfeng.github.io/2018/09/16/基于Power-BI-的咖啡销售报表/</id>
+    <published>2018-09-16T15:05:00.000Z</published>
+    <updated>2018-09-16T15:06:58.262Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/coffee1.jpg&quot; alt=&quot;coffee&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/coffee2.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
+    
+    
+      <category term="Power Bi" scheme="https://pangjinfeng.github.io/tags/Power-Bi/"/>
+    
+      <category term="报表" scheme="https://pangjinfeng.github.io/tags/%E6%8A%A5%E8%A1%A8/"/>
+    
+      <category term="销售" scheme="https://pangjinfeng.github.io/tags/%E9%94%80%E5%94%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>theme：next</title>
