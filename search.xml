@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[基于Power BI 的咖啡销售报表]]></title>
+    <url>%2F2018%2F09%2F16%2F%E5%9F%BA%E4%BA%8EPower-BI-%E7%9A%84%E5%92%96%E5%95%A1%E9%94%80%E5%94%AE%E6%8A%A5%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[使用数据 coffee 国家 1999/1/1 0:00:00 2000/1/1 0:00:00 2001/1/1 0:00:00 2002/1/1 0:00:00 2003/1/1 0:00:00 2004/1/1 0:00:00 2005/1/1 0:00:00 2006/1/1 0:00:00 马来西亚 29011 74405 116276 28958 35278 68289 33988 34629 韩国 32361 43192 68662 24125 37215 58806 85743 43024 泰国 78318 18631 121685 118535 84856 324123 102330 12768 日本 74003 17720 17981 62771 19747 110761 45985 24638 新西兰 21777 92099 62920 89419 78395 47050 41368 51758 澳大利亚 36868 112761 118956 105545 55199 108308 22727 73018 新加坡 10548 47598 88790 16378 74768 106765 32942 42573 巴基斯坦 64683 20131 114330 80276 20992 24810 40699 121076 中国 109764 55304 121865 14442 41610 21369 19328 51958 菲律宾 89140 99648 57413 123987 105914 33659 89062 121135 印度 104759 80649 60982 34981 22973 56098 87989 90123 缅甸 12684 78595 74413 112562 25204 88855 72764 55347 印度尼西亚 73957 74223 42882 13225 121958 91761 57875 77818 coffee.pbix]]></content>
+      <categories>
+        <category>Power BI</category>
+      </categories>
+      <tags>
+        <tag>Power BI</tag>
+        <tag>报表</tag>
+        <tag>销售</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[theme：next]]></title>
+    <url>%2F2018%2F09%2F15%2Ftheme%EF%BC%9Anext%2F</url>
+    <content type="text"><![CDATA[今天新换的一个找了很久的主题，内附详细安装以及配置过程theme：next]]></content>
+      <categories>
+        <category>themes</category>
+      </categories>
+      <tags>
+        <tag>theme</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Matlab三维图形增加图层]]></title>
+    <url>%2F2018%2F09%2F15%2FMatlab%E4%B8%89%E7%BB%B4%E5%9B%BE%E5%BD%A2%E5%A2%9E%E5%8A%A0%E5%9B%BE%E5%B1%82%2F</url>
+    <content type="text"><![CDATA[%% 圆柱R=0.1;h=1.7;m=100;[x,y,z]=cylinder(R,m);%创建以(0,0)为圆心，高度为[0,1]，半径为R的圆柱% z = z*h %高度为hmeshz(x,y,z) %% 增加两条直线 （增加图层方法一致）hold onx1 = [-0.11,-0.11];x2 = [-0.12,-0.17];y = [0.1,0.1];z = [0,1.7];plot3(x1,y,z);plot3(x2,y,z);hold off%%]]></content>
+      <categories>
+        <category>Matlab</category>
+      </categories>
+      <tags>
+        <tag>Matlab</tag>
+        <tag>圆柱</tag>
+        <tag>图层</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[基于 Power BI 的商品销售可视化]]></title>
+    <url>%2F2018%2F09%2F11%2F%E4%BA%8E-Power-BI-%E7%9A%84%E5%95%86%E5%93%81%E9%94%80%E5%94%AE%E5%8F%AF%E8%A7%86%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[shop.pbix原数据 shop.csv]]></content>
+      <categories>
+        <category>Power BI</category>
+      </categories>
+      <tags>
+        <tag>Power BI</tag>
+        <tag>商品销售</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Power BI Top 10 cost of living state]]></title>
+    <url>%2F2018%2F09%2F09%2FPower-BI-Top-10-cost-of-living-state%2F</url>
+    <content type="text"><![CDATA[Power BI top10]]></content>
+      <categories>
+        <category>Power BI</category>
+      </categories>
+      <tags>
+        <tag>Power BI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[基于SPSS的相关分析、方差分析、回归分析]]></title>
+    <url>%2F2018%2F09%2F02%2F%E5%9F%BA%E4%BA%8ESPSS%E7%9A%84%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90%E3%80%81%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90%E3%80%81%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90-1%2F</url>
+    <content type="text"><![CDATA[数据来源mtcars {datasets} R Documentation Motor Trend Car Road Tests The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models). Format A data frame with 32 observations on 11 variables.1234567891011[, 1] mpg Miles/(US) gallon[, 2] cyl Number of cylinders[, 3] disp Displacement (cu.in.)[, 4] hp Gross horsepower[, 5] drat Rear axle ratio[, 6] wt Weight (1000 lbs)[, 7] qsec 1/4 mile time[, 8] vs V/S[, 9] am Transmission (0 = automatic, 1 = manual)[,10] gear Number of forward gears[,11] carb Number of carburetors mpg cyl disp hp drat wt qsec vs am gear carb Mazda RX4 21 6 160 110 3.9 2.62 16.46 V-Engine Manual 4 4 Mazda RX4 Wag 21 6 160 110 3.9 2.875 17.02 V-Engine Manual 4 4 Datsun 710 22.8 4 108 93 3.85 2.32 18.61 Straight Engine Manual 4 1 Hornet 4 Drive 21.4 6 258 110 3.08 3.215 19.44 Straight Engine Automatic 3 1 Hornet Sportabout 18.7 8 360 175 3.15 3.44 17.02 V-Engine Automatic 3 2 Valiant 18.1 6 225 105 2.76 3.46 20.22 Straight Engine Automatic 3 1 Duster 360 14.3 8 360 245 3.21 3.57 15.84 V-Engine Automatic 3 4 Merc 240D 24.4 4 146.7 62 3.69 3.19 20 Straight Engine Automatic 4 2 Merc 230 22.8 4 140.8 95 3.92 3.15 22.9 Straight Engine Automatic 4 2 Merc 280 19.2 6 167.6 123 3.92 3.44 18.3 Straight Engine Automatic 4 4 Merc 280C 17.8 6 167.6 123 3.92 3.44 18.9 Straight Engine Automatic 4 4 Merc 450SE 16.4 8 275.8 180 3.07 4.07 17.4 V-Engine Automatic 3 3 Merc 450SL 17.3 8 275.8 180 3.07 3.73 17.6 V-Engine Automatic 3 3 Merc 450SLC 15.2 8 275.8 180 3.07 3.78 18 V-Engine Automatic 3 3 Cadillac Fleetwood 10.4 8 472 205 2.93 5.25 17.98 V-Engine Automatic 3 4 Lincoln Continental 10.4 8 460 215 3 5.424 17.82 V-Engine Automatic 3 4 Chrysler Imperial 14.7 8 440 230 3.23 5.345 17.42 V-Engine Automatic 3 4 Fiat 128 32.4 4 78.7 66 4.08 2.2 19.47 Straight Engine Manual 4 1 Honda Civic 30.4 4 75.7 52 4.93 1.615 18.52 Straight Engine Manual 4 2 Toyota Corolla 33.9 4 71.1 65 4.22 1.835 19.9 Straight Engine Manual 4 1 Toyota Corona 21.5 4 120.1 97 3.7 2.465 20.01 Straight Engine Automatic 3 1 Dodge Challenger 15.5 8 318 150 2.76 3.52 16.87 V-Engine Automatic 3 2 AMC Javelin 15.2 8 304 150 3.15 3.435 17.3 V-Engine Automatic 3 2 Camaro Z28 13.3 8 350 245 3.73 3.84 15.41 V-Engine Automatic 3 4 Pontiac Firebird 19.2 8 400 175 3.08 3.845 17.05 V-Engine Automatic 3 2 Fiat X1-9 27.3 4 79 66 4.08 1.935 18.9 Straight Engine Manual 4 1 Porsche 914-2 26 4 120.3 91 4.43 2.14 16.7 V-Engine Manual 5 2 Lotus Europa 30.4 4 95.1 113 3.77 1.513 16.9 Straight Engine Manual 5 2 Ford Pantera L 15.8 8 351 264 4.22 3.17 14.5 V-Engine Manual 5 4 Ferrari Dino 19.7 6 145 175 3.62 2.77 15.5 V-Engine Manual 5 6 Maserati Bora 15 8 301 335 3.54 3.57 14.6 V-Engine Manual 5 8 Volvo 142E 21.4 4 121 109 4.11 2.78 18.6 Straight Engine Manual 4 2 相关分析 (mpg~wr+qsec) Correlations相关性 mpg wt qsec disp hp drat mpg Pearson 相关性 1 -.868** .419* -.848** -.776** .681** 显著性（双侧） 0 0.017 0 0 0 N 32 32 32 32 32 32 wt Pearson 相关性 -.868** 1 -0.175 .888** .659** -.712** 显著性（双侧） 0 0.339 0 0 0 N 32 32 32 32 32 32 qsec Pearson 相关性 .419* -0.175 1 -.434* -.708** 0.091 显著性（双侧） 0.017 0.339 0.013 0 0.62 N 32 32 32 32 32 32 disp Pearson 相关性 -.848** .888** -.434* 1 .791** -.710** 显著性（双侧） 0 0 0.013 0 0 N 32 32 32 32 32 32 hp Pearson 相关性 -.776** .659** -.708** .791** 1 -.449** 显著性（双侧） 0 0 0 0 0.01 N 32 32 32 32 32 32 drat Pearson 相关性 .681** -.712** 0.091 -.710** -.449** 1 显著性（双侧） 0 0 0.62 0 0.01 N 32 32 32 32 32 32 **. 在 .01 水平（双侧）上显著相关。 *. 在 0.05 水平（双侧）上显著相关。 在0.01水平上： mpg与 wt、qsec、disp、hp、drat 相关性显著；wt 与 mpg、disp、hp、drat相关性显著；sqec 与 mpg、disp、hp、drat 相关性显著；disp 与 mpg、wt、qsec、hp、drat 相关性显著；hp 与 mpg、wt、qsec、disp、drat 相干性显著；drat 与 mpg、wt、qsec、disp、hp 相关性显著； 单因素方差分析（cyl~mpg）Oneway 描述 mpg N 均值 标准差 标准误 均值的 95% 置信区间 极小值 下限 上限 4 11 26.664 4.5098 1.3598 23.634 29.693 21.4 6 7 19.743 1.4536 0.5494 18.399 21.087 17.8 8 14 15.1 2.56 0.6842 13.622 16.578 10.4 总数 32 20.091 6.0269 1.0654 17.918 22.264 10.4 方差齐性检验 mpg Levene 统计量 df1 df2 显著性 6.484 2 29 0.005 单因素方差分析 mpg 平方和 df 均方 F 显著性 组间 824.785 2 412.392 39.698 .000 组内 301.263 29 10.388 总数 1126.047 31 由于Levene检验没有证据说明三种 cyl 的方差相等，参照两种不同的两两比较的结果是必要的。 Post Hoc Tests 多重比较 因变量: mpg (I) cyl (J) cyl 均值差 (I-J) 标准误 显著性 95% 置信区间 下限 上限 Bonferroni 4 6 6.9208* 1.5583 0 2.961 10.88 8 11.5636* 1.2986 0 8.264 14.863 6 4 -6.9208* 1.5583 0 -10.88 -2.961 8 4.6429* 1.492 0.012 0.852 8.434 8 4 -11.5636* 1.2986 0 -14.863 -8.264 6 -4.6429* 1.492 0.012 -8.434 -0.852 Tamhane 4 6 6.9208* 1.4666 0.001 2.905 10.937 8 11.5636* 1.5222 0 7.475 15.652 6 4 -6.9208* 1.4666 0.001 -10.937 -2.905 8 4.6429* 0.8775 0 2.34 6.945 8 4 -11.5636* 1.5222 0 -15.652 -7.475 6 -4.6429* 0.8775 0 -6.945 -2.34 *. 均值差的显著性水平为 0.05。 Bonferroni和Tamhane多重比较的结果是一致的, cyl 的数量 4、6和8有显著区别。 Homogeneous Subsets mpg cyl N alpha = 0.05 的子集 1 2 3 Tukey Ba,b 8 14 15.1 6 7 19.743 4 11 26.664 将显示同类子集中的组均值。 a. 将使用调和均值样本大小 = 9.830。 b. 组大小不相等。将使用组大小的调和均值。将不保证 I 类错误级别。 Tukey B两两比较输出的结果，它把在5%的显著性水平下没有区别的总体放在同一列，作为同类子集。Cyl 数量为4，Cyl 数量为6，Cyl 数量为8有显著区别，各自单独分为一类 Means Plots 轮廓图为各个总体的均值的折线图，从中可以直观的看出各个总体均值的趋势。 回归分析一元线性回归模型（mpg~wt，前进法）Regression 输入／移去的变量a 模型 输入的变量 移去的变量 方法 1 wtb . 输入 a. 因变量: mpg b. 已输入所有请求的变量。 模型汇总b 模型 R R 方 调整 R 方 标准 估计的误差 1 .868a 0.753 0.745 3.0459 a. 预测变量: (常量), wt。 b. 因变量: mpg Anovaa 模型 平方和 df 均方 F Sig. 1 回归 847.725 1 847.725 91.375 .000b 残差 278.322 30 9.277 总计 1126.047 31 a. 因变量: mpg b. 预测变量: (常量), wt。 系数a 模型 非标准化系数 标准系数 t Sig. B 标准 误差 试用版 1 (常量) 37.285 1.878 19.858 0 wt -5.344 0.559 -0.868 -9.559 0 a. 因变量: mpg 残差统计量a 极小值 极大值 均值 标准 偏差 N 预测值 8.297 29.199 20.091 5.2293 32 残差 -4.5432 6.8727 0 2.9964 32 标准 预测值 -2.255 1.742 0 1 32 标准 残差 -1.492 2.256 0 0.984 32 a. 因变量: mpg 判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著回归方程为：mpg = -5.344*wt + 37.285 多元线性回归模型（mpg~disp+drat+wt+qsec，逐步回归）Regression 输入／移去的变量a 模型 输入的变量 移去的变量 方法 1 wt . 步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。 2 qsec . 步进（准则: F-to-enter 的概率 &lt;= .050，F-to-remove 的概率 &gt;= .100）。 a. 因变量: mpg 模型汇总c 模型 R R 方 调整 R 方 标准 估计的误差 1 .868a 0.753 0.745 3.0459 2 .909b 0.826 0.814 2.5962 a. 预测变量: (常量), wt。 b. 预测变量: (常量), wt, qsec。 c. 因变量: mpg Anovaa 模型 平方和 df 均方 F Sig. 1 回归 847.725 1 847.725 91.375 .000b 残差 278.322 30 9.277 总计 1126.047 31 2 回归 930.584 2 465.292 69.033 .000c 残差 195.464 29 6.74 总计 1126.047 31 a. 因变量: mpg b. 预测变量: (常量), wt。 c. 预测变量: (常量), wt, qsec。 系数a 模型 非标准化系数 标准系数 t Sig. B 标准 误差 试用版 1 (常量) 37.285 1.878 19.858 0 wt -5.344 0.559 -0.868 -9.559 0 2 (常量) 19.746 5.252 3.76 0.001 wt -5.048 0.484 -0.82 -10.43 0 qsec 0.929 0.265 0.275 3.506 0.001 a. 因变量: mpg 已排除的变量a 模型 Beta In t Sig. 偏相关 共线性统计量 容差 1 disp -.364b -1.929 0.064 -0.337 0.211 drat .128b 0.989 0.331 0.181 0.492 qsec .275b 3.506 0.001 0.546 0.969 2 disp -.003c -0.012 0.99 -0.002 0.131 drat .147c 1.35 0.188 0.247 0.491 a. 因变量: mpg b. 模型中的预测变量: (常量), wt。 c. 模型中的预测变量: (常量), wt, qsec。 残差统计量a 极小值 极大值 均值 标准 偏差 N 预测值 8.924 28.974 20.091 5.4789 32 残差 -4.3962 5.7486 0 2.511 32 标准 预测值 -2.038 1.621 0 1 32 标准 残差 -1.693 2.214 0 0.967 32 a. 因变量: mpg ss回归方程1：判定系数 R ̅^2 = 0.745，拟合优度较高，不被解释变量较少；对于常系数， sig.=0.00&lt;0.05，回归系数显著不为0；对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著回归方程为：mpg = -5.344wt + 37.285回归方程2：判定系数 R ̅^2 = 0.814，拟合优度较高，不被解释变量较少；对于常系数， sig.=0.01&lt;0.05，回归系数显著不为0；对于wt，sig.=0.00&lt;0.05，回归系数显著不为0；对于sqec，sig.=0.00&lt;0.05，回归系数显著不为0；在方差分析表中，sig.=0.00&lt;0.01，回归模型非常显著回归方程为：mpg = -5.048wt + 0.929*qsec + 19.746]]></content>
+      <categories>
+        <category>SPSS</category>
+      </categories>
+      <tags>
+        <tag>SPSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown基本语法]]></title>
+    <url>%2F2018%2F09%2F02%2Fgganimate%EF%BC%9A%E6%9E%84%E5%BB%BAR%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96gif%E5%8A%A8%E5%9B%BE-1%2F</url>
+    <content type="text"><![CDATA[不定时更新……简书https://www.jianshu.com/p/191d1e21f7ed 制作表格 表头 表头 表头 内容 内容 内容 内容 内容 内容 第二行分割表头和内容。 -有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右 注：原生的语法两边都要用 | 包起来。此处省略 快速excel表格转换成markdown格式然后通过使用 exceltk0.0.4.7z 将excel文件转换为md文件 将exceltk0.0.4.7z压缩包解压，在dos下使用cd命令定位到它的解压路径下，1exceltk.exe -t md -xls xxx.xls 将xxx.xls改为你的excel文件的路径 最后它会生成一个md文件 doc 运行界面 原excel文件 exceltk.exe 转换后 md 文件 最终效果 换行在输入文字后面增加两个空格可以实现换行]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[gganimate：构建R语言可视化gif动图]]></title>
+    <url>%2F2018%2F09%2F02%2Fgganimate%EF%BC%9A%E6%9E%84%E5%BB%BAR%E8%AF%AD%E8%A8%80%E5%8F%AF%E8%A7%86%E5%8C%96gif%E5%8A%A8%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[gganimate简介gganimate是一款基于ggplot2的动态可视化扩展包，简单就是将ggplot2绘图对象转为gif动图的形式， 需要本地提前安装好ImageMagick这个软件，ImageMagick是一款功能强大且开源的图片处理和开发的软件包，安装的时候总是莫名其妙的报错，能不能一次性安装成功随缘。 下载安装1devtools::install_github("dgrtwo/gganimate") 绘图实例使用的是 gapminder的包中的全球主要国家在1952-2007年的GDP增长、人口变化以及预期寿命等方面的数据。现在我们想用 gganimate探索一下各大洲各主要国家GDP增长、预期寿命和人口增长是如何随时间变化的。123library(gapminder)library(ggplot2)theme_set(theme_bw()) 包下载太慢了，待更新…… 噗~ 包下载不成功详细步骤如下 ↓查看原文]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>gganimate</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Abela's folly]]></title>
+    <url>%2F2018%2F08%2F21%2FAbela-s-folly%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
+      <tags>
+        <tag>未分类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test]]></title>
+    <url>%2F2018%2F08%2F09%2FUntitled%2F</url>
+    <content type="text"><![CDATA[卧槽终于弄好了感谢大佬 ！！！！！！]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World ！]]></title>
+    <url>%2F2018%2F08%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
