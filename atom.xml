@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-16T15:33:57.427Z</updated>
+  <updated>2018-09-17T14:44:49.259Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DataGirls Visual Vocabulary</title>
+    <link href="https://pangjinfeng.github.io/2018/09/17/ataGirls-Visual-Vocabulary/"/>
+    <id>https://pangjinfeng.github.io/2018/09/17/ataGirls-Visual-Vocabulary/</id>
+    <published>2018-09-17T14:39:00.000Z</published>
+    <updated>2018-09-17T14:44:49.259Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;收藏-Tableau-报表&quot;&gt;&lt;a href=&quot;#收藏-Tableau-报表&quot; class=&quot;headerlink&quot; title=&quot;收藏 Tableau 报表&quot;&gt;&lt;/a&gt;收藏 Tableau 报表&lt;/h5&gt;&lt;p&gt;&lt;img src=&quot;/images/Change
+        
+      
+    
+    </summary>
+    
+      <category term="Tableau" scheme="https://pangjinfeng.github.io/categories/Tableau/"/>
+    
+    
+      <category term="报表" scheme="https://pangjinfeng.github.io/tags/%E6%8A%A5%E8%A1%A8/"/>
+    
+      <category term="Tableau" scheme="https://pangjinfeng.github.io/tags/Tableau/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Power BI 的咖啡销售报表</title>
