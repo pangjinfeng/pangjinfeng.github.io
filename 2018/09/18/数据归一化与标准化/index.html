@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="R,归一化,标准化,scale,center,normalization,standardization," />
 
 
 
@@ -81,17 +81,21 @@
 
 
 
-<meta name="description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}   标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100">
+<meta name="description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。  标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。 R语言处理函数s">
+<meta name="keywords" content="R,归一化,标准化,scale,center,normalization,standardization">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据归一化与标准化">
 <meta property="og:url" content="https://pangjinfeng.github.io/2018/09/18/数据归一化与标准化/index.html">
 <meta property="og:site_name" content="data science foll">
-<meta property="og:description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}   标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100">
+<meta property="og:description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。  标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。 R语言处理函数s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-20T15:21:48.454Z">
+<meta property="og:image" content="http://latex.codecogs.com/gif.latex?x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}">
+<meta property="og:image" content="http://latex.codecogs.com/gif.latex?x_{new}=\frac{x-\mu&space;}{\sigma&space;}">
+<meta property="og:updated_time" content="2018-09-20T15:29:43.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据归一化与标准化">
-<meta name="twitter:description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}   标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100">
+<meta name="twitter:description" content="归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。  标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。 R语言处理函数s">
+<meta name="twitter:image" content="http://latex.codecogs.com/gif.latex?x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}">
 
 
 
@@ -327,7 +331,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-18T17:05:53+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-18T17:05:00+08:00">
                 2018-09-18
               </time>
             
@@ -337,6 +341,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/预处理/" itemprop="url" rel="index">
+                    <span itemprop="name">预处理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -376,8 +402,8 @@
       
 
       
-        <h5 id="归一化（Normalization）"><a href="#归一化（Normalization）" class="headerlink" title="归一化（Normalization）"></a>归一化（Normalization）</h5><p>为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。<br>x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}  </p>
-<h5 id="标准化（Standardization）"><a href="#标准化（Standardization）" class="headerlink" title="标准化（Standardization）"></a>标准化（Standardization）</h5><p>消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。<br>x_{new}=\frac{x-\mu }{\sigma }</p>
+        <h5 id="归一化（Normalization）"><a href="#归一化（Normalization）" class="headerlink" title="归一化（Normalization）"></a>归一化（Normalization）</h5><p>为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。<br><a href="http://www.codecogs.com/eqnedit.php?latex=x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}" title="x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}}"></a> </p>
+<h5 id="标准化（Standardization）"><a href="#标准化（Standardization）" class="headerlink" title="标准化（Standardization）"></a>标准化（Standardization）</h5><p>消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。<br><a href="http://www.codecogs.com/eqnedit.php?latex=x_{new}=\frac{x-\mu&space;}{\sigma&space;}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x_{new}=\frac{x-\mu&space;}{\sigma&space;}" title="x_{new}=\frac{x-\mu }{\sigma }"></a></p>
 <h6 id="R语言处理函数"><a href="#R语言处理函数" class="headerlink" title="R语言处理函数"></a>R语言处理函数</h6><p>scale(dt,center = T,scale = T)<br>scale方法中的两个参数center和scale的解释：<br>1.center和scale默认为真,即T或者TRUE<br>2.center为真表示数据中心化(只减去均值不做其他处理)<br>3.scale为真表示数据标准化</p>
 
       
@@ -393,6 +419,24 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/R/" rel="tag"># R</a>
+          
+            <a href="/tags/归一化/" rel="tag"># 归一化</a>
+          
+            <a href="/tags/标准化/" rel="tag"># 标准化</a>
+          
+            <a href="/tags/scale/" rel="tag"># scale</a>
+          
+            <a href="/tags/center/" rel="tag"># center</a>
+          
+            <a href="/tags/normalization/" rel="tag"># normalization</a>
+          
+            <a href="/tags/standardization/" rel="tag"># standardization</a>
+          
+        </div>
       
 
       
@@ -507,7 +551,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -518,7 +562,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
