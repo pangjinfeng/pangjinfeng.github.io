@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用Markdown编辑数学公式]]></title>
+    <url>%2F2018%2F09%2F20%2F%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Cmd Markdown 公式指导手册 在线使用 LaTex 进行编辑]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[数据归一化与标准化]]></title>
+    <url>%2F2018%2F09%2F18%2F%E6%95%B0%E6%8D%AE%E5%BD%92%E4%B8%80%E5%8C%96%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。x_{new}=\frac{x-x_{min}}{x_{max}-x_{min}} 标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。x_{new}=\frac{x-\mu }{\sigma } R语言处理函数scale(dt,center = T,scale = T)scale方法中的两个参数center和scale的解释：1.center和scale默认为真,即T或者TRUE2.center为真表示数据中心化(只减去均值不做其他处理)3.scale为真表示数据标准化]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[DataGirls Visual Vocabulary]]></title>
     <url>%2F2018%2F09%2F17%2FataGirls-Visual-Vocabulary%2F</url>
     <content type="text"><![CDATA[收藏 Tableau 报表DataGirls Visual Vocabulary.twbx]]></content>
