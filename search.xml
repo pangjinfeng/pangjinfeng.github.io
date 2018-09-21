@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[相关系数矩阵 corrgram]]></title>
     <url>%2F2018%2F09%2F21%2F%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram%2F</url>
-    <content type="text"><![CDATA[install.packages(&quot;iterators&quot;) install.packages(&quot;corrgram&quot;) install.packages(&quot;kernlab&quot;) library(iterators) library(kernlab) library(corrgram) corrgram(mtcars, order=TRUE, lower.panel=panel.shade, upper.panel=panel.pie, text.panel=panel.txt, main=&quot;Correlogram of mtcar intercorrelations&quot;)]]></content>
+    <content type="text"><![CDATA[123456789101112install.packages(&quot;iterators&quot;)install.packages(&quot;corrgram&quot;)install.packages(&quot;kernlab&quot;)library(iterators)library(kernlab)library(corrgram)corrgram(mtcars, order=TRUE, lower.panel=panel.shade, upper.panel=panel.pie, text.panel=panel.txt, main=&quot;Correlogram of mtcar intercorrelations&quot;)]]></content>
       <categories>
         <category>R</category>
       </categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-21T08:06:46.463Z</updated>
+  <updated>2018-09-21T09:23:18.549Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pangjinfeng.github.io/2018/09/21/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram/"/>
     <id>https://pangjinfeng.github.io/2018/09/21/相关系数矩阵-corrgram/</id>
     <published>2018-09-21T07:57:00.000Z</published>
-    <updated>2018-09-21T08:06:46.463Z</updated>
+    <updated>2018-09-21T09:23:18.549Z</updated>
     
     <summary type="html">
     
@@ -29,10 +29,7 @@
       
         
         
-          &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;iterators&amp;quot;)
-install.packages(&amp;quot;corrgram&amp;quot;)
-install.packages(&amp;quot;kernlab&amp;quot;)
-library(iter
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
         
       
     
