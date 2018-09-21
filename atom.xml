@@ -43,9 +43,9 @@ library(iter
     
       <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
     
-      <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
-    
       <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
+    
+      <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
     
   </entry>
   
