@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[相关系数矩阵 corrgram]]></title>
+    <url>%2F2018%2F09%2F21%2F%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram%2F</url>
+    <content type="text"><![CDATA[install.packages(&quot;iterators&quot;) install.packages(&quot;corrgram&quot;) install.packages(&quot;kernlab&quot;) library(iterators) library(kernlab) library(corrgram) corrgram(mtcars, order=TRUE, lower.panel=panel.shade, upper.panel=panel.pie, text.panel=panel.txt, main=&quot;Correlogram of mtcar intercorrelations&quot;)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>corrgram</tag>
+        <tag>相关系数矩阵</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[哈夫曼图 CMplot]]></title>
     <url>%2F2018%2F09%2F21%2F%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE-CMplot%2F</url>
     <content type="text"><![CDATA[12345678910install.packages(&quot;CMplot&quot;)library(&quot;CMplot&quot;)data(pig60K) CMplot(pig60K[sample(1:nrow(pig60K),10000),c(1:4)],plot.type=&quot;c&quot;,threshold=c(0.01,0.05)/nrow(pig60K),threshold.col=c(&apos;red&apos;,&apos;orange&apos;),multracks=FALSE, chr.den.col=NULL, file.output = F)]]></content>
