@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[哈夫曼图 CMplot]]></title>
+    <url>%2F2018%2F09%2F21%2F%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE-CMplot%2F</url>
+    <content type="text"><![CDATA[12345678910install.packages(&quot;CMplot&quot;)library(&quot;CMplot&quot;)data(pig60K) CMplot(pig60K[sample(1:nrow(pig60K),10000),c(1:4)],plot.type=&quot;c&quot;,threshold=c(0.01,0.05)/nrow(pig60K),threshold.col=c(&apos;red&apos;,&apos;orange&apos;),multracks=FALSE, chr.den.col=NULL, file.output = F)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>CMplot</tag>
+        <tag>哈夫曼图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[使用Markdown编辑数学公式]]></title>
     <url>%2F2018%2F09%2F20%2F%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[Cmd Markdown 公式指导手册 在线使用 LaTex 进行编辑]]></content>

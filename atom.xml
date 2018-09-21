@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-20T15:26:28.083Z</updated>
+  <updated>2018-09-21T07:49:55.424Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哈夫曼图 CMplot</title>
+    <link href="https://pangjinfeng.github.io/2018/09/21/%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE-CMplot/"/>
+    <id>https://pangjinfeng.github.io/2018/09/21/哈夫曼图-CMplot/</id>
+    <published>2018-09-21T07:44:00.000Z</published>
+    <updated>2018-09-21T07:49:55.424Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
+    
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
+      <category term="CMplot" scheme="https://pangjinfeng.github.io/tags/CMplot/"/>
+    
+      <category term="哈夫曼图" scheme="https://pangjinfeng.github.io/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>使用Markdown编辑数学公式</title>
