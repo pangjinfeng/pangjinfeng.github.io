@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-21T09:23:18.549Z</updated>
+  <updated>2018-09-22T08:15:15.254Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>theme: next 相关配置优化</title>
+    <link href="https://pangjinfeng.github.io/2018/09/22/theme-next-%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96/"/>
+    <id>https://pangjinfeng.github.io/2018/09/22/theme-next-相关配置优化/</id>
+    <published>2018-09-22T08:08:00.000Z</published>
+    <updated>2018-09-22T08:15:15.254Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;作者：Alvabill&lt;br&gt;链接：&lt;a href=&quot;https://www.jianshu.com/p/1f8107a8778c&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="theme" scheme="https://pangjinfeng.github.io/categories/theme/"/>
+    
+    
+      <category term="theme" scheme="https://pangjinfeng.github.io/tags/theme/"/>
+    
+      <category term="next" scheme="https://pangjinfeng.github.io/tags/next/"/>
+    
+  </entry>
   
   <entry>
     <title>相关系数矩阵   corrgram</title>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[theme: next 相关配置优化]]></title>
+    <url>%2F2018%2F09%2F22%2Ftheme-next-%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[作者：Alvabill链接：https://www.jianshu.com/p/1f8107a8778c来源：简书]]></content>
+      <categories>
+        <category>theme</category>
+      </categories>
+      <tags>
+        <tag>theme</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[相关系数矩阵 corrgram]]></title>
     <url>%2F2018%2F09%2F21%2F%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram%2F</url>
     <content type="text"><![CDATA[123456789101112install.packages(&quot;iterators&quot;)install.packages(&quot;corrgram&quot;)install.packages(&quot;kernlab&quot;)library(iterators)library(kernlab)library(corrgram)corrgram(mtcars, order=TRUE, lower.panel=panel.shade, upper.panel=panel.pie, text.panel=panel.txt, main=&quot;Correlogram of mtcar intercorrelations&quot;)]]></content>
