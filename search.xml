@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[火山图 lattice]]></title>
+    <url>%2F2018%2F09%2F23%2F%E7%81%AB%E5%B1%B1%E5%9B%BE-lattice%2F</url>
+    <content type="text"><![CDATA[123456install.packages(&quot;lattice&quot;)library(lattice)head(volcano)contourplot(volcano) # 绘制火山的三维等高线图levelplot(volcano) # 绘制火山的三维水平图wireframe(volcano) # 绘制火山的三维线框图]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>lattice</tag>
+        <tag>火山图</tag>
+        <tag>三维</tag>
+        <tag>三维等高线图</tag>
+        <tag>三维水平图</tag>
+        <tag>三维线框图</tag>
+        <tag>volcano</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网络图 igraph]]></title>
+    <url>%2F2018%2F09%2F23%2F%E7%BD%91%E7%BB%9C%E5%9B%BE-igraph%2F</url>
+    <content type="text"><![CDATA[12345install.packages(&quot;igraph&quot;)library(igraph)data=matrix(sample(0:1, 400, replace=TRUE, prob=c(0.8,0.2)), nrow=20)network=graph_from_adjacency_matrix(data , mode=&apos;undirected&apos;, diag=F )plot(network, layout=layout.sphere)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>igragh</tag>
+        <tag>matrix</tag>
+        <tag>sample</tag>
+        <tag>layout</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[二维直方图 hexbin]]></title>
+    <url>%2F2018%2F09%2F23%2F%E4%BA%8C%E7%BB%B4%E7%9B%B4%E6%96%B9%E5%9B%BE-hexbin%2F</url>
+    <content type="text"><![CDATA[123456789install.packages(&quot;hexbin&quot;)install.packages(&quot;RColorBrewer&quot;)library(hexbin)library(RColorBrewer)x &lt;- rnorm(mean=1.5, 5000)y &lt;- rnorm(mean=1.6, 5000)bin&lt;-hexbin(x, y, xbins=40)my_colors=colorRampPalette(rev(brewer.pal(11,&apos;Spectral&apos;)))plot(bin, colramp=my_colors, legend=F)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>hexbin</tag>
+        <tag>RColorBrewer</tag>
+        <tag>rnorm</tag>
+        <tag>colorRampalette</tag>
+        <tag>rev</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[时间序列分析 forecast]]></title>
+    <url>%2F2018%2F09%2F23%2F%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90-forecast%2F</url>
+    <content type="text"><![CDATA[12345678install.packages(&quot;forecast&quot;)library(forecast)# 使用英国每月死于肺病的人数数据fit&lt;- auto.arima(mdeaths)# 设置置信区间forecast(fit, level=c(80, 95, 99), h=3)# 绘制时间序列趋势图plot(forecast(fit), shadecols=&quot;oldstyle&quot;)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>时间序列</tag>
+        <tag>forecast</tag>
+        <tag>mdeaths</tag>
+        <tag>shadecols</tag>
+        <tag>auto.arima</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[相关性系数矩阵（椭圆） ellipse]]></title>
     <url>%2F2018%2F09%2F23%2F%E7%9B%B8%E5%85%B3%E6%80%A7%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5%EF%BC%88%E6%A4%AD%E5%9C%86%EF%BC%89-ellipse%2F</url>
     <content type="text"><![CDATA[12345install.packages(&quot;ellipse&quot;)library(ellipse)data(mtcars)fit &lt;- lm(mpg ~ ., mtcars)plotcorr(summary(fit, correlation = TRUE)$correlation)]]></content>
@@ -44,12 +109,12 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
-        <tag>相关</tag>
-        <tag>mtcar</tag>
-        <tag>mtcarData</tag>
         <tag>order</tag>
         <tag>lower.panel</tag>
         <tag>upper.panel</tag>
+        <tag>相关</tag>
+        <tag>mtcar</tag>
+        <tag>mtcarData</tag>
       </tags>
   </entry>
   <entry>
@@ -75,11 +140,11 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
+        <tag>iterators</tag>
+        <tag>kernlab</tag>
         <tag>order</tag>
         <tag>lower.panel</tag>
         <tag>upper.panel</tag>
-        <tag>iterators</tag>
-        <tag>kernlab</tag>
         <tag>text.panel</tag>
       </tags>
   </entry>
