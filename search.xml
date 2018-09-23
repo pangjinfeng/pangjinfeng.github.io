@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[相关性系数矩阵（椭圆） ellipse]]></title>
+    <url>%2F2018%2F09%2F23%2F%E7%9B%B8%E5%85%B3%E6%80%A7%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5%EF%BC%88%E6%A4%AD%E5%9C%86%EF%BC%89-ellipse%2F</url>
+    <content type="text"><![CDATA[12345install.packages(&quot;ellipse&quot;)library(ellipse)data(mtcars)fit &lt;- lm(mpg ~ ., mtcars)plotcorr(summary(fit, correlation = TRUE)$correlation)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>相关系数矩阵</tag>
+        <tag>ellipse</tag>
+        <tag>mtcars</tag>
+        <tag>lm</tag>
+        <tag>summary</tag>
+        <tag>plotcorr</tag>
+        <tag>correlation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[时间序列数据的可视化 dygraphs]]></title>
+    <url>%2F2018%2F09%2F23%2F%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96-dygraphs%2F</url>
+    <content type="text"><![CDATA[12345install.packages(&quot;dygraphs&quot;)library(dygraphs)data=data.frame( time=c( seq(0,20,0.5), 40), value=runif(42))str(data)dygraph(data)]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>时间序列</tag>
+        <tag>dygraphs</tag>
+        <tag>runif</tag>
+        <tag>str</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[相关系数矩阵 corrgram]]></title>
     <url>%2F2018%2F09%2F23%2F%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrplot%2F</url>
     <content type="text"><![CDATA[123456789install.packages(corrgram)library(corrgram)library(mtcarData)library(mtcar)corrgram(mtcars, order=TRUE, lower.panel=panel.ellipse, upper.panel=panel.pts, text.panel=panel.txt, diag.panel=panel.minmax, main=&quot;Corrgram of mtcars data using scatter plots and ellipses&quot;) 123456cols &lt;- colorRampPalette(c(&quot;darkgoldenrod4&quot;, &quot;burlywood1&quot;, &quot;darkkhaki&quot;, &quot;darkgreen&quot;))corrgram(mtcars, order=TRUE, col.regions=cols, lower.panel=panel.shade, upper.panel=panel.conf, text.panel=panel.txt, main=&quot;A Corrgram (or Horse) of a Different Color&quot;)]]></content>
@@ -8,9 +41,15 @@
         <category>R</category>
       </categories>
       <tags>
+        <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
         <tag>相关</tag>
+        <tag>mtcar</tag>
+        <tag>mtcarData</tag>
+        <tag>order</tag>
+        <tag>lower.panel</tag>
+        <tag>upper.panel</tag>
       </tags>
   </entry>
   <entry>
@@ -36,6 +75,12 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
+        <tag>order</tag>
+        <tag>lower.panel</tag>
+        <tag>upper.panel</tag>
+        <tag>iterators</tag>
+        <tag>kernlab</tag>
+        <tag>text.panel</tag>
       </tags>
   </entry>
   <entry>

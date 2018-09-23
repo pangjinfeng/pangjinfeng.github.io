@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-23T13:53:10.429Z</updated>
+  <updated>2018-09-23T14:13:32.671Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>相关系数矩阵 corrgram</title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrplot/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/相关系数矩阵-corrplot/</id>
-    <published>2018-09-23T13:30:00.000Z</published>
-    <updated>2018-09-23T13:53:10.429Z</updated>
+    <title>相关性系数矩阵（椭圆） ellipse</title>
+    <link href="https://pangjinfeng.github.io/2018/09/23/%E7%9B%B8%E5%85%B3%E6%80%A7%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5%EF%BC%88%E6%A4%AD%E5%9C%86%EF%BC%89-ellipse/"/>
+    <id>https://pangjinfeng.github.io/2018/09/23/相关性系数矩阵（椭圆）-ellipse/</id>
+    <published>2018-09-23T14:06:00.000Z</published>
+    <updated>2018-09-23T14:13:32.671Z</updated>
     
     <summary type="html">
     
@@ -38,11 +38,97 @@
       <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
     
     
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
+      <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
+    
+      <category term="ellipse" scheme="https://pangjinfeng.github.io/tags/ellipse/"/>
+    
+      <category term="mtcars" scheme="https://pangjinfeng.github.io/tags/mtcars/"/>
+    
+      <category term="lm" scheme="https://pangjinfeng.github.io/tags/lm/"/>
+    
+      <category term="summary" scheme="https://pangjinfeng.github.io/tags/summary/"/>
+    
+      <category term="plotcorr" scheme="https://pangjinfeng.github.io/tags/plotcorr/"/>
+    
+      <category term="correlation" scheme="https://pangjinfeng.github.io/tags/correlation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间序列数据的可视化 dygraphs</title>
+    <link href="https://pangjinfeng.github.io/2018/09/23/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96-dygraphs/"/>
+    <id>https://pangjinfeng.github.io/2018/09/23/时间序列数据的可视化-dygraphs/</id>
+    <published>2018-09-23T13:55:00.000Z</published>
+    <updated>2018-09-23T14:11:55.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
+    
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
+      <category term="时间序列" scheme="https://pangjinfeng.github.io/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/"/>
+    
+      <category term="dygraphs" scheme="https://pangjinfeng.github.io/tags/dygraphs/"/>
+    
+      <category term="runif" scheme="https://pangjinfeng.github.io/tags/runif/"/>
+    
+      <category term="str" scheme="https://pangjinfeng.github.io/tags/str/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>相关系数矩阵 corrgram</title>
+    <link href="https://pangjinfeng.github.io/2018/09/23/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrplot/"/>
+    <id>https://pangjinfeng.github.io/2018/09/23/相关系数矩阵-corrplot/</id>
+    <published>2018-09-23T13:30:00.000Z</published>
+    <updated>2018-09-23T14:12:57.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
+    
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
       <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
     
       <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
     
       <category term="相关" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3/"/>
+    
+      <category term="mtcar" scheme="https://pangjinfeng.github.io/tags/mtcar/"/>
+    
+      <category term="mtcarData" scheme="https://pangjinfeng.github.io/tags/mtcarData/"/>
+    
+      <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
+    
+      <category term="lower.panel" scheme="https://pangjinfeng.github.io/tags/lower-panel/"/>
+    
+      <category term="upper.panel" scheme="https://pangjinfeng.github.io/tags/upper-panel/"/>
     
   </entry>
   
@@ -79,7 +165,7 @@
     <link href="https://pangjinfeng.github.io/2018/09/21/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram/"/>
     <id>https://pangjinfeng.github.io/2018/09/21/相关系数矩阵-corrgram/</id>
     <published>2018-09-21T07:57:00.000Z</published>
-    <updated>2018-09-21T09:23:18.549Z</updated>
+    <updated>2018-09-23T14:14:35.693Z</updated>
     
     <summary type="html">
     
@@ -101,6 +187,18 @@
       <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
     
       <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
+    
+      <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
+    
+      <category term="lower.panel" scheme="https://pangjinfeng.github.io/tags/lower-panel/"/>
+    
+      <category term="upper.panel" scheme="https://pangjinfeng.github.io/tags/upper-panel/"/>
+    
+      <category term="iterators" scheme="https://pangjinfeng.github.io/tags/iterators/"/>
+    
+      <category term="kernlab" scheme="https://pangjinfeng.github.io/tags/kernlab/"/>
+    
+      <category term="text.panel" scheme="https://pangjinfeng.github.io/tags/text-panel/"/>
     
   </entry>
   
