@@ -298,6 +298,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/23/序贯设计及其应用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/23/序贯设计及其应用/" itemprop="url">序贯设计及其应用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-23T23:29:00+08:00">
+                2018-09-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/试验设计/" itemprop="url" rel="index">
+                    <span itemprop="name">试验设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/23/序贯设计及其应用/" class="leancloud_visitors" data-flag-title="序贯设计及其应用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1、-单因素优选法"><a href="#1、-单因素优选法" class="headerlink" title="1、 单因素优选法"></a>1、 单因素优选法</h3><p>设x为试验中最重要的因素或唯一的因素，并设其包含响应y的最优响应点的范围为 [a,b] .将响应y与因素x之间的关系写成数学表达式，不能写出表达式时，就要确定评估结果好坏的方法。令目标函数y=f(x)中不存在随机误差的情形。<br>黄金分割法：第一个试验点x_1设在范围 [a,b] 的0.618位置上，第二个试验点x_2取成x_1的对称点，即  </p>
+<p><img src="http://latex.codecogs.com/gif.latex?x_{1}=a&plus;0.618(b-a)" title="x_{1}=a+0.618(b-a)"></p>
+<p><img src="http://latex.codecogs.com/gif.latex?x_{2}=a&plus;b-x_{1}=a&plus;0.382(b-a)" title="x_{2}=a+b-x_{1}=a+0.382(b-a)"></p>
+<p>用f(x_1)和f(x_2)分别表示x_1和x_2处的响应值.此时分为以下两种情形：<br>情形1：若f(x_1)比f(x_2)好，即x_1是好点，于是把试验区域[a, x_2)划去，剩下[x_2,b].<br>情形2：若f(x_1)比f(x_2)差，即x_2是好点，于是把试验区域（x_1,b]划去，剩下[a, x_1].  </p>
+<h3 id="2、-响应曲面法"><a href="#2、-响应曲面法" class="headerlink" title="2、 响应曲面法"></a>2、 响应曲面法</h3><h4 id="2-1、-最陡上升法"><a href="#2-1、-最陡上升法" class="headerlink" title="2.1、 最陡上升法"></a>2.1、 最陡上升法</h4><p>最陡上升法是一种使响应y朝最陡上升的方向序贯移动的方法.显然，若试验目的是使y最小化，那么该方法就变成了最陡下降法.当前试验点x的领域内的一些试验的数据，由最小二乘法得出拟合模型<br>……<br><img src="/images/响应曲面1.png" alt="响应曲面1.png"><br><img src="/images/响应曲面2.png" alt="响应曲面2.png"></p>
+<hr>
+<p>原文太多数学公式了，markdown 编辑太麻烦，直接上传源文件算了, 等哪天找到 word 转 markdown ，数学公式不乱码再更新……  </p>
+<p>  <a href="https://github.com/pangjinfeng/pangjinfeng.github.io/blob/master/word/%E8%B4%AF%E5%BA%8F%E8%AE%BE%E8%AE%A1.docx" target="_blank" rel="noopener">源文件点击下载</a> </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/23/火山图-lattice/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1671,160 +1831,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/21/哈夫曼图-CMplot/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/21/哈夫曼图-CMplot/" itemprop="url">哈夫曼图 CMplot</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-21T15:44:00+08:00">
-                2018-09-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/R/" itemprop="url" rel="index">
-                    <span itemprop="name">R</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/21/哈夫曼图-CMplot/" class="leancloud_visitors" data-flag-title="哈夫曼图 CMplot">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">install.packages(&quot;CMplot&quot;)</span><br><span class="line">library(&quot;CMplot&quot;)</span><br><span class="line">data(pig60K)                        </span><br><span class="line">CMplot(pig60K[sample(1:nrow(pig60K),10000),c(1:4)],</span><br><span class="line">plot.type=&quot;c&quot;,</span><br><span class="line">threshold=c(0.01,0.05)/nrow(pig60K),</span><br><span class="line">threshold.col=c(&apos;red&apos;,&apos;orange&apos;),</span><br><span class="line">multracks=FALSE, </span><br><span class="line">chr.den.col=NULL, </span><br><span class="line">file.output = F)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/CMplot.png" alt="CMplot.png"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1879,7 +1885,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1890,7 +1896,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1901,7 +1907,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-count">69</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

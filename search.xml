@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[序贯设计及其应用]]></title>
+    <url>%2F2018%2F09%2F23%2F%E5%BA%8F%E8%B4%AF%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[1、 单因素优选法设x为试验中最重要的因素或唯一的因素，并设其包含响应y的最优响应点的范围为 [a,b] .将响应y与因素x之间的关系写成数学表达式，不能写出表达式时，就要确定评估结果好坏的方法。令目标函数y=f(x)中不存在随机误差的情形。黄金分割法：第一个试验点x_1设在范围 [a,b] 的0.618位置上，第二个试验点x_2取成x_1的对称点，即 用f(x_1)和f(x_2)分别表示x_1和x_2处的响应值.此时分为以下两种情形：情形1：若f(x_1)比f(x_2)好，即x_1是好点，于是把试验区域[a, x_2)划去，剩下[x_2,b].情形2：若f(x_1)比f(x_2)差，即x_2是好点，于是把试验区域（x_1,b]划去，剩下[a, x_1]. 2、 响应曲面法2.1、 最陡上升法最陡上升法是一种使响应y朝最陡上升的方向序贯移动的方法.显然，若试验目的是使y最小化，那么该方法就变成了最陡下降法.当前试验点x的领域内的一些试验的数据，由最小二乘法得出拟合模型…… 原文太多数学公式了，markdown 编辑太麻烦，直接上传源文件算了, 等哪天找到 word 转 markdown ，数学公式不乱码再更新…… 源文件点击下载]]></content>
+      <categories>
+        <category>试验设计</category>
+      </categories>
+      <tags>
+        <tag>Matlab</tag>
+        <tag>R</tag>
+        <tag>单因素优选法</tag>
+        <tag>响应曲面法</tag>
+        <tag>最陡上升法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[火山图 lattice]]></title>
     <url>%2F2018%2F09%2F23%2F%E7%81%AB%E5%B1%B1%E5%9B%BE-lattice%2F</url>
     <content type="text"><![CDATA[123456install.packages(&quot;lattice&quot;)library(lattice)head(volcano)contourplot(volcano) # 绘制火山的三维等高线图levelplot(volcano) # 绘制火山的三维水平图wireframe(volcano) # 绘制火山的三维线框图]]></content>
@@ -125,8 +140,8 @@
         <category>themes</category>
       </categories>
       <tags>
-        <tag>next</tag>
         <tag>theme</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
