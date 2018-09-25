@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[利用R语言进行词云分析 jiebaR、wordcloud]]></title>
+    <url>%2F2018%2F09%2F25%2F%E5%88%A9%E7%94%A8R%E8%AF%AD%E8%A8%80%E8%BF%9B%E8%A1%8C%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90-jiebaR%E3%80%81wordcloud%2F</url>
+    <content type="text"><![CDATA[jiebaRjiebaR是一款高效的R语言中文分词包，底层使用的是C++，通过Rcpp进行调用很高效。jieba分词基于MIT协议,让R的可以方便的处理中文文本。jieba中文分词的R语言版本，支持最大概率法（Maximum Probability）, 隐式马尔科夫模型（Hidden Markov Model）, 索引模型（QuerySegment）, 混合模型（MixSegment）, 共四种分词模式， 同时有词性标注，关键词提取，文本Simhash相似度比较等功能。项目使用了Rcpp和CppJieba进行开发。 Wordcloud包Wordcloud包在做词语分析时并没有多大的作用，但是在后期的报告展示中却起着很大的作用。虽然说实质大于形式，在实质能够保证的前提下，一个好的形式是成功的关键点所在。Wordcloud包就是一个可以使词频以图形的形式展示的软件包，它可以通过改变词云的形状和颜色，是的分析结果锦上添花。 1234567891011121314library(jiebaRD)library(jiebaR)library(wordcloud)#读入数据分隔符是‘\n’，字符编码是‘UTF-8’，what=&apos;&apos;表示以字符串类型读入word &lt;- scan(&apos;C:\\Users\\10568\\Desktop\\word.txt&apos;,sep=&apos;\n&apos;,what=&apos;&apos;,encoding=&quot;GBK&quot;)seg &lt;- qseg[word] #使用qseg类型分词，并把结果保存到对象seg中seg &lt;- table(seg) #统计词频length(seg) #查看处理完后剩余的词数seg &lt;- sort(seg, decreasing = TRUE)[1:100] #降序排序，并提取出现次数最多的前100个词语data=data.frame(seg)wordcloud(data$seg , data$Freq, colors = rainbow(100), random.order=F)x11()dev.off()]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>jiebaR</tag>
+        <tag>Wordcloud</tag>
+        <tag>词云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[序贯设计及其应用]]></title>
     <url>%2F2018%2F09%2F23%2F%E5%BA%8F%E8%B4%AF%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%2F</url>
     <content type="text"><![CDATA[1、 单因素优选法设x为试验中最重要的因素或唯一的因素，并设其包含响应y的最优响应点的范围为 [a,b] .将响应y与因素x之间的关系写成数学表达式，不能写出表达式时，就要确定评估结果好坏的方法。令目标函数y=f(x)中不存在随机误差的情形。黄金分割法：第一个试验点x_1设在范围 [a,b] 的0.618位置上，第二个试验点x_2取成x_1的对称点，即 用f(x_1)和f(x_2)分别表示x_1和x_2处的响应值.此时分为以下两种情形：情形1：若f(x_1)比f(x_2)好，即x_1是好点，于是把试验区域[a, x_2)划去，剩下[x_2,b].情形2：若f(x_1)比f(x_2)差，即x_2是好点，于是把试验区域（x_1,b]划去，剩下[a, x_1]. 2、 响应曲面法2.1、 最陡上升法最陡上升法是一种使响应y朝最陡上升的方向序贯移动的方法.显然，若试验目的是使y最小化，那么该方法就变成了最陡下降法.当前试验点x的领域内的一些试验的数据，由最小二乘法得出拟合模型…… 原文太多数学公式了，markdown 编辑太麻烦，直接上传源文件算了, 等哪天找到 word 转 markdown ，数学公式不乱码再更新…… 源文件点击下载]]></content>
@@ -26,7 +39,6 @@
         <tag>R</tag>
         <tag>lattice</tag>
         <tag>火山图</tag>
-        <tag>三维</tag>
         <tag>三维等高线图</tag>
         <tag>三维水平图</tag>
         <tag>三维线框图</tag>
@@ -75,8 +87,6 @@
         <tag>R</tag>
         <tag>时间序列</tag>
         <tag>forecast</tag>
-        <tag>mdeaths</tag>
-        <tag>shadecols</tag>
         <tag>auto.arima</tag>
       </tags>
   </entry>
@@ -94,8 +104,6 @@
         <tag>mtcars</tag>
         <tag>lm</tag>
         <tag>summary</tag>
-        <tag>plotcorr</tag>
-        <tag>correlation</tag>
       </tags>
   </entry>
   <entry>
@@ -122,11 +130,8 @@
       </categories>
       <tags>
         <tag>R</tag>
-        <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
         <tag>order</tag>
-        <tag>lower.panel</tag>
-        <tag>upper.panel</tag>
         <tag>相关</tag>
         <tag>mtcar</tag>
         <tag>mtcarData</tag>
