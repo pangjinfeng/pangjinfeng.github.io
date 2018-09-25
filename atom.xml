@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-25T08:37:28.155Z</updated>
+  <updated>2018-09-25T09:21:43.933Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL 教程</title>
+    <link href="https://pangjinfeng.github.io/2018/09/25/SQL-%E6%95%99%E7%A8%8B/"/>
+    <id>https://pangjinfeng.github.io/2018/09/25/SQL-教程/</id>
+    <published>2018-09-25T08:48:00.000Z</published>
+    <updated>2018-09-25T09:21:43.933Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://www.w3school.com.cn/about/about_us.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;关于 W3School&lt;/a&gt;&lt;br&gt;W3School 是因特网上最大的 WEB
+        
+      
+    
+    </summary>
+    
+      <category term="SQL" scheme="https://pangjinfeng.github.io/categories/SQL/"/>
+    
+    
+      <category term="W3chool" scheme="https://pangjinfeng.github.io/tags/W3chool/"/>
+    
+      <category term="SQL" scheme="https://pangjinfeng.github.io/tags/SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>R语言进行词云分析  jiebaR、wordcloud</title>
@@ -634,32 +662,6 @@
       <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
     
       <category term="商品销售" scheme="https://pangjinfeng.github.io/tags/%E5%95%86%E5%93%81%E9%94%80%E5%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Power BI Top 10 cost of living state</title>
-    <link href="https://pangjinfeng.github.io/2018/09/09/Power-BI-Top-10-cost-of-living-state/"/>
-    <id>https://pangjinfeng.github.io/2018/09/09/Power-BI-Top-10-cost-of-living-state/</id>
-    <published>2018-09-09T15:02:00.000Z</published>
-    <updated>2018-09-16T11:29:47.279Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h6 id=&quot;Power-BI-top10&quot;&gt;&lt;a href=&quot;#Power-BI-top10&quot; class=&quot;headerlink&quot; title=&quot;Power BI top10&quot;&gt;&lt;/a&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
-    
-    
-      <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
     
   </entry>
   
