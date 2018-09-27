@@ -95,9 +95,7 @@
         <tag>R</tag>
         <tag>hexbin</tag>
         <tag>RColorBrewer</tag>
-        <tag>rnorm</tag>
         <tag>colorRampalette</tag>
-        <tag>rev</tag>
       </tags>
   </entry>
   <entry>
@@ -187,9 +185,6 @@
         <tag>iterators</tag>
         <tag>kernlab</tag>
         <tag>order</tag>
-        <tag>lower.panel</tag>
-        <tag>upper.panel</tag>
-        <tag>text.panel</tag>
       </tags>
   </entry>
   <entry>

@@ -214,7 +214,7 @@
     <link href="https://pangjinfeng.github.io/2018/09/23/%E4%BA%8C%E7%BB%B4%E7%9B%B4%E6%96%B9%E5%9B%BE-hexbin/"/>
     <id>https://pangjinfeng.github.io/2018/09/23/二维直方图-hexbin/</id>
     <published>2018-09-23T14:45:00.000Z</published>
-    <updated>2018-09-23T14:50:13.814Z</updated>
+    <updated>2018-09-27T09:51:42.798Z</updated>
     
     <summary type="html">
     
@@ -237,11 +237,7 @@
     
       <category term="RColorBrewer" scheme="https://pangjinfeng.github.io/tags/RColorBrewer/"/>
     
-      <category term="rnorm" scheme="https://pangjinfeng.github.io/tags/rnorm/"/>
-    
       <category term="colorRampalette" scheme="https://pangjinfeng.github.io/tags/colorRampalette/"/>
-    
-      <category term="rev" scheme="https://pangjinfeng.github.io/tags/rev/"/>
     
   </entry>
   
@@ -416,7 +412,7 @@
     <link href="https://pangjinfeng.github.io/2018/09/21/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram/"/>
     <id>https://pangjinfeng.github.io/2018/09/21/相关系数矩阵-corrgram/</id>
     <published>2018-09-21T07:57:00.000Z</published>
-    <updated>2018-09-23T14:14:35.693Z</updated>
+    <updated>2018-09-27T09:51:11.063Z</updated>
     
     <summary type="html">
     
@@ -444,12 +440,6 @@
       <category term="kernlab" scheme="https://pangjinfeng.github.io/tags/kernlab/"/>
     
       <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
-    
-      <category term="lower.panel" scheme="https://pangjinfeng.github.io/tags/lower-panel/"/>
-    
-      <category term="upper.panel" scheme="https://pangjinfeng.github.io/tags/upper-panel/"/>
-    
-      <category term="text.panel" scheme="https://pangjinfeng.github.io/tags/text-panel/"/>
     
   </entry>
   
