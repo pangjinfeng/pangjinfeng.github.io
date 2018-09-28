@@ -16,7 +16,7 @@
     <url>%2F2018%2F09%2F26%2FColor-Hunt%2F</url>
     <content type="text"><![CDATA[Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes colorhunt 虽为设计师而生，但也不妨作为一个令可视化图表更为好看的配色网站 colorhunt.co]]></content>
       <categories>
-        <category>others</category>
+        <category>Others</category>
       </categories>
       <tags>
         <tag>可视化</tag>
@@ -229,16 +229,14 @@
     <url>%2F2018%2F09%2F18%2F%E6%95%B0%E6%8D%AE%E5%BD%92%E4%B8%80%E5%8C%96%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96%2F</url>
     <content type="text"><![CDATA[归一化（Normalization）为了将数据映射到0~1之间，去掉量纲的过程，让计算更加合理，不会因为量纲问题导致1米与100mm产生不同。 标准化（Standardization）消除分布产生的度量偏差，例如：班级数学考试，数学成绩在90-100之间，语文成绩在60-100之间，那么，小明数学90，语文100，小花数学95，语文95，如何评价两个综合成绩好坏的数学处理方式。 R语言处理函数scale(dt,center = T,scale = T)scale方法中的两个参数center和scale的解释：1.center和scale默认为真,即T或者TRUE2.center为真表示数据中心化(只减去均值不做其他处理)3.scale为真表示数据标准化]]></content>
       <categories>
-        <category>预处理</category>
+        <category>R</category>
       </categories>
       <tags>
         <tag>R</tag>
         <tag>归一化</tag>
         <tag>标准化</tag>
         <tag>scale</tag>
-        <tag>center</tag>
-        <tag>normalization</tag>
-        <tag>standardization</tag>
+        <tag>预处理</tag>
       </tags>
   </entry>
   <entry>
@@ -352,7 +350,7 @@
     <url>%2F2018%2F08%2F21%2FAbela-s-folly%2F</url>
     <content type="text"><![CDATA[]]></content>
       <categories>
-        <category>others</category>
+        <category>Others</category>
       </categories>
       <tags>
         <tag>未分类</tag>
