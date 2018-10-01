@@ -298,6 +298,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/23/时间序列分析-forecast/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/23/时间序列分析-forecast/" itemprop="url">时间序列分析 forecast </a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-23T22:40:00+08:00">
+                2018-09-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/R/" itemprop="url" rel="index">
+                    <span itemprop="name">R</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/23/时间序列分析-forecast/" class="leancloud_visitors" data-flag-title="时间序列分析 forecast ">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">install.packages(&quot;forecast&quot;)</span><br><span class="line">library(forecast)</span><br><span class="line"># 使用英国每月死于肺病的人数数据</span><br><span class="line">fit&lt;- auto.arima(mdeaths)</span><br><span class="line"># 设置置信区间</span><br><span class="line">forecast(fit, level=c(80, 95, 99), h=3)</span><br><span class="line"># 绘制时间序列趋势图</span><br><span class="line">plot(forecast(fit), shadecols=&quot;oldstyle&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/forecast.png" alt="forecast.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/23/相关性系数矩阵（椭圆）-ellipse/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1670,325 +1824,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/16/基于Power-BI-的咖啡销售报表/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/16/基于Power-BI-的咖啡销售报表/" itemprop="url">基于Power BI 的咖啡销售报表</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-16T23:05:00+08:00">
-                2018-09-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Power-BI/" itemprop="url" rel="index">
-                    <span itemprop="name">Power BI</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/16/基于Power-BI-的咖啡销售报表/" class="leancloud_visitors" data-flag-title="基于Power BI 的咖啡销售报表">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h5 id="使用数据-coffee"><a href="#使用数据-coffee" class="headerlink" title="使用数据  coffee"></a>使用数据  <a href="https://github.com/pangjinfeng/pangjinfeng.github.io/blob/master/practical%20%20data/coffee.xlsx" target="_blank" rel="noopener">coffee</a></h5><table>
-<thead>
-<tr>
-<th style="text-align:left">国家</th>
-<th style="text-align:left">1999/1/1 0:00:00</th>
-<th style="text-align:left">2000/1/1 0:00:00</th>
-<th style="text-align:left">2001/1/1 0:00:00</th>
-<th style="text-align:left">2002/1/1 0:00:00</th>
-<th style="text-align:left">2003/1/1 0:00:00</th>
-<th style="text-align:left">2004/1/1 0:00:00</th>
-<th style="text-align:left">2005/1/1 0:00:00</th>
-<th style="text-align:left">2006/1/1 0:00:00</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">马来西亚</td>
-<td style="text-align:left">29011</td>
-<td style="text-align:left">74405</td>
-<td style="text-align:left">116276</td>
-<td style="text-align:left">28958</td>
-<td style="text-align:left">35278</td>
-<td style="text-align:left">68289</td>
-<td style="text-align:left">33988</td>
-<td style="text-align:left">34629</td>
-</tr>
-<tr>
-<td style="text-align:left">韩国</td>
-<td style="text-align:left">32361</td>
-<td style="text-align:left">43192</td>
-<td style="text-align:left">68662</td>
-<td style="text-align:left">24125</td>
-<td style="text-align:left">37215</td>
-<td style="text-align:left">58806</td>
-<td style="text-align:left">85743</td>
-<td style="text-align:left">43024</td>
-</tr>
-<tr>
-<td style="text-align:left">泰国</td>
-<td style="text-align:left">78318</td>
-<td style="text-align:left">18631</td>
-<td style="text-align:left">121685</td>
-<td style="text-align:left">118535</td>
-<td style="text-align:left">84856</td>
-<td style="text-align:left">324123</td>
-<td style="text-align:left">102330</td>
-<td style="text-align:left">12768</td>
-</tr>
-<tr>
-<td style="text-align:left">日本</td>
-<td style="text-align:left">74003</td>
-<td style="text-align:left">17720</td>
-<td style="text-align:left">17981</td>
-<td style="text-align:left">62771</td>
-<td style="text-align:left">19747</td>
-<td style="text-align:left">110761</td>
-<td style="text-align:left">45985</td>
-<td style="text-align:left">24638</td>
-</tr>
-<tr>
-<td style="text-align:left">新西兰</td>
-<td style="text-align:left">21777</td>
-<td style="text-align:left">92099</td>
-<td style="text-align:left">62920</td>
-<td style="text-align:left">89419</td>
-<td style="text-align:left">78395</td>
-<td style="text-align:left">47050</td>
-<td style="text-align:left">41368</td>
-<td style="text-align:left">51758</td>
-</tr>
-<tr>
-<td style="text-align:left">澳大利亚</td>
-<td style="text-align:left">36868</td>
-<td style="text-align:left">112761</td>
-<td style="text-align:left">118956</td>
-<td style="text-align:left">105545</td>
-<td style="text-align:left">55199</td>
-<td style="text-align:left">108308</td>
-<td style="text-align:left">22727</td>
-<td style="text-align:left">73018</td>
-</tr>
-<tr>
-<td style="text-align:left">新加坡</td>
-<td style="text-align:left">10548</td>
-<td style="text-align:left">47598</td>
-<td style="text-align:left">88790</td>
-<td style="text-align:left">16378</td>
-<td style="text-align:left">74768</td>
-<td style="text-align:left">106765</td>
-<td style="text-align:left">32942</td>
-<td style="text-align:left">42573</td>
-</tr>
-<tr>
-<td style="text-align:left">巴基斯坦</td>
-<td style="text-align:left">64683</td>
-<td style="text-align:left">20131</td>
-<td style="text-align:left">114330</td>
-<td style="text-align:left">80276</td>
-<td style="text-align:left">20992</td>
-<td style="text-align:left">24810</td>
-<td style="text-align:left">40699</td>
-<td style="text-align:left">121076</td>
-</tr>
-<tr>
-<td style="text-align:left">中国</td>
-<td style="text-align:left">109764</td>
-<td style="text-align:left">55304</td>
-<td style="text-align:left">121865</td>
-<td style="text-align:left">14442</td>
-<td style="text-align:left">41610</td>
-<td style="text-align:left">21369</td>
-<td style="text-align:left">19328</td>
-<td style="text-align:left">51958</td>
-</tr>
-<tr>
-<td style="text-align:left">菲律宾</td>
-<td style="text-align:left">89140</td>
-<td style="text-align:left">99648</td>
-<td style="text-align:left">57413</td>
-<td style="text-align:left">123987</td>
-<td style="text-align:left">105914</td>
-<td style="text-align:left">33659</td>
-<td style="text-align:left">89062</td>
-<td style="text-align:left">121135</td>
-</tr>
-<tr>
-<td style="text-align:left">印度</td>
-<td style="text-align:left">104759</td>
-<td style="text-align:left">80649</td>
-<td style="text-align:left">60982</td>
-<td style="text-align:left">34981</td>
-<td style="text-align:left">22973</td>
-<td style="text-align:left">56098</td>
-<td style="text-align:left">87989</td>
-<td style="text-align:left">90123</td>
-</tr>
-<tr>
-<td style="text-align:left">缅甸</td>
-<td style="text-align:left">12684</td>
-<td style="text-align:left">78595</td>
-<td style="text-align:left">74413</td>
-<td style="text-align:left">112562</td>
-<td style="text-align:left">25204</td>
-<td style="text-align:left">88855</td>
-<td style="text-align:left">72764</td>
-<td style="text-align:left">55347</td>
-</tr>
-<tr>
-<td style="text-align:left">印度尼西亚</td>
-<td style="text-align:left">73957</td>
-<td style="text-align:left">74223</td>
-<td style="text-align:left">42882</td>
-<td style="text-align:left">13225</td>
-<td style="text-align:left">121958</td>
-<td style="text-align:left">91761</td>
-<td style="text-align:left">57875</td>
-<td style="text-align:left">77818</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://github.com/pangjinfeng/pangjinfeng.github.io/blob/master/power%20bi/coffee.pbix" target="_blank" rel="noopener">coffee.pbix</a></p>
-<p><img src="/images/coffee1.jpg" alt="coffee"><br><img src="/images/coffee2.jpg" alt="coffee"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2038,7 +1878,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

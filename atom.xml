@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-09-30T15:50:12.288Z</updated>
+  <updated>2018-10-01T16:04:23.122Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一款有趣的IDE—RCode</title>
+    <link href="https://pangjinfeng.github.io/2018/10/01/%E4%B8%80%E6%AC%BE%E6%9C%89%E8%B6%A3%E7%9A%84IDE%E2%80%94RCode/"/>
+    <id>https://pangjinfeng.github.io/2018/10/01/一款有趣的IDE—RCode/</id>
+    <published>2018-10-01T15:58:00.000Z</published>
+    <updated>2018-10-01T16:04:23.122Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://pgm-rcode.s3.amazonaws.com/rcode-1.0.5.exe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RCode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/main.gif&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
+    
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
+  </entry>
   
   <entry>
     <title>R语言自定义词云  wordcloud</title>
@@ -619,36 +646,6 @@
       <category term="Tableau" scheme="https://pangjinfeng.github.io/tags/Tableau/"/>
     
       <category term="报表" scheme="https://pangjinfeng.github.io/tags/%E6%8A%A5%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于Power BI 的咖啡销售报表</title>
-    <link href="https://pangjinfeng.github.io/2018/09/16/%E5%9F%BA%E4%BA%8EPower-BI-%E7%9A%84%E5%92%96%E5%95%A1%E9%94%80%E5%94%AE%E6%8A%A5%E8%A1%A8/"/>
-    <id>https://pangjinfeng.github.io/2018/09/16/基于Power-BI-的咖啡销售报表/</id>
-    <published>2018-09-16T15:05:00.000Z</published>
-    <updated>2018-09-16T15:33:57.427Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h5 id=&quot;使用数据-coffee&quot;&gt;&lt;a href=&quot;#使用数据-coffee&quot; class=&quot;headerlink&quot; title=&quot;使用数据  coffee&quot;&gt;&lt;/a&gt;使用数据  &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
-    
-    
-      <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
-    
-      <category term="报表" scheme="https://pangjinfeng.github.io/tags/%E6%8A%A5%E8%A1%A8/"/>
-    
-      <category term="销售" scheme="https://pangjinfeng.github.io/tags/%E9%94%80%E5%94%AE/"/>
     
   </entry>
   
