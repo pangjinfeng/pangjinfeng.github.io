@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[基于R语言的自动数据收集，网络抓取和文本挖掘指南]]></title>
+    <url>%2F2018%2F10%2F02%2F%E5%9F%BA%E4%BA%8ER%E8%AF%AD%E8%A8%80%E7%9A%84%E8%87%AA%E5%8A%A8%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%EF%BC%8C%E7%BD%91%E7%BB%9C%E6%8A%93%E5%8F%96%E5%92%8C%E6%96%87%E6%9C%AC%E6%8C%96%E6%8E%98%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[书籍官方网址r-datacollection.com 配套代码源代码https://github.com/pangjinfeng/Wiley-ADCR]]></content>
+      <categories>
+        <category>R</category>
+        <category>Others</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>文本</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一款有趣的IDE—RCode]]></title>
     <url>%2F2018%2F10%2F01%2F%E4%B8%80%E6%AC%BE%E6%9C%89%E8%B6%A3%E7%9A%84IDE%E2%80%94RCode%2F</url>
     <content type="text"><![CDATA[RCode Directly edit your variablesSimple variables, lists, data frames… Inspect and edit everything. Modern autocompletionAnalyse all your scripts to get the perfect autocompletion. Fast graphsQuickly visualize your data with a time series or a density graph. Command history reinventedExecution time for each command, and displayed in red if an error occurs. And more…]]></content>
@@ -217,9 +230,9 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
+        <tag>order</tag>
         <tag>iterators</tag>
         <tag>kernlab</tag>
-        <tag>order</tag>
       </tags>
   </entry>
   <entry>
