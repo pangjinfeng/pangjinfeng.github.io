@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-10-04T16:06:41.689Z</updated>
+  <updated>2018-10-08T15:37:23.129Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown 添加在线视频</title>
+    <link href="https://pangjinfeng.github.io/2018/10/08/Markdown-%E6%B7%BB%E5%8A%A0%E5%9C%A8%E7%BA%BF%E8%A7%86%E9%A2%91/"/>
+    <id>https://pangjinfeng.github.io/2018/10/08/Markdown-添加在线视频/</id>
+    <published>2018-10-08T15:25:00.000Z</published>
+    <updated>2018-10-08T15:37:23.129Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;通用代码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Markdown" scheme="https://pangjinfeng.github.io/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="https://pangjinfeng.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VLOOKUP 函数</title>
+    <link href="https://pangjinfeng.github.io/2018/10/08/VLOOKUP-%E5%87%BD%E6%95%B0/"/>
+    <id>https://pangjinfeng.github.io/2018/10/08/VLOOKUP-函数/</id>
+    <published>2018-10-08T15:13:00.000Z</published>
+    <updated>2018-10-08T15:37:44.323Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部件号查找汽车部件的价格。&lt;br&gt;在这一最简单的形式中，VLOOKUP
+        
+      
+    
+    </summary>
+    
+      <category term="excel" scheme="https://pangjinfeng.github.io/categories/excel/"/>
+    
+    
+      <category term="excel" scheme="https://pangjinfeng.github.io/tags/excel/"/>
+    
+      <category term="vlookup" scheme="https://pangjinfeng.github.io/tags/vlookup/"/>
+    
+  </entry>
   
   <entry>
     <title>基于R语言的用户贷款风险预测</title>
@@ -559,9 +613,9 @@
       <category term="themes" scheme="https://pangjinfeng.github.io/categories/themes/"/>
     
     
-      <category term="next" scheme="https://pangjinfeng.github.io/tags/next/"/>
-    
       <category term="theme" scheme="https://pangjinfeng.github.io/tags/theme/"/>
+    
+      <category term="next" scheme="https://pangjinfeng.github.io/tags/next/"/>
     
   </entry>
   
@@ -598,66 +652,6 @@
       <category term="kernlab" scheme="https://pangjinfeng.github.io/tags/kernlab/"/>
     
       <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哈夫曼图 CMplot</title>
-    <link href="https://pangjinfeng.github.io/2018/09/21/%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE-CMplot/"/>
-    <id>https://pangjinfeng.github.io/2018/09/21/哈夫曼图-CMplot/</id>
-    <published>2018-09-21T07:44:00.000Z</published>
-    <updated>2018-09-21T07:49:55.424Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="CMplot" scheme="https://pangjinfeng.github.io/tags/CMplot/"/>
-    
-      <category term="哈夫曼图" scheme="https://pangjinfeng.github.io/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Markdown编辑数学公式</title>
-    <link href="https://pangjinfeng.github.io/2018/09/20/%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    <id>https://pangjinfeng.github.io/2018/09/20/使用Markdown编辑数学公式/</id>
-    <published>2018-09-20T15:09:00.000Z</published>
-    <updated>2018-09-20T15:26:28.083Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h6 id=&quot;Cmd-Markdown-公式指导手册&quot;&gt;&lt;a href=&quot;#Cmd-Markdown-公式指导手册&quot; class=&quot;headerlink&quot; title=&quot;Cmd Markdown 公式指导手册&quot;&gt;&lt;/a&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Markdown" scheme="https://pangjinfeng.github.io/categories/Markdown/"/>
-    
-    
-      <category term="Markdown" scheme="https://pangjinfeng.github.io/tags/Markdown/"/>
-    
-      <category term="LaTex" scheme="https://pangjinfeng.github.io/tags/LaTex/"/>
-    
-      <category term="数学公式" scheme="https://pangjinfeng.github.io/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     
   </entry>
   
