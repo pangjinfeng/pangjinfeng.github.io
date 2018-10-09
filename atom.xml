@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-10-08T15:56:18.856Z</updated>
+  <updated>2018-10-09T09:33:55.813Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>magrittr  管道操作</title>
+    <link href="https://pangjinfeng.github.io/2018/10/09/magrittr-%E7%AE%A1%E9%81%93%E6%93%8D%E4%BD%9C/"/>
+    <id>https://pangjinfeng.github.io/2018/10/09/magrittr-管道操作/</id>
+    <published>2018-10-09T04:56:23.000Z</published>
+    <updated>2018-10-09T09:33:55.813Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;magrittr-相关文章收集&quot;&gt;&lt;a href=&quot;#magrittr-相关文章收集&quot; class=&quot;headerlink&quot; title=&quot;magrittr 相关文章收集&quot;&gt;&lt;/a&gt;magrittr 相关文章收集&lt;/h3&gt;&lt;p&gt;magrittr
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown 添加在线视频</title>
@@ -616,42 +638,6 @@
       <category term="next" scheme="https://pangjinfeng.github.io/tags/next/"/>
     
       <category term="theme" scheme="https://pangjinfeng.github.io/tags/theme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>相关系数矩阵   corrgram</title>
-    <link href="https://pangjinfeng.github.io/2018/09/21/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrgram/"/>
-    <id>https://pangjinfeng.github.io/2018/09/21/相关系数矩阵-corrgram/</id>
-    <published>2018-09-21T07:57:00.000Z</published>
-    <updated>2018-09-27T09:51:11.063Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
-    
-      <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
-    
-      <category term="iterators" scheme="https://pangjinfeng.github.io/tags/iterators/"/>
-    
-      <category term="kernlab" scheme="https://pangjinfeng.github.io/tags/kernlab/"/>
-    
-      <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
     
   </entry>
   

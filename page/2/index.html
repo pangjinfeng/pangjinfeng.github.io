@@ -298,6 +298,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/25/利用R语言进行词云分析-jiebaR、wordcloud/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/25/利用R语言进行词云分析-jiebaR、wordcloud/" itemprop="url">R语言进行词云分析  jiebaR、wordcloud</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-25T16:23:00+08:00">
+                2018-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/R/" itemprop="url" rel="index">
+                    <span itemprop="name">R</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/25/利用R语言进行词云分析-jiebaR、wordcloud/" class="leancloud_visitors" data-flag-title="R语言进行词云分析  jiebaR、wordcloud">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="jiebaR"><a href="#jiebaR" class="headerlink" title="jiebaR"></a>jiebaR</h3><p>jiebaR是一款高效的R语言中文分词包，底层使用的是C++，通过Rcpp进行调用很高效。jieba分词基于MIT协议,让R的可以方便的处理中文文本。jieba中文分词的R语言版本，支持最大概率法（Maximum Probability）, 隐式马尔科夫模型（Hidden Markov Model）, 索引模型（QuerySegment）, 混合模型（MixSegment）, 共四种分词模式， 同时有词性标注，关键词提取，文本Simhash相似度比较等功能。项目使用了Rcpp和CppJieba进行开发。</p>
+<h3 id="Wordcloud"><a href="#Wordcloud" class="headerlink" title="Wordcloud"></a>Wordcloud</h3><p>Wordcloud包在做词语分析时并没有多大的作用，但是在后期的报告展示中却起着很大的作用。虽然说实质大于形式，在实质能够保证的前提下，一个好的形式是成功的关键点所在。Wordcloud包就是一个可以使词频以图形的形式展示的软件包，它可以通过改变词云的形状和颜色，是的分析结果锦上添花。  </p>
+<p><a href="https://github.com/pangjinfeng/pangjinfeng.github.io/blob/master/txt/word.txt" target="_blank" rel="noopener">word.txt</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">library(jiebaRD)</span><br><span class="line">library(jiebaR)</span><br><span class="line">library(wordcloud)</span><br><span class="line"></span><br><span class="line">#读入数据分隔符是‘\n’，字符编码是‘UTF-8’，what=&apos;&apos;表示以字符串类型读入</span><br><span class="line">word &lt;- scan(&apos;C:\\Users\\10568\\Desktop\\word.txt&apos;,sep=&apos;\n&apos;,what=&apos;&apos;,encoding=&quot;GBK&quot;)</span><br><span class="line">seg &lt;- qseg[word] #使用qseg类型分词，并把结果保存到对象seg中</span><br><span class="line">seg &lt;- table(seg) #统计词频</span><br><span class="line">length(seg) #查看处理完后剩余的词数</span><br><span class="line">seg &lt;- sort(seg, decreasing = TRUE)[1:100] #降序排序，并提取出现次数最多的前100个词语</span><br><span class="line">data=data.frame(seg)</span><br><span class="line">wordcloud(data$seg , data$Freq, colors = rainbow(100), random.order=F)</span><br><span class="line">x11()</span><br><span class="line">dev.off()</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/wordcloud.png" alt="wordcloud.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/23/序贯设计及其应用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1677,160 +1833,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/09/21/相关系数矩阵-corrgram/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/21/相关系数矩阵-corrgram/" itemprop="url">相关系数矩阵   corrgram</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-21T15:57:00+08:00">
-                2018-09-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/R/" itemprop="url" rel="index">
-                    <span itemprop="name">R</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/21/相关系数矩阵-corrgram/" class="leancloud_visitors" data-flag-title="相关系数矩阵   corrgram">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">install.packages(&quot;iterators&quot;)</span><br><span class="line">install.packages(&quot;corrgram&quot;)</span><br><span class="line">install.packages(&quot;kernlab&quot;)</span><br><span class="line">library(iterators)</span><br><span class="line">library(kernlab)</span><br><span class="line">library(corrgram)</span><br><span class="line">corrgram(mtcars, </span><br><span class="line">         order=TRUE,</span><br><span class="line">         lower.panel=panel.shade,</span><br><span class="line">         upper.panel=panel.pie,</span><br><span class="line">         text.panel=panel.txt,</span><br><span class="line">         main=&quot;Correlogram of mtcar intercorrelations&quot;)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/Correlogram of mtcar intercorrelations.png" alt="Correlogram of mtcar intercorrelations.png"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1885,7 +1887,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1907,7 +1909,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">77</span>
+                  <span class="site-state-item-count">82</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
