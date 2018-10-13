@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-10-09T09:33:55.813Z</updated>
+  <updated>2018-10-13T15:16:34.108Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Power BI 第二届可视化大赛</title>
+    <link href="https://pangjinfeng.github.io/2018/10/13/Power-BI-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E8%B5%9B/"/>
+    <id>https://pangjinfeng.github.io/2018/10/13/Power-BI-第二届可视化大赛/</id>
+    <published>2018-10-13T15:06:00.000Z</published>
+    <updated>2018-10-13T15:16:34.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;&lt;br&gt;&lt;a href=&quot;http://www.chinapowerbi.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Power BI 第二届可视化大赛&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
+    
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
+    
+  </entry>
   
   <entry>
     <title>magrittr  管道操作</title>
@@ -610,34 +638,6 @@
       <category term="mtcar" scheme="https://pangjinfeng.github.io/tags/mtcar/"/>
     
       <category term="mtcarData" scheme="https://pangjinfeng.github.io/tags/mtcarData/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>theme: next 相关配置优化</title>
-    <link href="https://pangjinfeng.github.io/2018/09/22/theme-next-%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96/"/>
-    <id>https://pangjinfeng.github.io/2018/09/22/theme-next-相关配置优化/</id>
-    <published>2018-09-22T08:20:00.000Z</published>
-    <updated>2018-09-22T08:23:33.677Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;作者：Alvabill&lt;br&gt;链接：&lt;a href=&quot;https://www.jianshu.com/p/1f8107a8778c&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="themes" scheme="https://pangjinfeng.github.io/categories/themes/"/>
-    
-    
-      <category term="next" scheme="https://pangjinfeng.github.io/tags/next/"/>
-    
-      <category term="theme" scheme="https://pangjinfeng.github.io/tags/theme/"/>
     
   </entry>
   
