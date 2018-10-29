@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-10-13T15:16:34.108Z</updated>
+  <updated>2018-10-29T15:59:21.213Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PPT 渐变字体练习</title>
+    <link href="https://pangjinfeng.github.io/2018/10/29/PPT-%E6%B8%90%E5%8F%98%E5%AD%97%E4%BD%93%E7%BB%83%E4%B9%A0/"/>
+    <id>https://pangjinfeng.github.io/2018/10/29/PPT-渐变字体练习/</id>
+    <published>2018-10-29T15:57:00.000Z</published>
+    <updated>2018-10-29T15:59:21.213Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/ppt_hello world !.jpg&quot; alt=&quot;ppt_hello world
+        
+      
+    
+    </summary>
+    
+      <category term="PPT" scheme="https://pangjinfeng.github.io/categories/PPT/"/>
+    
+    
+      <category term="PPT" scheme="https://pangjinfeng.github.io/tags/PPT/"/>
+    
+  </entry>
   
   <entry>
     <title>Power BI 第二届可视化大赛</title>
@@ -602,42 +628,6 @@
       <category term="runif" scheme="https://pangjinfeng.github.io/tags/runif/"/>
     
       <category term="str" scheme="https://pangjinfeng.github.io/tags/str/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>相关系数矩阵 corrgram</title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5-corrplot/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/相关系数矩阵-corrplot/</id>
-    <published>2018-09-23T13:30:00.000Z</published>
-    <updated>2018-09-25T08:32:23.713Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="corrgram" scheme="https://pangjinfeng.github.io/tags/corrgram/"/>
-    
-      <category term="order" scheme="https://pangjinfeng.github.io/tags/order/"/>
-    
-      <category term="相关" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3/"/>
-    
-      <category term="mtcar" scheme="https://pangjinfeng.github.io/tags/mtcar/"/>
-    
-      <category term="mtcarData" scheme="https://pangjinfeng.github.io/tags/mtcarData/"/>
     
   </entry>
   

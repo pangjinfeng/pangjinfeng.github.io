@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PPT 渐变字体练习]]></title>
+    <url>%2F2018%2F10%2F29%2FPPT-%E6%B8%90%E5%8F%98%E5%AD%97%E4%BD%93%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>PPT</category>
+      </categories>
+      <tags>
+        <tag>PPT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Power BI 第二届可视化大赛]]></title>
     <url>%2F2018%2F10%2F13%2FPower-BI-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E8%B5%9B%2F</url>
     <content type="text"><![CDATA[Power BI 第二届可视化大赛 官方提供大赛数据 虚拟企业示例数据，点击下载 微软示例数据库 - Adventure Works 微软Azure SQL Database数据源（使用此数据源，除了其它奖项外，还有机会获得ADS（Azure Data Service）特别奖）： —服务器：pbicontest.database.chinacloudapi.cn —数据库：pbiDB —用户名：pbiguest —密码：1234#P@sd powerbi第二届可视化大赛作品展示]]></content>
@@ -288,9 +299,9 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
-        <tag>order</tag>
         <tag>iterators</tag>
         <tag>kernlab</tag>
+        <tag>order</tag>
       </tags>
   </entry>
   <entry>
