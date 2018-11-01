@@ -299,9 +299,9 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
+        <tag>order</tag>
         <tag>iterators</tag>
         <tag>kernlab</tag>
-        <tag>order</tag>
       </tags>
   </entry>
   <entry>
