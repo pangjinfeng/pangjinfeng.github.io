@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-11-01T15:42:07.744Z</updated>
+  <updated>2018-11-18T08:50:18.408Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>power bi pro 发布 web 共享</title>
+    <link href="https://pangjinfeng.github.io/2018/11/18/power-bi-pro-%E5%8F%91%E5%B8%83-web-%E5%85%B1%E4%BA%AB/"/>
+    <id>https://pangjinfeng.github.io/2018/11/18/power-bi-pro-发布-web-共享/</id>
+    <published>2018-11-18T08:27:00.000Z</published>
+    <updated>2018-11-18T08:50:18.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;之前制作的 Power BI 文件都放在 GitHub 里面，可操作性差&lt;/p&gt;
+&lt;p&gt;点击 &lt;a href=&quot;https://github.com/pangjinfeng/pangjinfeng.github.io&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
+    
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
+    
+  </entry>
   
   <entry>
     <title>PPT 渐变字体练习</title>
@@ -413,9 +440,9 @@
       <category term="试验设计" scheme="https://pangjinfeng.github.io/categories/%E8%AF%95%E9%AA%8C%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
       <category term="Matlab" scheme="https://pangjinfeng.github.io/tags/Matlab/"/>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
     
       <category term="单因素优选法" scheme="https://pangjinfeng.github.io/tags/%E5%8D%95%E5%9B%A0%E7%B4%A0%E4%BC%98%E9%80%89%E6%B3%95/"/>
     
@@ -594,40 +621,6 @@
       <category term="lm" scheme="https://pangjinfeng.github.io/tags/lm/"/>
     
       <category term="summary" scheme="https://pangjinfeng.github.io/tags/summary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>时间序列数据的可视化 dygraphs</title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96-dygraphs/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/时间序列数据的可视化-dygraphs/</id>
-    <published>2018-09-23T13:55:00.000Z</published>
-    <updated>2018-09-23T14:11:55.404Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="时间序列" scheme="https://pangjinfeng.github.io/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/"/>
-    
-      <category term="dygraphs" scheme="https://pangjinfeng.github.io/tags/dygraphs/"/>
-    
-      <category term="runif" scheme="https://pangjinfeng.github.io/tags/runif/"/>
-    
-      <category term="str" scheme="https://pangjinfeng.github.io/tags/str/"/>
     
   </entry>
   
