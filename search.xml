@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[PPT 渐变字体练习]]></title>
     <url>%2F2018%2F10%2F29%2FPPT-%E6%B8%90%E5%8F%98%E5%AD%97%E4%BD%93%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[点击下载]]></content>
       <categories>
         <category>PPT</category>
       </categories>
@@ -162,8 +162,8 @@
         <category>试验设计</category>
       </categories>
       <tags>
-        <tag>Matlab</tag>
         <tag>R</tag>
+        <tag>Matlab</tag>
         <tag>单因素优选法</tag>
         <tag>响应曲面法</tag>
         <tag>最陡上升法</tag>
@@ -299,9 +299,9 @@
         <tag>R</tag>
         <tag>相关系数矩阵</tag>
         <tag>corrgram</tag>
+        <tag>order</tag>
         <tag>iterators</tag>
         <tag>kernlab</tag>
-        <tag>order</tag>
       </tags>
   </entry>
   <entry>
