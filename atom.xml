@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-11-18T08:50:18.408Z</updated>
+  <updated>2018-11-18T09:28:48.282Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>power Bi 预测 </title>
+    <link href="https://pangjinfeng.github.io/2018/11/18/power-Bi-%E9%A2%84%E6%B5%8B/"/>
+    <id>https://pangjinfeng.github.io/2018/11/18/power-Bi-预测/</id>
+    <published>2018-11-18T09:24:00.000Z</published>
+    <updated>2018-11-18T09:28:48.282Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;目前只针对基于时间序列的折线图可用  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/powerbi_折线.png&quot; alt=&quot;powerbi_折线.png&quot;&gt;&lt;/p&gt;
+&lt;iframe width=&quot;800&quot; height=&quot;600&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/categories/Power-BI/"/>
+    
+    
+      <category term="Power BI" scheme="https://pangjinfeng.github.io/tags/Power-BI/"/>
+    
+  </entry>
   
   <entry>
     <title>power bi pro 发布 web 共享</title>
@@ -585,42 +613,6 @@
       <category term="forecast" scheme="https://pangjinfeng.github.io/tags/forecast/"/>
     
       <category term="auto.arima" scheme="https://pangjinfeng.github.io/tags/auto-arima/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>相关性系数矩阵（椭圆） ellipse</title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E7%9B%B8%E5%85%B3%E6%80%A7%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5%EF%BC%88%E6%A4%AD%E5%9C%86%EF%BC%89-ellipse/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/相关性系数矩阵（椭圆）-ellipse/</id>
-    <published>2018-09-23T14:06:00.000Z</published>
-    <updated>2018-09-25T08:31:47.576Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="相关系数矩阵" scheme="https://pangjinfeng.github.io/tags/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9F%A9%E9%98%B5/"/>
-    
-      <category term="ellipse" scheme="https://pangjinfeng.github.io/tags/ellipse/"/>
-    
-      <category term="mtcars" scheme="https://pangjinfeng.github.io/tags/mtcars/"/>
-    
-      <category term="lm" scheme="https://pangjinfeng.github.io/tags/lm/"/>
-    
-      <category term="summary" scheme="https://pangjinfeng.github.io/tags/summary/"/>
     
   </entry>
   

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[power Bi 预测]]></title>
+    <url>%2F2018%2F11%2F18%2Fpower-Bi-%E9%A2%84%E6%B5%8B%2F</url>
+    <content type="text"><![CDATA[目前只针对基于时间序列的折线图可用]]></content>
+      <categories>
+        <category>Power BI</category>
+      </categories>
+      <tags>
+        <tag>Power BI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[power bi pro 发布 web 共享]]></title>
     <url>%2F2018%2F11%2F18%2Fpower-bi-pro-%E5%8F%91%E5%B8%83-web-%E5%85%B1%E4%BA%AB%2F</url>
     <content type="text"><![CDATA[之前制作的 Power BI 文件都放在 GitHub 里面，可操作性差 点击 超链接 进入 GitHub → 选择文件下载 → 本地打开 竟然如此麻烦，还是看看效果图片就好 现在！没错，就是现在！可以网页一步到位，power bi web 共享了解一下？ power bi pro 可以实现 web 共享，免费试用60天]]></content>
