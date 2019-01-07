@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[散点图矩阵]]></title>
+    <url>%2F2019%2F01%2F07%2F%E6%95%A3%E7%82%B9%E5%9B%BE%E7%9F%A9%E9%98%B5_splom%2F</url>
+    <content type="text"><![CDATA[12library(lattice)splom(mtcars[c(1,3,4,5)])]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[power Bi 预测]]></title>
     <url>%2F2018%2F11%2F18%2Fpower-Bi-%E9%A2%84%E6%B5%8B%2F</url>
     <content type="text"><![CDATA[目前只针对基于时间序列的折线图可用]]></content>
@@ -306,8 +317,8 @@
         <category>themes</category>
       </categories>
       <tags>
-        <tag>next</tag>
         <tag>theme</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>

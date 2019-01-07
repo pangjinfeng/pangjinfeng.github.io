@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2018-11-18T09:28:48.282Z</updated>
+  <updated>2019-01-07T13:54:13.330Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>散点图矩阵</title>
+    <link href="https://pangjinfeng.github.io/2019/01/07/%E6%95%A3%E7%82%B9%E5%9B%BE%E7%9F%A9%E9%98%B5_splom/"/>
+    <id>https://pangjinfeng.github.io/2019/01/07/散点图矩阵_splom/</id>
+    <published>2019-01-07T13:52:00.000Z</published>
+    <updated>2019-01-07T13:54:13.330Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
+    
+    
+      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
+    
+  </entry>
   
   <entry>
     <title>power Bi 预测 </title>
@@ -581,38 +607,6 @@
       <category term="RColorBrewer" scheme="https://pangjinfeng.github.io/tags/RColorBrewer/"/>
     
       <category term="colorRampalette" scheme="https://pangjinfeng.github.io/tags/colorRampalette/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>时间序列分析 forecast </title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90-forecast/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/时间序列分析-forecast/</id>
-    <published>2018-09-23T14:40:00.000Z</published>
-    <updated>2018-09-25T08:31:12.323Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="时间序列" scheme="https://pangjinfeng.github.io/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/"/>
-    
-      <category term="forecast" scheme="https://pangjinfeng.github.io/tags/forecast/"/>
-    
-      <category term="auto.arima" scheme="https://pangjinfeng.github.io/tags/auto-arima/"/>
     
   </entry>
   
