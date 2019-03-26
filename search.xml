@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux mkdir 命令]]></title>
+    <url>%2F2019%2F03%2F26%2FLinux-mkdir-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux mkdir命令用于建立名称为 dirName 之子目录。 语法1mkdir [-p] dirName 参数说明 -p 确保目录名称存在，不存在的就建一个。 实例在工作目录下，建立一个名为 AAA 的子目录 :1mkdir AAA 在工作目录下的 BBB 目录中，建立一个名为 Test 的子目录。 若 BBB 目录原本不存在，则建立一个。（注：本例若不加 -p，且原本 BBB目录不存在，则产生错误。）1mkdir -p BBB/Test]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>mkdir</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux rm 命令]]></title>
+    <url>%2F2019%2F03%2F26%2FLinux-rm-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux rm命令用于删除一个文件或者目录。 语法1rm [options] name... 参数 -i 删除前逐一询问确认。 -f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。 -r 将目录及以下之档案亦逐一删除。 实例删除文件可以直接使用rm命令，若删除目录则必须配合选项”-r”，例如：123456# rm test.txt rm：是否删除 一般文件 &quot;test.txt&quot;? y # rm homework rm: 无法删除目录&quot;homework&quot;: 是一个目录 # rm -r homework rm：是否删除 目录 &quot;homework&quot;? y 删除当前目录下的所有文件及目录，命令行为：1rm -r * 文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>rm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux mv 命令]]></title>
     <url>%2F2019%2F03%2F26%2FLinux-mv-%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置。 语法12mv [options] source destmv [options] source... directory 参数说明 -i: 若指定目录已有同名文件，则先询问是否覆盖旧文件; -f: 在mv操作要覆盖某已有的目标文件时不给任何指示;mv参数设置与运行结果 命令格式 运行结果 mv 文件名 文件名 将源文件名改为目标文件名 mv 文件名 目录名 将文件移动到目标目录 mv 目录名 目录名 目标目录已存在，将源目录移动到目标目录；目标目录不存在则改名 mv 目录名 文件名 出错 实例将文件 aaa 更名为 bbb :1mv aaa bbb 将info目录放入logs目录中。注意，如果logs目录不存在，则该命令将info改名为logs。1mv info/ logs 再如将/usr/student下的所有文件和目录移到当前目录下，命令行为：1$ mv /usr/student/* .]]></content>

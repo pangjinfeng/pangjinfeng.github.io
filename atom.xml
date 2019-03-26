@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2019-03-26T08:07:08.666Z</updated>
+  <updated>2019-03-26T08:23:27.692Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux mkdir 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/26/Linux-mkdir-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/26/Linux-mkdir-命令/</id>
+    <published>2019-03-26T08:21:00.000Z</published>
+    <updated>2019-03-26T08:23:27.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux mkdir命令用于建立名称为 dirName 之子目录。&lt;/p&gt;
+&lt;h5 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h5&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+      <category term="mkdir" scheme="https://pangjinfeng.github.io/tags/mkdir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux rm 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/26/Linux-rm-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/26/Linux-rm-命令/</id>
+    <published>2019-03-26T08:18:00.000Z</published>
+    <updated>2019-03-26T08:20:46.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux rm命令用于删除一个文件或者目录。&lt;/p&gt;
+&lt;h5 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h5&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+      <category term="rm" scheme="https://pangjinfeng.github.io/tags/rm/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux mv 命令</title>
@@ -525,63 +583,6 @@
     
     
       <category term="Google" scheme="https://pangjinfeng.github.io/tags/Google/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Color Hunt</title>
-    <link href="https://pangjinfeng.github.io/2018/09/26/Color-Hunt/"/>
-    <id>https://pangjinfeng.github.io/2018/09/26/Color-Hunt/</id>
-    <published>2018-09-26T15:26:00.000Z</published>
-    <updated>2018-09-28T07:12:15.603Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes  &lt;/p&gt;
-&lt;p&gt;colorhunt
-        
-      
-    
-    </summary>
-    
-      <category term="Others" scheme="https://pangjinfeng.github.io/categories/Others/"/>
-    
-    
-      <category term="可视化" scheme="https://pangjinfeng.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
-    
-      <category term="color" scheme="https://pangjinfeng.github.io/tags/color/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 教程</title>
-    <link href="https://pangjinfeng.github.io/2018/09/25/SQL-%E6%95%99%E7%A8%8B/"/>
-    <id>https://pangjinfeng.github.io/2018/09/25/SQL-教程/</id>
-    <published>2018-09-25T08:48:00.000Z</published>
-    <updated>2018-09-25T09:21:43.933Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;http://www.w3school.com.cn/about/about_us.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;关于 W3School&lt;/a&gt;&lt;br&gt;W3School 是因特网上最大的 WEB
-        
-      
-    
-    </summary>
-    
-      <category term="SQL" scheme="https://pangjinfeng.github.io/categories/SQL/"/>
-    
-    
-      <category term="W3chool" scheme="https://pangjinfeng.github.io/tags/W3chool/"/>
-    
-      <category term="SQL" scheme="https://pangjinfeng.github.io/tags/SQL/"/>
     
   </entry>
   
