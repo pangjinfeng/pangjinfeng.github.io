@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2019-03-26T12:25:39.968Z</updated>
+  <updated>2019-03-26T13:09:17.377Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux awk 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/26/Linux-awk-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/26/Linux-awk-命令/</id>
+    <published>2019-03-26T12:36:00.000Z</published>
+    <updated>2019-03-26T13:09:17.377Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;AWK是一种处理文本文件的语言，是一个强大的文本分析工具。&lt;br&gt;之所以叫AWK是因为其取了三位创始人 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 的 Family Name 的首字符。&lt;/p&gt;
+&lt;h5
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+      <category term="awk" scheme="https://pangjinfeng.github.io/tags/awk/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux ls 命令</title>
@@ -554,37 +583,6 @@
       <category term="xgboost" scheme="https://pangjinfeng.github.io/tags/xgboost/"/>
     
       <category term="randomForest" scheme="https://pangjinfeng.github.io/tags/randomForest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于R语言的自动数据收集，网络抓取和文本挖掘指南</title>
-    <link href="https://pangjinfeng.github.io/2018/10/02/%E5%9F%BA%E4%BA%8ER%E8%AF%AD%E8%A8%80%E7%9A%84%E8%87%AA%E5%8A%A8%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%EF%BC%8C%E7%BD%91%E7%BB%9C%E6%8A%93%E5%8F%96%E5%92%8C%E6%96%87%E6%9C%AC%E6%8C%96%E6%8E%98%E6%8C%87%E5%8D%97/"/>
-    <id>https://pangjinfeng.github.io/2018/10/02/基于R语言的自动数据收集，网络抓取和文本挖掘指南/</id>
-    <published>2018-10-02T10:06:00.000Z</published>
-    <updated>2018-10-02T10:13:45.665Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;书籍官方网址&lt;br&gt;&lt;a href=&quot;http://r-datacollection.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;r-datacollection.com&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;配套代码源代码&lt;br&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-      <category term="Others" scheme="https://pangjinfeng.github.io/categories/R/Others/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="文本" scheme="https://pangjinfeng.github.io/tags/%E6%96%87%E6%9C%AC/"/>
     
   </entry>
   
