@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux ls 命令]]></title>
+    <url>%2F2019%2F03%2F26%2FLinux-ls-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。 语法1ls [-alrtAFR] [name...] 参数 -a 显示所有文件及目录 (ls内定将文件名或目录名称开头为”.”的视为隐藏档，不会列出) -l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出 -r 将文件以相反次序显示(原定依英文字母次序) -t 将文件依建立时间之先后次序列出 -A 同 -a ，但不列出 “.” (目前目录) 及 “..” (父目录) -F 在列出的文件名称后加一符号；例如可执行档则加 “*”, 目录则加 “/“ -R 若目录下有文件，则以下之文件亦皆依序列出 实例列出根目录()下的所有目录：1234# ls /bin dev lib media net root srv upload wwwboot etc lib64 misc opt sbin sys usrhome lost+found mnt proc selinux tmp var 列出目前工作目录下所有名称是 s 开头的文件，越新的排越后面 :1ls -ltr s* 将 /bin 目录以下所有目录及文件详细资料列出 :1ls -lR /bin 列出目前工作目录下所有文件及目录；目录于名称后加 “/“, 可执行档于名称后加 “*” :1ls -AF]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>ls</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux rmdir 命令]]></title>
+    <url>%2F2019%2F03%2F26%2FLinux-rmdir-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux rmdir命令删除空的目录。 语法1rmdir [-p] dirName -p 是当子目录被删除后使它也成为空目录的话，则顺便一并删除。实例将工作目录下，名为 AAA 的子目录删除 :1rmdir AAA 在工作目录下的 BBB 目录中，删除名为 Test 的子目录。若 Test 删除后，BBB 目录成为空目录，则 BBB 亦予删除。1rmdir -p BBB/Test]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>rmdir</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux cd 命令]]></title>
+    <url>%2F2019%2F03%2F26%2FLinux-cd-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux cd命令用于切换当前工作目录至 dirName(目录参数)。其中 dirName 表示法可为绝对路径或相对路径。若目录名称省略，则变换至使用者的 home 目录 (也就是刚 login 时所在的目录)。另外，”~” 也表示为 home 目录 的意思，”.” 则是表示目前所在的目录，”..” 则表示目前目录位置的上一层目录。 语法1cd [dirName] dirName：要切换的目标目录。 实例跳到 /usr/bin/ :1cd /usr/bin 跳到自己的 home 目录 :1cd ~ 跳到目前目录的上上两层 :1cd ../..]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>cd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux mkdir 命令]]></title>
     <url>%2F2019%2F03%2F26%2FLinux-mkdir-%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[Linux mkdir命令用于建立名称为 dirName 之子目录。 语法1mkdir [-p] dirName 参数说明 -p 确保目录名称存在，不存在的就建一个。 实例在工作目录下，建立一个名为 AAA 的子目录 :1mkdir AAA 在工作目录下的 BBB 目录中，建立一个名为 Test 的子目录。 若 BBB 目录原本不存在，则建立一个。（注：本例若不加 -p，且原本 BBB目录不存在，则产生错误。）1mkdir -p BBB/Test]]></content>
@@ -401,8 +437,8 @@
         <category>themes</category>
       </categories>
       <tags>
-        <tag>next</tag>
         <tag>theme</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
