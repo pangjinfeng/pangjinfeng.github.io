@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2019-03-25T14:20:29.377Z</updated>
+  <updated>2019-03-26T06:29:56.602Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux grep 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/26/Linux-grep-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/26/Linux-grep-命令/</id>
+    <published>2019-03-26T06:05:00.000Z</published>
+    <updated>2019-03-26T06:29:56.602Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+      <category term="grep" scheme="https://pangjinfeng.github.io/tags/grep/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux sed 命令</title>
@@ -555,40 +583,6 @@
       <category term="jiebaR" scheme="https://pangjinfeng.github.io/tags/jiebaR/"/>
     
       <category term="Wordcloud" scheme="https://pangjinfeng.github.io/tags/Wordcloud/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>序贯设计及其应用</title>
-    <link href="https://pangjinfeng.github.io/2018/09/23/%E5%BA%8F%E8%B4%AF%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
-    <id>https://pangjinfeng.github.io/2018/09/23/序贯设计及其应用/</id>
-    <published>2018-09-23T15:29:00.000Z</published>
-    <updated>2018-09-23T15:48:59.612Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;1、-单因素优选法&quot;&gt;&lt;a href=&quot;#1、-单因素优选法&quot; class=&quot;headerlink&quot; title=&quot;1、 单因素优选法&quot;&gt;&lt;/a&gt;1、 单因素优选法&lt;/h3&gt;&lt;p&gt;设x为试验中最重要的因素或唯一的因素，并设其包含响应y的最优响应点的范围为
-        
-      
-    
-    </summary>
-    
-      <category term="试验设计" scheme="https://pangjinfeng.github.io/categories/%E8%AF%95%E9%AA%8C%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="Matlab" scheme="https://pangjinfeng.github.io/tags/Matlab/"/>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="单因素优选法" scheme="https://pangjinfeng.github.io/tags/%E5%8D%95%E5%9B%A0%E7%B4%A0%E4%BC%98%E9%80%89%E6%B3%95/"/>
-    
-      <category term="响应曲面法" scheme="https://pangjinfeng.github.io/tags/%E5%93%8D%E5%BA%94%E6%9B%B2%E9%9D%A2%E6%B3%95/"/>
-    
-      <category term="最陡上升法" scheme="https://pangjinfeng.github.io/tags/%E6%9C%80%E9%99%A1%E4%B8%8A%E5%8D%87%E6%B3%95/"/>
     
   </entry>
   

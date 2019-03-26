@@ -298,6 +298,204 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-grep-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-grep-命令/" itemprop="url">Linux grep 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T14:05:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-grep-命令/" class="leancloud_visitors" data-flag-title="Linux grep 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux grep命令用于查找文件里符合条件的字符串。<br>grep指令用于查找内容包含指定的范本样式的文件，如果发现某文件的内容符合所指定的范本样式，预设grep指令会把含有范本样式的那一列显示出来。若不指定任何文件名称，或是所给予的文件名为”-“，则<br>grep指令会从标准输入设备读取数据。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep [-abcEFGhHilLnqrsvVwxy][-A&lt;显示列数&gt;][-B&lt;显示列数&gt;][-C&lt;显示列数&gt;][-d&lt;进行动作&gt;][-e&lt;范本样式&gt;][-f&lt;范本文件&gt;][--help][范本样式][文件或目录...]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-a 或 –text : 不要忽略二进制的数据。</li>
+<li>-A&lt;显示行数&gt; 或 –after-context=&lt;显示行数&gt; : 除了显示符合范本样式的那一列之外，并显示该行之后的内容。</li>
+<li>-b 或 –byte-offset : 在显示符合样式的那一行之前，标示出该行第一个字符的编号。</li>
+<li>-B&lt;显示行数&gt; 或 –before-context=&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前的内容。</li>
+<li>-c 或 –count : 计算符合样式的列数。</li>
+<li>-C&lt;显示行数&gt; 或 –context=&lt;显示行数&gt;或-&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前后的内容。</li>
+<li>-d &lt;动作&gt; 或 –directories=&lt;动作&gt; : 当指定要查找的是目录而非文件时，必须使用这项参数，否则grep指令将回报信息并停止动作。</li>
+<li>-e&lt;范本样式&gt; 或 –regexp=&lt;范本样式&gt; : 指定字符串做为查找文件内容的样式。</li>
+<li>-E 或 –extended-regexp : 将样式为延伸的普通表示法来使用。</li>
+<li>-f&lt;规则文件&gt; 或 –file=&lt;规则文件&gt; : 指定规则文件，其内容含有一个或多个规则样式，让grep查找符合规则条件的文件内容，格式为每行一个规则样式。</li>
+<li>-F 或 –fixed-regexp : 将样式视为固定字符串的列表。</li>
+<li>-G 或 –basic-regexp : 将样式视为普通的表示法来使用。</li>
+<li>-h 或 –no-filename : 在显示符合样式的那一行之前，不标示该行所属的文件名称。</li>
+<li>-H 或 –with-filename : 在显示符合样式的那一行之前，表示该行所属的文件名称。</li>
+<li>-i 或 –ignore-case : 忽略字符大小写的差别。</li>
+<li>-l 或 –file-with-matches : 列出文件内容符合指定的样式的文件名称。</li>
+<li>-L 或 –files-without-match : 列出文件内容不符合指定的样式的文件名称。</li>
+<li>-n 或 –line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。</li>
+<li>-o 或 –only-matching : 只显示匹配PATTERN 部分。</li>
+<li>-q 或 –quiet或–silent : 不显示任何信息。</li>
+<li>-r 或 –recursive : 此参数的效果和指定”-d recurse”参数相同。</li>
+<li>-s 或 –no-messages : 不显示错误信息。</li>
+<li>-v 或 –revert-match : 显示不包含匹配文本的所有行。</li>
+<li>-V 或 –version : 显示版本信息。</li>
+<li>-w 或 –word-regexp : 只显示全字符合的列。</li>
+<li>-x –line-regexp : 只显示全列符合的列。</li>
+<li>-y : 此参数的效果和指定”-i”参数相同。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><ol>
+<li>在当前目录中，查找后缀有 file 字样的文件中包含 test 字符串的文件，并打印出该字符串的行。此时，可以使用如下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep test *file</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>结果如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ grep test test* #查找前缀有“test”的文件包含“test”字符串的文件  </span><br><span class="line">testfile1:This a Linux testfile! #列出testfile1 文件中包含test字符的行  </span><br><span class="line">testfile_2:This is a linux testfile! #列出testfile_2 文件中包含test字符的行  </span><br><span class="line">testfile_2:Linux test #列出testfile_2 文件中包含test字符的行</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li>以递归的方式查找符合条件的文件。例如，查找指定目录/etc/acpi 及其子目录（如果存在子目录的话）下所有文件中包含字符串”update”的文件，并打印出该字符串所在行的内容，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -r update /etc/acpi</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>输出结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ grep -r update /etc/acpi #以递归的方式查找“etc/acpi”  </span><br><span class="line">#下包含“update”的文件  </span><br><span class="line">/etc/acpi/ac.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of IO.)  </span><br><span class="line">Rather than  </span><br><span class="line">/etc/acpi/resume.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of  </span><br><span class="line">IO.) Rather than  </span><br><span class="line">/etc/acpi/events/thinkpad-cmos:action=/usr/sbin/thinkpad-keys--update</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li>反向查找。前面各个例子是查找并打印出符合条件的行，通过”-v”参数可以打印出不符合条件行的内容。<br>查找文件名中包含 test 的文件中不包含test 的行，此时，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -v test *test*</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>结果如下所示:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ grep-v test* #查找文件名中包含test 的文件中不包含test 的行  </span><br><span class="line">testfile1:helLinux!  </span><br><span class="line">testfile1:Linis a free Unix-type operating system.  </span><br><span class="line">testfile1:Lin  </span><br><span class="line">testfile_1:HELLO LINUX!  </span><br><span class="line">testfile_1:LINUX IS A FREE UNIX-TYPE OPTERATING SYSTEM.  </span><br><span class="line">testfile_1:THIS IS A LINUX TESTFILE!  </span><br><span class="line">testfile_2:HELLO LINUX!  </span><br><span class="line">testfile_2:Linux is a free unix-type opterating system.</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/25/Linux-sed-命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1881,160 +2079,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/08/Markdown-添加在线视频/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/08/Markdown-添加在线视频/" itemprop="url">Markdown 添加在线视频</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-08T23:25:00+08:00">
-                2018-10-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/08/Markdown-添加在线视频/" class="leancloud_visitors" data-flag-title="Markdown 添加在线视频">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>通用代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe height=400 width=700 src=&apos;http://music.163.com/m/mv?id=10770095&amp;userid=340573904&apos; frameborder=0 &apos;allowfullscreen&apos;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
-<p>修改的src后的链接即可</p>
-<center><iframe height="400" width="700" src="http://music.163.com/m/mv?id=10770095&userid=340573904" frameborder="0" 'allowfullscreen'=""></iframe></center>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2089,7 +2133,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">45</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -2111,7 +2155,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">82</span>
+                  <span class="site-state-item-count">83</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
