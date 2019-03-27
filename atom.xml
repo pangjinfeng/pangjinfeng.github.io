@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pangjinfeng.github.io/"/>
-  <updated>2019-03-26T13:09:17.377Z</updated>
+  <updated>2019-03-27T09:49:42.894Z</updated>
   <id>https://pangjinfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux df 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/27/Linux-df-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/27/Linux-df-命令/</id>
+    <published>2019-03-27T09:44:00.000Z</published>
+    <updated>2019-03-27T09:49:42.894Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux df命令用于显示目前在Linux系统上的文件系统的磁盘使用情况统计。 &lt;/p&gt;
+&lt;h5 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h5&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UntitledLinux mdir 命令</title>
+    <link href="https://pangjinfeng.github.io/2019/03/27/UntitledLinux-mdir-%E5%91%BD%E4%BB%A4/"/>
+    <id>https://pangjinfeng.github.io/2019/03/27/UntitledLinux-mdir-命令/</id>
+    <published>2019-03-27T09:40:00.000Z</published>
+    <updated>2019-03-27T09:42:32.741Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux mdir命令用于显示MS-DOS目录。&lt;br&gt;mdir为mtools工具指令，模拟MS-DOS的dir指令，可显示MS-DOS文件系统中的目录内容。&lt;/p&gt;
+&lt;h5 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://pangjinfeng.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux awk 命令</title>
@@ -512,77 +566,6 @@
     
     
       <category term="Markdown" scheme="https://pangjinfeng.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VLOOKUP 函数</title>
-    <link href="https://pangjinfeng.github.io/2018/10/08/VLOOKUP-%E5%87%BD%E6%95%B0/"/>
-    <id>https://pangjinfeng.github.io/2018/10/08/VLOOKUP-函数/</id>
-    <published>2018-10-08T15:13:00.000Z</published>
-    <updated>2018-10-08T16:00:35.164Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部件号查找汽车部件的价格。&lt;br&gt;在这一最简单的形式中，VLOOKUP
-        
-      
-    
-    </summary>
-    
-      <category term="excel" scheme="https://pangjinfeng.github.io/categories/excel/"/>
-    
-    
-      <category term="excel" scheme="https://pangjinfeng.github.io/tags/excel/"/>
-    
-      <category term="vlookup" scheme="https://pangjinfeng.github.io/tags/vlookup/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于R语言的用户贷款风险预测</title>
-    <link href="https://pangjinfeng.github.io/2018/10/04/%E5%9F%BA%E4%BA%8ER%E8%AF%AD%E8%A8%80%E7%9A%84%E7%94%A8%E6%88%B7%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E9%A2%84%E6%B5%8B/"/>
-    <id>https://pangjinfeng.github.io/2018/10/04/基于R语言的用户贷款风险预测/</id>
-    <published>2018-10-04T04:45:00.000Z</published>
-    <updated>2018-10-04T16:06:41.689Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;作者介绍：皮吉斯，热爱R语言，知乎号：皮吉斯&lt;br&gt;已授权转载&lt;/p&gt;
-&lt;p&gt;本次的分析数据来自kaggle数据竞赛平台的 “&lt;a href=&quot;https://www.kaggle.com/c/GiveMeSomeCredit&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/categories/R/"/>
-    
-    
-      <category term="R" scheme="https://pangjinfeng.github.io/tags/R/"/>
-    
-      <category term="kaggle" scheme="https://pangjinfeng.github.io/tags/kaggle/"/>
-    
-      <category term="glm" scheme="https://pangjinfeng.github.io/tags/glm/"/>
-    
-      <category term="step" scheme="https://pangjinfeng.github.io/tags/step/"/>
-    
-      <category term="vif" scheme="https://pangjinfeng.github.io/tags/vif/"/>
-    
-      <category term="cart" scheme="https://pangjinfeng.github.io/tags/cart/"/>
-    
-      <category term="nnet" scheme="https://pangjinfeng.github.io/tags/nnet/"/>
-    
-      <category term="xgboost" scheme="https://pangjinfeng.github.io/tags/xgboost/"/>
-    
-      <category term="randomForest" scheme="https://pangjinfeng.github.io/tags/randomForest/"/>
     
   </entry>
   

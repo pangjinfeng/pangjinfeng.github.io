@@ -298,6 +298,384 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/25/Linux-sed-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/25/Linux-sed-命令/" itemprop="url">Linux sed 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-25T21:38:00+08:00">
+                2019-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/25/Linux-sed-命令/" class="leancloud_visitors" data-flag-title="Linux sed 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux sed命令是利用script来处理文本文件。<br>sed可依照script的指令，来处理、编辑文本文件。<br>Sed主要用来自动编辑一个或多个文件；简化对文件的反复操作；编写转换程序等。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed [-hnV][-e][-f][文本文件]</span><br></pre></td></tr></table></figure>
+<h6 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h6><ul>
+<li>-e或–expression=以选项中指定的script来处理输入的文本文件。  </li>
+<li>-f&lt;script文件&gt;或–file=&lt;script文件&gt; 以选项中指定的script文件来处理输入的文本文件。  </li>
+<li>-h或–help 显示帮助。  </li>
+<li>-n或–quiet或–silent 仅显示script处理后的结果。  </li>
+<li>-V或–version 显示版本信息。  </li>
+</ul>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>a ：新增， a 的后面可以接字串，而这些字串会在新的一行出现(目前的下一行)～</li>
+<li>c ：取代， c 的后面可以接字串，这些字串可以取代 n1,n2 之间的行！</li>
+<li>d ：删除，因为是删除啊，所以 d 后面通常不接任何咚咚；</li>
+<li>i ：插入， i 的后面可以接字串，而这些字串会在新的一行出现(目前的上一行)；</li>
+<li>p ：打印，亦即将某个选择的数据印出。通常 p 会与参数 sed -n 一起运行～</li>
+<li>s ：取代，可以直接进行取代的工作哩！通常这个 s 的动作可以搭配正规表示法！例如 1,20s/old/new/g</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>在testfile文件的第四行后添加一行，并将结果输出到标准输出，在命令行提示符下输入如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -e 4a\newLine testfile</span><br></pre></td></tr></table></figure>
+<p>首先查看testfile中的内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cat testfile #查看testfile 中的内容  </span><br><span class="line">HELLO LINUX!  </span><br><span class="line">Linux is a free unix-type opterating system.  </span><br><span class="line">This is a linux testfile!  </span><br><span class="line">Linux test</span><br></pre></td></tr></table></figure></p>
+<p>使用sed命令后，输出结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sed -e 4a\newline testfile #使用sed 在第四行后添加新字符串  </span><br><span class="line">HELLO LINUX! #testfile文件原有的内容  </span><br><span class="line">Linux is a free unix-type opterating system.  </span><br><span class="line">This is a linux testfile!  </span><br><span class="line">Linux test  </span><br><span class="line">newline</span><br></pre></td></tr></table></figure></p>
+<h6 id="以行为单位的新增-删除"><a href="#以行为单位的新增-删除" class="headerlink" title="以行为单位的新增/删除"></a>以行为单位的新增/删除</h6><p>将 /etc/passwd 的内容列出并且列印行号，同时，请将第 2~5 行删除！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# nl /etc/passwd | sed &apos;2,5d&apos;</span><br><span class="line">1 root:x:0:0:root:/root:/bin/bash</span><br><span class="line">6 sync:x:5:0:sync:/sbin:/bin/sync</span><br><span class="line">7 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown</span><br><span class="line">.....(后面省略).....</span><br></pre></td></tr></table></figure>
+<p>sed 的动作为 ‘2,5d’ ，那个 d 就是删除！因为 2-5 行给他删除了，所以显示的数据就没有 2-5 行罗～ 另外，注意一下，原本应该是要下达 sed -e 才对，没有 -e 也行啦！同时也要注意的是， sed 后面接的动作，请务必以 ‘’ 两个单引号括住喔！</p>
+<p>只要删除第 2 行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed &apos;2d&apos;</span><br></pre></td></tr></table></figure></p>
+<p>要删除第 3 到最后一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed &apos;3,$d&apos;</span><br></pre></td></tr></table></figure></p>
+<p>在第二行后(亦即是加在第三行)加上『drink tea?』字样！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# nl /etc/passwd | sed &apos;2a drink tea&apos;</span><br><span class="line">1 root:x:0:0:root:/root:/bin/bash</span><br><span class="line">2 bin:x:1:1:bin:/bin:/sbin/nologin</span><br><span class="line">drink tea</span><br><span class="line">3 daemon:x:2:2:daemon:/sbin:/sbin/nologin</span><br><span class="line">.....(后面省略).....</span><br></pre></td></tr></table></figure></p>
+<p>那如果是要在第二行前<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed &apos;2i drink tea&apos;</span><br></pre></td></tr></table></figure></p>
+<p>如果是要增加两行以上，在第二行后面加入两行字，例如 Drink tea or ….. 与 drink beer?<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# nl /etc/passwd | sed &apos;2a Drink tea or ......\</span><br><span class="line">&gt; drink beer ?&apos;</span><br><span class="line">1 root:x:0:0:root:/root:/bin/bash</span><br><span class="line">2 bin:x:1:1:bin:/bin:/sbin/nologin</span><br><span class="line">Drink tea or ......</span><br><span class="line">drink beer ?</span><br><span class="line">3 daemon:x:2:2:daemon:/sbin:/sbin/nologin</span><br><span class="line">.....(后面省略).....</span><br></pre></td></tr></table></figure></p>
+<p>每一行之间都必须要以反斜杠『 \ 』来进行新行的添加喔！所以，上面的例子中，我们可以发现在第一行的最后面就有 \ 存在。</p>
+<h6 id="以行为单位的替换与显示"><a href="#以行为单位的替换与显示" class="headerlink" title="以行为单位的替换与显示"></a>以行为单位的替换与显示</h6><p>将第2-5行的内容取代成为『No 2-5 number』呢？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# nl /etc/passwd | sed &apos;2,5c No 2-5 number&apos;</span><br><span class="line">1 root:x:0:0:root:/root:/bin/bash</span><br><span class="line">No 2-5 number</span><br><span class="line">6 sync:x:5:0:sync:/sbin:/bin/sync</span><br><span class="line">.....(后面省略).....</span><br></pre></td></tr></table></figure></p>
+<p>透过这个方法我们就能够将数据整行取代了！</p>
+<p>仅列出 /etc/passwd 文件内的第 5-7 行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# nl /etc/passwd | sed -n &apos;5,7p&apos;</span><br><span class="line">5 lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin</span><br><span class="line">6 sync:x:5:0:sync:/sbin:/bin/sync</span><br><span class="line">7 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown</span><br></pre></td></tr></table></figure></p>
+<p>可以透过这个 sed 的以行为单位的显示功能， 就能够将某一个文件内的某些行号选择出来显示。</p>
+<h6 id="数据的搜寻并显示"><a href="#数据的搜寻并显示" class="headerlink" title="数据的搜寻并显示"></a>数据的搜寻并显示</h6><p>搜索 /etc/passwd有root关键字的行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed &apos;/root/p&apos;</span><br><span class="line">1  root:x:0:0:root:/root:/bin/bash</span><br><span class="line">1  root:x:0:0:root:/root:/bin/bash</span><br><span class="line">2  daemon:x:1:1:daemon:/usr/sbin:/bin/sh</span><br><span class="line">3  bin:x:2:2:bin:/bin:/bin/sh</span><br><span class="line">4  sys:x:3:3:sys:/dev:/bin/sh</span><br><span class="line">5  sync:x:4:65534:sync:/bin:/bin/sync</span><br><span class="line">....下面忽略</span><br></pre></td></tr></table></figure></p>
+<p>如果root找到，除了输出所有行，还会输出匹配行。</p>
+<p>使用-n的时候将只打印包含模板的行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed -n &apos;/root/p&apos;</span><br><span class="line">1  root:x:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure></p>
+<h6 id="数据的搜寻并删除"><a href="#数据的搜寻并删除" class="headerlink" title="数据的搜寻并删除"></a>数据的搜寻并删除</h6><p>删除/etc/passwd所有包含root的行，其他行输出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed  &apos;/root/d&apos;</span><br><span class="line">2  daemon:x:1:1:daemon:/usr/sbin:/bin/sh</span><br><span class="line">3  bin:x:2:2:bin:/bin:/bin/sh</span><br><span class="line">....下面忽略</span><br><span class="line">#第一行的匹配root已经删除了</span><br></pre></td></tr></table></figure></p>
+<h6 id="数据的搜寻并执行命令"><a href="#数据的搜寻并执行命令" class="headerlink" title="数据的搜寻并执行命令"></a>数据的搜寻并执行命令</h6><p>搜索/etc/passwd,找到root对应的行，执行后面花括号中的一组命令，每个命令之间用分号分隔，这里把bash替换为blueshell，再输出这行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed -n &apos;/root/&#123;s/bash/blueshell/;p;q&#125;&apos;    </span><br><span class="line">1  root:x:0:0:root:/root:/bin/blueshell</span><br></pre></td></tr></table></figure></p>
+<p>最后的q是退出。</p>
+<h6 id="数据的搜寻并替换"><a href="#数据的搜寻并替换" class="headerlink" title="数据的搜寻并替换"></a>数据的搜寻并替换</h6><p>除了整行的处理模式之外， sed 还可以用行为单位进行部分数据的搜寻并取代。基本上 sed 的搜寻与替代的与 vi 相当的类似！他有点像这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &apos;s/要被取代的字串/新的字串/g&apos;</span><br></pre></td></tr></table></figure></p>
+<p>先观察原始信息，利用 /sbin/ifconfig 查询 IP<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# /sbin/ifconfig eth0</span><br><span class="line">eth0 Link encap:Ethernet HWaddr 00:90:CC:A6:34:84</span><br><span class="line">inet addr:192.168.1.100 Bcast:192.168.1.255 Mask:255.255.255.0</span><br><span class="line">inet6 addr: fe80::290:ccff:fea6:3484/64 Scope:Link</span><br><span class="line">UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1</span><br><span class="line">.....(以下省略).....</span><br></pre></td></tr></table></figure></p>
+<p>本机的ip是192.168.1.100。<br>将 IP 前面的部分予以删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# /sbin/ifconfig eth0 | grep &apos;inet addr&apos; | sed &apos;s/^.*addr://g&apos;</span><br><span class="line">192.168.1.100 Bcast:192.168.1.255 Mask:255.255.255.0</span><br></pre></td></tr></table></figure></p>
+<p>接下来则是删除后续的部分，亦即： 192.168.1.100 Bcast:192.168.1.255 Mask:255.255.255.0<br>将 IP 后面的部分予以删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# /sbin/ifconfig eth0 | grep &apos;inet addr&apos; | sed &apos;s/^.*addr://g&apos; | sed &apos;s/Bcast.*$//g&apos;</span><br><span class="line">192.168.1.100</span><br></pre></td></tr></table></figure></p>
+<h6 id="多点编辑"><a href="#多点编辑" class="headerlink" title="多点编辑"></a>多点编辑</h6><p>一条sed命令，删除/etc/passwd第三行到末尾的数据，并把bash替换为blueshell<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed -e &apos;3,$d&apos; -e &apos;s/bash/blueshell/&apos;</span><br><span class="line">1  root:x:0:0:root:/root:/bin/blueshell</span><br><span class="line">2  daemon:x:1:1:daemon:/usr/sbin:/bin/sh</span><br></pre></td></tr></table></figure></p>
+<p>-e表示多点编辑，第一个编辑命令删除/etc/passwd第三行到末尾的数据，第二条命令搜索bash替换为blueshell。</p>
+<h6 id="直接修改文件内容-危险动作"><a href="#直接修改文件内容-危险动作" class="headerlink" title="直接修改文件内容(危险动作)"></a>直接修改文件内容(危险动作)</h6><p>sed 可以直接修改文件的内容，不必使用管道命令或数据流重导向！ 不过，由於这个动作会直接修改到原始的文件，所以请你千万不要随便拿系统配置来测试！ 我们还是使用文件 regular_express.txt 文件来测试看看吧！<br>regular_express.txt 文件内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# cat regular_express.txt </span><br><span class="line">runoob.</span><br><span class="line">google.</span><br><span class="line">taobao.</span><br><span class="line">facebook.</span><br><span class="line">zhihu-</span><br><span class="line">weibo-</span><br></pre></td></tr></table></figure></p>
+<p>利用 sed 将 regular_express.txt 内每一行结尾若为 . 则换成 !<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# sed -i &apos;s/\.$/\!/g&apos; regular_express.txt</span><br><span class="line">[root@www ~]# cat regular_express.txt </span><br><span class="line">runoob!</span><br><span class="line">google!</span><br><span class="line">taobao!</span><br><span class="line">facebook!</span><br><span class="line">zhihu-</span><br><span class="line">weibo-</span><br></pre></td></tr></table></figure></p>
+<p>:q:q<br>利用 sed 直接在 regular_express.txt 最后一行加入 # This is a test:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@www ~]# sed -i &apos;$a # This is a test&apos; regular_express.txt</span><br><span class="line">[root@www ~]# cat regular_express.txt </span><br><span class="line">runoob!</span><br><span class="line">google!</span><br><span class="line">taobao!</span><br><span class="line">facebook!</span><br><span class="line">zhihu-</span><br><span class="line">weibo-</span><br><span class="line"># This is a test</span><br></pre></td></tr></table></figure></p>
+<p>由於 $ 代表的是最后一行，而 a 的动作是新增，因此该文件最后新增 # This is a test！</p>
+<p>sed 的 -i 选项可以直接修改文件内容，这功能非常有帮助！举例来说，如果你有一个 100 万行的文件，你要在第 100 行加某些文字，此时使用 vim 可能会疯掉！因为文件太大了！那怎办？就利用 sed 啊！透过 sed 直接修改/取代的功能，你甚至不需要使用 vim 去修订！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/25/Linux-cat-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/25/Linux-cat-命令/" itemprop="url">Linux cat 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-25T21:28:00+08:00">
+                2019-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/25/Linux-cat-命令/" class="leancloud_visitors" data-flag-title="Linux cat 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>cat 命令用于连接文件并打印到标准输出设备上。</p>
+<h5 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat [-AbeEnstTuv] [--help] [--version] fileName</span><br></pre></td></tr></table></figure>
+<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><p>-n 或 –number：由 1 开始对所有输出的行数编号。</p>
+<p>-b 或 –number-nonblank：和 -n 相似，只不过对于空白行不编号。</p>
+<p>-s 或 –squeeze-blank：当遇到有连续两行以上的空白行，就代换为一行的空白行。</p>
+<p>-v 或 –show-nonprinting：使用 ^ 和 M- 符号，除了 LFD 和 TAB 之外。</p>
+<p>-E 或 –show-ends : 在每行结束处显示 $。</p>
+<p>-T 或 –show-tabs: 将 TAB 字符显示为 ^I。</p>
+<p>-A, –show-all：等价于 -vET。</p>
+<p>-e：等价于”-vE”选项；</p>
+<p>-t：等价于”-vT”选项；</p>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>把 textfile1 的文档内容加上行号后输入 textfile2 这个文档里：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat -n textfile1 &gt; textfile2</span><br></pre></td></tr></table></figure></p>
+<p>把 textfile1 和 textfile2 的文档内容加上行号（空白行不加）之后将内容附加到 textfile3 文档里：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat -b textfile1 textfile2 &gt;&gt; textfile3</span><br></pre></td></tr></table></figure></p>
+<p>批量合并相似文件test1、test2、test3…..<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat text* &gt;&gt; testfile</span><br></pre></td></tr></table></figure></p>
+<p>清空 /etc/test.txt 文档内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /dev/null &gt; /etc/test.txt</span><br></pre></td></tr></table></figure></p>
+<p>cat 也可以用来制作镜像文件。例如要制作软盘的镜像文件，将软盘放好后输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /dev/fd0 &gt; OUTFILE</span><br></pre></td></tr></table></figure></p>
+<p>相反的，如果想把 image file 写到软盘，输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat IMG_FILE &gt; /dev/fd0</span><br></pre></td></tr></table></figure></p>
+<h5 id="注"><a href="#注" class="headerlink" title="注"></a>注</h5><ol>
+<li>OUTFILE 指输出的镜像文件名。</li>
+<li>IMG_FILE 指镜像文件。</li>
+<li>若从镜像文件写回 device 时，device 容量需与相当。</li>
+<li>通常用制作开机磁片。</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/01/14/基于R语言的相关性显著性检验/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1657,538 +2035,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/08/VLOOKUP-函数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/08/VLOOKUP-函数/" itemprop="url">VLOOKUP 函数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-08T23:13:00+08:00">
-                2018-10-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/excel/" itemprop="url" rel="index">
-                    <span itemprop="name">excel</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/08/VLOOKUP-函数/" class="leancloud_visitors" data-flag-title="VLOOKUP 函数">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部件号查找汽车部件的价格。<br>在这一最简单的形式中，VLOOKUP 函数表示：<br>=VLOOKUP（要查找的值、要在其中查找值的区域、区域中包含返回值的列号、精确匹配或近似匹配 – 指定为 0/FALSE 或 1/TRUE）。</p>
-<center> <iframe height="400" width="700" src="https://www.microsoft.com/zh-cn/videoplayer/embed/RE2p7LV?pid=ocpVideo0-innerdiv-oneplayer&postJsllMsg=true&maskLevel=20&market=zh-cn" frameborder="0" 'allowfullscreen'=""></iframe> </center>
-
-<p>使用 VLOOKUP 函数在表中查找值。<br>语法<br>VLOOKUP (lookup_value, table_array, col_index_num, [range_lookup])</p>
-<p>例如：<br>=VLOOKUP(105,A2:C7,2,TRUE)<br>=VLOOKUP(“袁”,B2:E7,2,FALSE)</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">参数名称</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">lookup_value   （必需参数）</td>
-<td style="text-align:left">要查找的值。要查找的值必须位于 table-array 中指定的单元格区域的第一列中。</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">例如，如果 table-array 指定的单元格为 B2:D7，则 lookup_value 必须位于列 B 中。请参见下图。Lookup_value 可以是值，也可以是单元格引用。</td>
-</tr>
-<tr>
-<td style="text-align:left">Table_array   （必需参数）</td>
-<td style="text-align:left">VLOOKUP 在其中搜索 lookup_value 和返回值的单元格区域。</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">该单元格区域中的第一列必须包含 lookup_value（例如，下图中的“姓氏”）。此单元格区域中还需要包含您要查找的返回值（例如，下图中的“名字”）。</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">了解如何选择工作表中的区域。</td>
-</tr>
-<tr>
-<td style="text-align:left">col_index_num   （必需参数）</td>
-<td style="text-align:left">其中包含返回值的单元格的编号（table-array 最左侧单元格为 1 开始编号）。</td>
-</tr>
-<tr>
-<td style="text-align:left">range_lookup   （可选参数）</td>
-<td style="text-align:left">一个逻辑值，该值指定希望 VLOOKUP 查找近似匹配还是精确匹配：</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">TRUE 假定表中的第一列按数字或字母排序，然后搜索最接近的值。这是未指定值时的默认方法。</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">FALSE 在第一列中搜索精确值。</td>
-</tr>
-</tbody>
-</table>
-<p>需要四条信息才能构建 VLOOKUP 语法：<br>1、要查找的值，也被称为查阅值。<br>2、查阅值所在的区域。请记住，查阅值应该始终位于所在区域的第一列，这样 VLOOKUP 才能正常工作。例如，如果查阅值位于单元格 C2 内，那么您的区域应该以 C 开头。<br>3、区域中包含返回值的列号。例如，如果指定 B2：D11 作为区域，那么应该将 B 算作第一列，C 作为第二列，以此类推。<br>4、（可选）如果需要返回值的近似匹配，可以指定 TRUE；如果需要返回值的精确匹配，则指定 FALSE。如果没有指定任何内容，默认值将始终为 TRUE 或近似匹配。</p>
-<p>现在将上述所有内容集中在一起，如下所示：<br>=VLOOKUP（查阅值、包含查阅值的区域、区域中包含返回值的列号以及（可选）为近似匹配指定 TRUE 或者为精确匹配指定 FALSE）。</p>
-<p>例如：<br><img src="https://support.content.office.net/zh-cn/media/0d08ad32-9e64-4578-89af-4c85683394b6.png" alt="https://support.content.office.net/zh-cn/media/0d08ad32-9e64-4578-89af-4c85683394b6.png"><br><img src="https://support.content.office.net/zh-cn/media/ddaf561c-1df2-4f13-a136-a79e65a3ee6f.png" alt="https://support.content.office.net/zh-cn/media/ddaf561c-1df2-4f13-a136-a79e65a3ee6f.png"></p>
-<p>文章来源：<a href="https://support.office.com/zh-cn/article/VLOOKUP-%E5%87%BD%E6%95%B0-0BBC8083-26FE-4963-8AB8-93A18AD188A1" target="_blank" rel="noopener">excel官方文档</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/04/基于R语言的用户贷款风险预测/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/04/基于R语言的用户贷款风险预测/" itemprop="url">基于R语言的用户贷款风险预测</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-04T12:45:00+08:00">
-                2018-10-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/R/" itemprop="url" rel="index">
-                    <span itemprop="name">R</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/04/基于R语言的用户贷款风险预测/" class="leancloud_visitors" data-flag-title="基于R语言的用户贷款风险预测">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>作者介绍：皮吉斯，热爱R语言，知乎号：皮吉斯<br>已授权转载</p>
-<p>本次的分析数据来自kaggle数据竞赛平台的 “<a href="https://www.kaggle.com/c/GiveMeSomeCredit" target="_blank" rel="noopener">give me some credit</a>” 竞赛项目。任务是提高模型精度AUC。<br>本次分析用到了多种算法，分别有：逻辑回归，cart决策树，神经网络，xgboost，随机森林。通过多种模型相互对比，最终根据auc选出最好的模型。  </p>
-<h3 id="分析步骤："><a href="#分析步骤：" class="headerlink" title="分析步骤："></a>分析步骤：</h3><ol>
-<li>导入数据</li>
-<li>数据清洗及准备</li>
-<li>模型建立</li>
-<li>模型评估</li>
-<li>多模型对比  </li>
-</ol>
-<h4 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cs_training &lt;- read.csv(&quot;cs_training.csv&quot;)</span><br><span class="line">names(cs_training) </span><br><span class="line">a &lt;- cs_training </span><br><span class="line">a1 &lt;- cs_training </span><br><span class="line">colnames(a)&lt;-c(&apos;id&apos;,&apos;response&apos;,&apos;x1&apos;,&apos;age&apos;,&apos;x2&apos;,&apos;debtratio&apos;,&apos;monthlyincome&apos;,&apos;x3&apos;,&apos;x4&apos;,&apos;x5&apos;,&apos;x6&apos;,&apos;x7&apos;)</span><br></pre></td></tr></table></figure>
-<p>导入数据，并对列名重命名，方便分析。<br>通过summary了解数据的整体情况，可以看到monthliincome和x7变量有缺失值<br><img src="/images/summary-a.jpg" alt="summary-a.jpg"></p>
-<h4 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#age变量</span><br><span class="line">age&lt;-a$age</span><br><span class="line">var_age&lt;-c(var=&quot;age&quot;,</span><br><span class="line">mean=mean(age,na.rm=TRUE),#na.rm=TRUE去除NA的影响</span><br><span class="line">median=median(age,na.rm=TRUE),</span><br><span class="line">quantile(age,c(0,0.01,0.1,0.25,0.5,0.75,0.9,0.99,1),na.rm=TRUE),  </span><br><span class="line">max=max(age,na.rm=TRUE),</span><br><span class="line">missing=sum(is.na(age)) )</span><br><span class="line">View(var_age)</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">var</th>
-<th style="text-align:left">mean</th>
-<th style="text-align:left">median</th>
-<th style="text-align:left">0</th>
-<th style="text-align:left">0.01</th>
-<th style="text-align:left">0.1</th>
-<th style="text-align:left">0.25</th>
-<th style="text-align:left">0.5</th>
-<th style="text-align:left">0.75</th>
-<th style="text-align:left">0.9</th>
-<th style="text-align:left">0.99</th>
-<th style="text-align:left">1</th>
-<th style="text-align:left">max</th>
-<th style="text-align:left">missing</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">age</td>
-<td style="text-align:left">52.2952066666667</td>
-<td style="text-align:left">52</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">24</td>
-<td style="text-align:left">33</td>
-<td style="text-align:left">41</td>
-<td style="text-align:left">52</td>
-<td style="text-align:left">63</td>
-<td style="text-align:left">72</td>
-<td style="text-align:left">87</td>
-<td style="text-align:left">109</td>
-<td style="text-align:left">109</td>
-<td style="text-align:left">0</td>
-</tr>
-</tbody>
-</table>
-<p>这样可以看到各个变量的数据分布情况<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看异常值</span><br><span class="line">boxplot(age~response,data = a,horizontal = T ,frame = F ,        col = &quot;lightgray&quot;,main = &quot;Distribution&quot;)</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/Distribution.jpg" alt="Distribution.jpg"></p>
-<p>上图可以看到，数据存在异常值。<br>处理异常值：通常采用盖帽法，即用数据分布在1%的数据覆盖在1%以下的数据，用在99%的数据覆盖99%以上的数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">block&lt;-function(x,lower=T,upper=T)&#123;</span><br><span class="line">if(lower)&#123;</span><br><span class="line">q1&lt;-quantile(x,0.01)</span><br><span class="line">x[x&lt;=q1]&lt;-q1</span><br><span class="line">&#125;  </span><br><span class="line">if(upper)&#123;</span><br><span class="line">q99&lt;-quantile(x,0.99)</span><br><span class="line">x[x&gt;q99]&lt;-q99</span><br><span class="line">&#125;</span><br><span class="line">return(x)</span><br><span class="line">&#125;</span><br><span class="line">boxplot(age~response,data = a,horizontal = T ,frame = F ,        col = &quot;lightgray&quot;,main = &quot;Distribution&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>经过处理，异常值大量减少<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># x1</span><br><span class="line">xa1&lt;-a$x1</span><br><span class="line">var_x1&lt;-c(var=&apos;xa1&apos;,</span><br><span class="line">mean=mean(xa1,na.rm = T),</span><br><span class="line">median=median(xa1,na.rm = T),</span><br><span class="line">quantile(xa1,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T), max=max(xa1,na.rm = T), </span><br><span class="line">miss=sum(is.na(xa1)) )</span><br><span class="line">boxplot(x1~response,data=a,horizontal=T, frame=F, col=&quot;lightgray&quot;,main=&quot;Distribution-x1&quot;) </span><br><span class="line">#对X1变量进行处理 </span><br><span class="line">a$x1&lt;-block(a$x1)</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/Distribution-x1.png" alt="Distribution-x1"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"># x2</span><br><span class="line">a$x2 </span><br><span class="line">summary(a$x2) </span><br><span class="line">xa2&lt;-a$x2 </span><br><span class="line">var_x2&lt;-c(var=&apos;xa2&apos;,</span><br><span class="line">mean=mean(xa2,na.rm = T), </span><br><span class="line">median=median(xa2,na.rm = T), </span><br><span class="line">quantile(xa2,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(xa2,na.rm = T), </span><br><span class="line">miss=sum(is.na(xa2)) ) </span><br><span class="line">boxplot(x2~response,data=a,horizontal=T, frame=F,  col=&quot;lightgray&quot;,main=&quot;Distribution&quot;) </span><br><span class="line"># 对x2变量进行处理 </span><br><span class="line">a$x2&lt;-block(a$x2) </span><br><span class="line">a$x1&lt;-round(a$x1,2)</span><br><span class="line"># debtratio</span><br><span class="line">summary(a$debtratio) </span><br><span class="line">ratio&lt;-a$debtratio </span><br><span class="line">var_ratio&lt;-c(var=&apos;debtratio&apos;, </span><br><span class="line">mean=mean(ratio,na.rm = T), </span><br><span class="line">median=median(ratio,na.rm = T), </span><br><span class="line">quantile(ratio,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(ratio,na.rm = T), </span><br><span class="line">miss=sum(is.na(ratio)) ) </span><br><span class="line">hist(a$debtratio)</span><br><span class="line"># 因为debtratio是百分比，对异常值的处理要结合实际</span><br><span class="line">a$debtratio&lt;-ifelse(a$debtratio&gt;1,1,a$debtratio)</span><br><span class="line"># monthlyincome</span><br><span class="line">income&lt;-a$monthlyincome </span><br><span class="line">var_income&lt;-c(var=&apos;income&apos;,</span><br><span class="line">mean=mean(income,na.rm = T), </span><br><span class="line">median=median(income,na.rm = T), </span><br><span class="line">quantile(income,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),</span><br><span class="line">max=max(income,na.rm = T), </span><br><span class="line">miss=sum(is.na(income)) ) </span><br><span class="line">hist(income) </span><br><span class="line">boxplot(monthlyincome~response,data=a,horizontal=T, frame=F,  col=&quot;lightgray&quot;,main=&quot;Distribution-x2&quot;)</span><br><span class="line"># 对缺失值处理</span><br><span class="line">a$monthlyincome&lt;-ifelse(is.na(a$monthlyincome)==T,6670.2,a$monthlyincome)</span><br><span class="line"># 对异常值处理</span><br><span class="line">a$monthlyincome&lt;-block(a$monthlyincome)</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/Distribution-x2.png" alt="Distribution-x1"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># x3</span><br><span class="line">summary(a$x3) </span><br><span class="line">x3&lt;-a$x3 </span><br><span class="line">var_x3&lt;-c(var=&apos;x3&apos;,mean=mean(x3,na.rm = T),  </span><br><span class="line">median=median(x3,na.rm = T),          </span><br><span class="line">quantile(x3,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),   max=max(x3,na.rm = T),  </span><br><span class="line">miss=sum(is.na(x3)) ) </span><br><span class="line">names(a) </span><br><span class="line"># 对x3进行处理 </span><br><span class="line">a$x3&lt;-block(a$x3)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># x4-延迟90天的次数</span><br><span class="line">summary(a$x4) </span><br><span class="line">x4&lt;-a$x4 </span><br><span class="line">var_x4&lt;-c(var=&apos;x4&apos;,mean=mean(x4,na.rm = T),</span><br><span class="line">median=median(x4,na.rm = T),          </span><br><span class="line">quantile(x4,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(x4,na.rm = T),  </span><br><span class="line">miss=sum(is.na(x4)) ) </span><br><span class="line"># 对x4进行处理 </span><br><span class="line">a$x4&lt;-block(a$x4)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># x5-贷款额度</span><br><span class="line">summary(a$x5) </span><br><span class="line">x5&lt;-a$x5 </span><br><span class="line">var_x5&lt;-c(var=&apos;x5&apos;,mean=mean(x5,na.rm = T),   </span><br><span class="line">median=median(x5,na.rm = T),          </span><br><span class="line">quantile(x5,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(x5,na.rm = T),  </span><br><span class="line">miss=sum(is.na(x5)) ) </span><br><span class="line"># 对x5异常值进行采用盖帽法处理 </span><br><span class="line">a$x5&lt;-block(a$x5) </span><br><span class="line">boxplot(a$x5) </span><br><span class="line">boxplot(x5~response , data = a , horizontal = T, main=&quot;Distribution-x5&quot;)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/Distribution-x5.png" alt="Distribution-x5"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># x6</span><br><span class="line">summary(a$x6) </span><br><span class="line">x6&lt;-a$x6 </span><br><span class="line">var_x6&lt;-c(var=&apos;x6&apos;,mean=mean(x6,na.rm = T), </span><br><span class="line">median=median(x6,na.rm = T),  </span><br><span class="line">quantile(x6,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(x6,na.rm = T),  </span><br><span class="line">miss=sum(is.na(x6)) ) </span><br><span class="line"># 对x6进行盖帽法 </span><br><span class="line">a$x6&lt;-block(a$x6)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># x7</span><br><span class="line">summary(a$x7) </span><br><span class="line">x7&lt;-a$x7 </span><br><span class="line">var_x7&lt;-c(var=&apos;x7&apos;,mean=mean(x7,na.rm = T),  </span><br><span class="line">median=median(x7,na.rm = T),  </span><br><span class="line">quantile(x7,c(0,0.01,0.1,0.5,0.75,0.9,0.99,1),na.rm = T),  max=max(x7,na.rm = T),  </span><br><span class="line">miss=sum(is.na(x7)) ) </span><br><span class="line">hist(a$x7,freq=F)</span><br><span class="line"># 对缺失值处理</span><br><span class="line">a$x7&lt;-ifelse(is.na(a$x7)==T,0.76,a$x7)</span><br><span class="line"># 对异常值处理</span><br><span class="line">a$x7&lt;-block(a$x7) </span><br><span class="line">summary(a)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/Histogram of a$x7.png" alt="Histogram of a$x7"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#response变量</span><br><span class="line"># 为了方便理解，将1作为违约，0表示不违约</span><br><span class="line">a$response&lt;-as.numeric(!as.logical(a$response))</span><br></pre></td></tr></table></figure></p>
-<h4 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h4><h5 id="数据分组"><a href="#数据分组" class="headerlink" title="数据分组"></a>数据分组</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">table(a$response)</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">10026</td>
-<td style="text-align:center">139974</td>
-</tr>
-</tbody>
-</table>
-<p>数据正负比例不平衡，我们要对数据进行smote处理，smote算法的思想是合成新的少数类样本，合成的策略是对每个少数类样本a，从它的最近邻中随机选一个样本b，然后在a、b之间的连线上随机选一点作为新合成的少数类样本。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">library(lattice) </span><br><span class="line">library(grid) </span><br><span class="line">library(DMwR) </span><br><span class="line">a$response &lt;- factor(a$response) </span><br><span class="line">a$response &lt;- as.factor(ifelse(a$response == 0 , &quot;yes&quot; , &quot;no&quot;)) </span><br><span class="line">newData &lt;- SMOTE(response ~ ., a) </span><br><span class="line">table(newData$response) </span><br><span class="line">newData$response &lt;- ifelse(newData$response == &quot;yes&quot; , 0 , 1) </span><br><span class="line">newData$response &lt;- as.numeric(newData$response) </span><br><span class="line">str(newData)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 接下来进行分组</span><br><span class="line">index &lt;- sample(1:nrow(newData) , nrow(newData)*0.7) </span><br><span class="line">train &lt;- newData[index,] </span><br><span class="line">test &lt;- newData[-index,] </span><br><span class="line">table(train$response) </span><br><span class="line">table(test$response)</span><br></pre></td></tr></table></figure>
-<p>table(train$response) </p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">21213</td>
-<td style="text-align:center">27914</td>
-</tr>
-</tbody>
-</table>
-<p>table(test$response)</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">8865</td>
-<td style="text-align:center">12190</td>
-</tr>
-</tbody>
-</table>
-<h4 id="逻辑回归"><a href="#逻辑回归" class="headerlink" title="逻辑回归"></a>逻辑回归</h4><h5 id="建立模型"><a href="#建立模型" class="headerlink" title="建立模型"></a>建立模型</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">glm_model &lt;- glm(response~. , data = train  , family = binomial()) </span><br><span class="line">summary(glm_model)</span><br><span class="line">#p值全部显著</span><br></pre></td></tr></table></figure>
-<p><img src="/images/summary-glm_model.jpg" alt="summary-glm_model.jpg"></p>
-<h5 id="使用逐步法剔除变量"><a href="#使用逐步法剔除变量" class="headerlink" title="使用逐步法剔除变量"></a>使用逐步法剔除变量</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">step(glm_model , direction = &quot;both&quot;)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/step-glm_model.jpg" alt="step-glm_model.jpg"></p>
-<h5 id="VIF多重共线性检验"><a href="#VIF多重共线性检验" class="headerlink" title="VIF多重共线性检验"></a>VIF多重共线性检验</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">library(carData) </span><br><span class="line">library(car) </span><br><span class="line">vif(glm_model) #一般认为VIF值大于2的话，表明变量间存在共线性。此时没有大于2的值,各个变量间相互独立</span><br></pre></td></tr></table></figure>
-<p><img src="/images/vif-glm_model.jpg" alt="vif-glm_model"></p>
-<h5 id="预测"><a href="#预测" class="headerlink" title="预测"></a>预测</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">train_pred &lt;- predict(glm_model , newdata = train , type = &quot;response&quot;) </span><br><span class="line">test_pred &lt;- predict(glm_model , newdata = test , type = &quot;response&quot;)</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-842466）"><a href="#模型评估（auc-0-842466）" class="headerlink" title="模型评估（auc=0.842466）"></a>模型评估（auc=0.842466）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">library(gplots)</span><br><span class="line">library(ROCR)</span><br><span class="line">test_prob &lt;- prediction(test_pred,  test$response) </span><br><span class="line">test_perf &lt;- performance(test_prob , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_prob ,&quot;auc&quot;)</span><br><span class="line">plot(test_perf) </span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict_perf.png" alt="predict_perf.jpg"></p>
-<h4 id="cart决策树模型"><a href="#cart决策树模型" class="headerlink" title="cart决策树模型"></a>cart决策树模型</h4><h5 id="模型建立"><a href="#模型建立" class="headerlink" title="模型建立"></a>模型建立</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">library(rpart) </span><br><span class="line">library(rpart.plot) </span><br><span class="line">library(RWeka) </span><br><span class="line">cart_dt&lt;-rpart.control(minsplit = 50,maxdepth = 4,xval=10,cp=0) </span><br><span class="line">cart_model &lt;- rpart(response~.,  data = train , method = &quot;anova&quot; , control = cart_dt) </span><br><span class="line">rpart.plot(cart_model,digits=3)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/tree.jpg" alt="tree.jpg"></p>
-<h5 id="预测-1"><a href="#预测-1" class="headerlink" title="预测"></a>预测</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_pred &lt;- predict(cart_model  , newdata = test)</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-3670627）"><a href="#模型评估（auc-0-3670627）" class="headerlink" title="模型评估（auc=0.3670627）"></a>模型评估（auc=0.3670627）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">test_prob &lt;- prediction(test_pred,  test$response) </span><br><span class="line">test_perf &lt;- performance(test_prob , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_prob ,&quot;auc&quot;)</span><br><span class="line">plot(test_perf) </span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict-tree.png" alt="predict-tree.png"></p>
-<h4 id="nnet包的单隐层BP网络"><a href="#nnet包的单隐层BP网络" class="headerlink" title="nnet包的单隐层BP网络"></a>nnet包的单隐层BP网络</h4><h5 id="对数据进行标准化"><a href="#对数据进行标准化" class="headerlink" title="对数据进行标准化"></a>对数据进行标准化</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#对数据进行标准化 </span><br><span class="line">names(train) </span><br><span class="line">train[,2:11] &lt;- scale(train[,2:11]) </span><br><span class="line">test[,2:11] &lt;- scale(test[,2:11])</span><br></pre></td></tr></table></figure>
-<h5 id="模型建立-1"><a href="#模型建立-1" class="headerlink" title="模型建立"></a>模型建立</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">library(nnet) </span><br><span class="line">train_nnet&lt;-nnet(response~., linout =F,size=10, decay=0.0076, maxit=200,data = train) </span><br><span class="line"># size隐节点数,decay权值衰减率</span><br></pre></td></tr></table></figure>
-<h5 id="预测并将概率调整为0和1"><a href="#预测并将概率调整为0和1" class="headerlink" title="预测并将概率调整为0和1"></a>预测并将概率调整为0和1</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">test_pred&lt;-predict(train_nnet, test) </span><br><span class="line">test_pred[test_pred&lt;0.5]=0 </span><br><span class="line">test_pred[test_pred&gt;=0.5]=1 </span><br><span class="line">table(test_pred)</span><br></pre></td></tr></table></figure>
-<p>test_pred</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">14523</td>
-<td style="text-align:center">6532</td>
-</tr>
-</tbody>
-</table>
-<h5 id="计算准确率"><a href="#计算准确率" class="headerlink" title="计算准确率"></a>计算准确率</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_pred_rate&lt;-sum(test_pred==test$response)/length(test$response)</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-7848754）"><a href="#模型评估（auc-0-7848754）" class="headerlink" title="模型评估（auc=0.7848754）"></a>模型评估（auc=0.7848754）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">library(gplots) </span><br><span class="line">library(ROCR) </span><br><span class="line">test_prob &lt;- prediction(test_pred,  test$response) </span><br><span class="line">test_perf &lt;- performance(test_prob , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_prob ,&quot;auc&quot;)</span><br><span class="line">plot(test_perf) </span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict-nnet.png" alt="predict-nnet.png"></p>
-<h5 id="模型调参"><a href="#模型调参" class="headerlink" title="模型调参"></a>模型调参</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">##输入数据的预测变量必须是二分类的。且所有变量只包含模型输入输出变量。</span><br><span class="line">##调参时如果变量过多size不宜过大。</span><br><span class="line">##构建调参函数network()。 构建调参函数network()</span><br><span class="line">##构建调参函数network()。 </span><br><span class="line"></span><br><span class="line">network&lt;-function(formula,data,size,adjust,decay=0,maxit=200,scale=TRUE,samplerate=0.7,seed=1,linout=FALSE,ifplot=TRUE)&#123;</span><br><span class="line">library(nnet) </span><br><span class="line">##规范输出变量为0,1   </span><br><span class="line">yvar&lt;-colnames(data)==(all.vars(formula)[1])  </span><br><span class="line">levels(data[,yvar])&lt;-c(0,1)  ##抽样建立训练集和测试集  </span><br><span class="line">set.seed(seed)  </span><br><span class="line">select&lt;-sample(1:nrow(data),nrow(data)*samplerate)  train=data[select,]  </span><br><span class="line">test=data[-select,]  ##根据给定判断进行标准化  </span><br><span class="line">if(scale==T)&#123;    </span><br><span class="line">xvar&lt;-colnames(data)!=(all.vars(formula)[1])    train[,xvar]=scale(train[,xvar])    test[,xvar]=scale(test[,xvar])  </span><br><span class="line">&#125;  ##循环使用nnet训练调参  </span><br><span class="line">obj&lt;-eval(parse(text = adjust))  </span><br><span class="line">auc&lt;-data.frame()  </span><br><span class="line">for(i in obj)&#123;    </span><br><span class="line">if(adjust==&quot;size&quot;)&#123;       </span><br><span class="line">mynnet&lt;-nnet(formula,size=i,linout=linout,decay=decay,                   </span><br><span class="line">maxit=maxit,trace=FALSE,data=train)    </span><br><span class="line">&#125;    </span><br><span class="line">else if(adjust==&quot;decay&quot;)&#123;     </span><br><span class="line">mynnet&lt;-nnet(formula,size=size,linout=linout,decay=i,                   </span><br><span class="line">maxit=maxit,trace=FALSE,data=train)&#125; ##调用之前的ROC()得到对应参数的AUC值    </span><br><span class="line">objcolname&lt;-all.vars(formula)[1]    </span><br><span class="line">auc0&lt;-ROC(model=mynnet,train=train,test=test,              </span><br><span class="line">objcolname=objcolname,ifplot=F)    ##输出指定参数不同值对应的数据框    </span><br><span class="line">out&lt;-data.frame(i,auc0)    </span><br><span class="line">auc&lt;-rbind(auc,out)  &#125;    </span><br><span class="line">names(auc)&lt;-c(adjust,&quot;Train_auc&quot;,&quot;Test_auc&quot;)  </span><br><span class="line">if(ifplot==T)&#123;    </span><br><span class="line">library(plotrix)    </span><br><span class="line">twoord.plot(auc[,1],auc$Train_auc,auc[,1],auc$Test_auc,lcol=4,rcol=2,xlab=adjust,ylab=&quot;Train_auc&quot;,  rylab=&quot;Test_auc&quot;,type=c(&quot;l&quot;,&quot;b&quot;),lab=c(15,5,10))  &#125;   </span><br><span class="line">return(auc) &#125; </span><br><span class="line">auc&lt;-network(response~.,data=train,size=4:16,adjust=&quot;size&quot;,             </span><br><span class="line">decay=0.0001,maxit=200,scale=T) #发现当隐藏节点数为6的时候，auc最高 </span><br><span class="line">auc&lt;-network(response~.,data=train,size=11,adjust=&quot;decay&quot;,             </span><br><span class="line">decay=c(0,seq(0.0001,0.01,0.0003)),maxit=200) </span><br><span class="line">#发现decay等于0.0025的时候， auc最高</span><br></pre></td></tr></table></figure>
-<h5 id="建模2-0"><a href="#建模2-0" class="headerlink" title="建模2.0"></a>建模2.0</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#调参后的模型 #size =11 , decay = 0.0013 , maxit = 200 </span><br><span class="line">library(nnet) </span><br><span class="line">train_nnet &lt;- nnet(response~. , linout = F , size = 4 , decay = 0.0031 , maxit = 200 , data = train)</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-7923195）"><a href="#模型评估（auc-0-7923195）" class="headerlink" title="模型评估（auc = 0.7923195）"></a>模型评估（auc = 0.7923195）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 预测为0，1 </span><br><span class="line">test_pred&lt;-predict(train_nnet, test) test_pred[test_pred&lt;0.5]=0 </span><br><span class="line">test_pred[test_pred&gt;=0.5]=1 </span><br><span class="line">table(test_pred) #计算准确率 </span><br><span class="line">test_pred_rate&lt;-sum(test_pred==test$response)/length(test$response) # 模型评估 </span><br><span class="line">library(gplots) </span><br><span class="line">library(ROCR) </span><br><span class="line">test_prob &lt;- prediction(test_pred,  test$response) </span><br><span class="line">test_perf &lt;- performance(test_prob , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_prob ,&quot;auc&quot;)</span><br><span class="line">plot(test_perf)</span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict-nnet.png" alt="predict-nnet.png"></p>
-<h4 id="xgboost算法"><a href="#xgboost算法" class="headerlink" title="xgboost算法"></a>xgboost算法</h4><h5 id="模型建立-2"><a href="#模型建立-2" class="headerlink" title="模型建立"></a>模型建立</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">library(xgboost) </span><br><span class="line">xgb_model &lt;- xgboost(data = data.matrix(train[,-1]) ,                              </span><br><span class="line">label=data.matrix(train$response) ,                                        </span><br><span class="line">max_depth = 6, eta=  0.3 , nthread = 2 , nrounds = 15 ,                             </span><br><span class="line">objective = &quot;binary:logistic&quot; , seed = 123)</span><br></pre></td></tr></table></figure>
-<h5 id="预测-2"><a href="#预测-2" class="headerlink" title="预测"></a>预测</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_prob &lt;- predict(xgb_model , data.matrix(test[,-1]))</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-860617）"><a href="#模型评估（auc-0-860617）" class="headerlink" title="模型评估（auc = 0.860617）"></a>模型评估（auc = 0.860617）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">test_pred &lt;- prediction(test_prob , test$response) </span><br><span class="line">test_perf &lt;- performance(test_pred , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_pred , &quot;auc&quot;)</span><br><span class="line">plot(test_perf)</span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict-xgboost.jpg" alt="predict-xgboost.jpg"></p>
-<h4 id="随机森林"><a href="#随机森林" class="headerlink" title="随机森林"></a>随机森林</h4><h5 id="模型建立-3"><a href="#模型建立-3" class="headerlink" title="模型建立"></a>模型建立</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">library(randomForest) </span><br><span class="line">random_model &lt;- randomForest(response~. , data = train) </span><br><span class="line">random_model</span><br></pre></td></tr></table></figure>
-<h5 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_prob &lt;- predict(random_model , test , type= &quot;response&quot;)</span><br></pre></td></tr></table></figure>
-<h5 id="模型评估（auc-0-8531173）"><a href="#模型评估（auc-0-8531173）" class="headerlink" title="模型评估（auc = 0.8531173）"></a>模型评估（auc = 0.8531173）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">test_pred &lt;- prediction(test_prob , test$response) </span><br><span class="line">test_perf &lt;- performance(test_pred , &quot;tpr&quot; , &quot;fpr&quot;) </span><br><span class="line">test_auc &lt;- performance(test_pred , &quot;auc&quot;)</span><br><span class="line">plot(test_perf)</span><br><span class="line">abline(a=0,b=1)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/predict-randomForest.jpg" alt="predict-randomForest.jpg"></p>
-<p>综上，通过多种模型对比可以看到xgboost算法的模型精确度是最高的达到0.860617。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2243,7 +2089,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">52</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
