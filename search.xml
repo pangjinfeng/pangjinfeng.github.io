@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux unzip 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-unzip-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux unzip命令用于解压缩zip文件unzip为.zip压缩文件的解压缩程序。 语法1unzip [-cflptuvz][-agCjLMnoqsVX][-P &lt;密码&gt;][.zip文件][文件][-d &lt;目录&gt;][-x &lt;文件&gt;] 或 unzip [-Z] 参数 -c 将解压缩的结果显示到屏幕上，并对字符做适当的转换。 -f 更新现有的文件。 -l 显示压缩文件内所包含的文件。 -p 与-c参数类似，会将解压缩的结果显示到屏幕上，但不会执行任何的转换。 -t 检查压缩文件是否正确。 -u 与-f参数类似，但是除了更新现有的文件外，也会将压缩文件中的其他文件解压缩到目录中。 -v 执行是时显示详细的信息。 -z 仅显示压缩文件的备注文字。 -a 对文本文件进行必要的字符转换。 -b 不要对文本文件进行字符转换。 -C 压缩文件中的文件名称区分大小写。 -j 不处理压缩文件中原有的目录路径。 -L 将压缩文件中的全部文件名改为小写。 -M 将输出结果送到more程序处理。 -n 解压缩时不要覆盖原有的文件。 -o 不必先询问用户，unzip执行后覆盖原有文件。 -P&lt;密码&gt; 使用zip的密码选项。 -q 执行时不显示任何信息。 -s 将文件名中的空白字符转换为底线字符。 -V 保留VMS的文件版本信息。 -X 解压缩时同时回存文件原来的UID/GID。 [.zip文件] 指定.zip压缩文件。 [文件] 指定要处理.zip压缩文件中的哪些文件。 -d&lt;目录&gt; 指定文件解压缩后所要存储的目录。 -x&lt;文件&gt; 指定不要处理.zip压缩文件中的哪些文件。 -Z unzip -Z等于执行zipinfo指令。 实例查看压缩文件中包含的文件：1234567891011# unzip -l abc.zip Archive: abc.zip Length Date Time Name-------- ---- ---- ---- 94618 05-21-10 20:44 a11.jpg 202001 05-21-10 20:44 a22.jpg 16 05-22-10 15:01 11.txt 46468 05-23-10 10:30 w456.JPG 140085 03-14-10 21:49 my.asp-------- ------- 483188 5 files -v 参数用于查看压缩文件目录信息，但是不解压该文件。12345678910Archive: abc.zipLength Method Size Ratio Date Time CRC-32 Name-------- ------ ------- ----- ---- ---- ------ ---- 94618 Defl:N 93353 1% 05-21-10 20:44 9e661437 a11.jpg 202001 Defl:N 201833 0% 05-21-10 20:44 1da462eb a22.jpg 16 Stored 16 0% 05-22-10 15:01 ae8a9910 ? +-|￥+-? (11).txt 46468 Defl:N 39997 14% 05-23-10 10:30 962861f2 w456.JPG 140085 Defl:N 36765 74% 03-14-10 21:49 836fcc3f my.asp-------- ------- --- ------- 483188 371964 23% 5 files]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux zip 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-zip-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux zip命令用于压缩文件。zip是个使用广泛的压缩程序，文件经它压缩后会另外产生具有”.zip”扩展名的压缩文件。 语法1zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &lt;工作目录&gt;][-ll][-n &lt;字尾字符串&gt;][-t &lt;日期时间&gt;][-&lt;压缩效率&gt;][压缩文件][文件...][-i &lt;范本样式&gt;][-x &lt;范本样式&gt;] 参数 -A 调整可执行的自动解压缩文件。 -b&lt;工作目录&gt; 指定暂时存放文件的目录。 -c 替每个被压缩的文件加上注释。 -d 从压缩文件内删除指定的文件。 -D 压缩文件内不建立目录名称。 -f 此参数的效果和指定”-u”参数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。 -F 尝试修复已损坏的压缩文件。 -g 将文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。 -h 在线帮助。 -i&lt;范本样式&gt; 只压缩符合条件的文件。 -j 只保存文件名称及其内容，而不存放任何目录名称。 -J 删除压缩文件前面不必要的数据。 -k 使用MS-DOS兼容格式的文件名称。 -l 压缩文件时，把LF字符置换成LF+CR字符。 -ll 压缩文件时，把LF+CR字符置换成LF字符。 -L 显示版权信息。 -m 将文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。 -n&lt;字尾字符串&gt; 不压缩具有特定字尾字符串的文件。 -o 以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。 -q 不显示指令执行过程。 -r 递归处理，将指定目录下的所有文件和子目录一并处理。 -S 包含系统和隐藏文件。 -t&lt;日期时间&gt; 把压缩文件的日期设成指定的日期。 -T 检查备份文件内的每个文件是否正确无误。 -u 更换较新的文件到压缩文件内。 -v 显示指令执行过程或显示版本信息。 -V 保存VMS操作系统的文件属性。 -w 在文件名称里假如版本编号，本参数仅在VMS操作系统下有效。 -x&lt;范本样式&gt; 压缩时排除符合条件的文件。 -X 不保存额外的文件属性。 -y 直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之类的系统下有效。 -z 替压缩文件加上注释。 -$ 保存第一个被压缩文件所在磁盘的卷册名称。 -&lt;压缩效率&gt; 压缩效率是一个介于1-9的数值。 实例将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：1zip -q -r html.zip /home/html 如果在我们在 /home/html 目录下，可以执行以下命令：1zip -q -r html.zip * 从压缩文件 cp.zip 中删除文件 a.c 1zip -dv cp.zip a.c]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux tar 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-tar-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux tar命令用于备份文件。tar是用来建立，还原备份文件的工具程序，它可以加入，解开备份文件内的文件。 语法1tar [-ABcdgGhiklmMoOpPrRsStuUvwWxzZ][-b &lt;区块数目&gt;][-C &lt;目的目录&gt;][-f &lt;备份文件&gt;][-F &lt;Script文件&gt;][-K &lt;文件&gt;][-L &lt;媒体容量&gt;][-N &lt;日期时间&gt;][-T &lt;范本文件&gt;][-V &lt;卷册名称&gt;][-X &lt;范本文件&gt;][-&lt;设备编号&gt;&lt;存储密度&gt;][--after-date=&lt;日期时间&gt;][--atime-preserve][--backuup=&lt;备份方式&gt;][--checkpoint][--concatenate][--confirmation][--delete][--exclude=&lt;范本样式&gt;][--force-local][--group=&lt;群组名称&gt;][--help][--ignore-failed-read][--new-volume-script=&lt;Script文件&gt;][--newer-mtime][--no-recursion][--null][--numeric-owner][--owner=&lt;用户名称&gt;][--posix][--erve][--preserve-order][--preserve-permissions][--record-size=&lt;区块数目&gt;][--recursive-unlink][--remove-files][--rsh-command=&lt;执行指令&gt;][--same-owner][--suffix=&lt;备份字尾字符串&gt;][--totals][--use-compress-program=&lt;执行指令&gt;][--version][--volno-file=&lt;编号文件&gt;][文件或目录...] 参数 -A或–catenate 新增文件到已存在的备份文件。 -b&lt;区块数目&gt;或–blocking-factor=&lt;区块数目&gt; 设置每笔记录的区块数目，每个区块大小为12Bytes。 -B或–read-full-records 读取数据时重设区块大小。 -c或–create 建立新的备份文件。 -C&lt;目的目录&gt;或–directory=&lt;目的目录&gt; 切换到指定的目录。 -d或–diff或–compare 对比备份文件内和文件系统上的文件的差异。 -f&lt;备份文件&gt;或–file=&lt;备份文件&gt; 指定备份文件。 -F&lt;Script文件&gt;或–info-script=&lt;Script文件&gt; 每次更换磁带时，就执行指定的Script文件。 -g或–listed-incremental 处理GNU格式的大量备份。 -G或–incremental 处理旧的GNU格式的大量备份。 -h或–dereference 不建立符号连接，直接复制该连接所指向的原始文件。 -i或–ignore-zeros 忽略备份文件中的0 Byte区块，也就是EOF。 -k或–keep-old-files 解开备份文件时，不覆盖已有的文件。 -K&lt;文件&gt;或–starting-file=&lt;文件&gt; 从指定的文件开始还原。 -l或–one-file-system 复制的文件或目录存放的文件系统，必须与tar指令执行时所处的文件系统相同，否则不予复制。 -L&lt;媒体容量&gt;或-tape-length=&lt;媒体容量&gt; 设置存放每体的容量，单位以1024 Bytes计算。 -m或–modification-time 还原文件时，不变更文件的更改时间。 -M或–multi-volume 在建立，还原备份文件或列出其中的内容时，采用多卷册模式。 -N&lt;日期格式&gt;或–newer=&lt;日期时间&gt; 只将较指定日期更新的文件保存到备份文件里。 -o或–old-archive或–portability 将资料写入备份文件时使用V7格式。 -O或–stdout 把从备份文件里还原的文件输出到标准输出设备。 -p或–same-permissions 用原来的文件权限还原文件。 -P或–absolute-names 文件名使用绝对名称，不移除文件名称前的”/“号。 -r或–append 新增文件到已存在的备份文件的结尾部分。 -R或–block-number 列出每个信息在备份文件中的区块编号。 -s或–same-order 还原文件的顺序和备份文件内的存放顺序相同。 -S或–sparse 倘若一个文件内含大量的连续0字节，则将此文件存成稀疏文件。 -t或–list 列出备份文件的内容。 -T&lt;范本文件&gt;或–files-from=&lt;范本文件&gt; 指定范本文件，其内含有一个或多个范本样式，让tar解开或建立符合设置条件的文件。 -u或–update 仅置换较备份文件内的文件更新的文件。 -U或–unlink-first 解开压缩文件还原文件之前，先解除文件的连接。 -v或–verbose 显示指令执行过程。 -V&lt;卷册名称&gt;或–label=&lt;卷册名称&gt; 建立使用指定的卷册名称的备份文件。 -w或–interactive 遭遇问题时先询问用户。 -W或–verify 写入备份文件后，确认文件正确无误。 -x或–extract或–get 从备份文件中还原文件。 -X&lt;范本文件&gt;或–exclude-from=&lt;范本文件&gt; 指定范本文件，其内含有一个或多个范本样式，让ar排除符合设置条件的文件。 -z或–gzip或–ungzip 通过gzip指令处理备份文件。 -Z或–compress或–uncompress 通过compress指令处理备份文件。 -&lt;设备编号&gt;&lt;存储密度&gt; 设置备份用的外围设备编号及存放数据的密度。 –after-date=&lt;日期时间&gt; 此参数的效果和指定”-N”参数相同。 –atime-preserve 不变更文件的存取时间。 –backup=&lt;备份方式&gt;或–backup 移除文件前先进行备份。 –checkpoint 读取备份文件时列出目录名称。 –concatenate 此参数的效果和指定”-A”参数相同。 –confirmation 此参数的效果和指定”-w”参数相同。 –delete 从备份文件中删除指定的文件。 –exclude=&lt;范本样式&gt; 排除符合范本样式的问家。 –group=&lt;群组名称&gt; 把加入设备文件中的文件的所属群组设成指定的群组。 –help 在线帮助。 –ignore-failed-read 忽略数据读取错误，不中断程序的执行。 –new-volume-script=&lt;Script文件&gt; 此参数的效果和指定”-F”参数相同。 –newer-mtime 只保存更改过的文件。 –no-recursion 不做递归处理，也就是指定目录下的所有文件及子目录不予处理。 –null 从null设备读取文件名称。 –numeric-owner 以用户识别码及群组识别码取代用户名称和群组名称。 –owner=&lt;用户名称&gt; 把加入备份文件中的文件的拥有者设成指定的用户。 –posix 将数据写入备份文件时使用POSIX格式。 –preserve 此参数的效果和指定”-ps”参数相同。 –preserve-order 此参数的效果和指定”-A”参数相同。 –preserve-permissions 此参数的效果和指定”-p”参数相同。 –record-size=&lt;区块数目&gt; 此参数的效果和指定”-b”参数相同。 –recursive-unlink 解开压缩文件还原目录之前，先解除整个目录下所有文件的连接。 –remove-files 文件加入备份文件后，就将其删除。 –rsh-command=&lt;执行指令&gt; 设置要在远端主机上执行的指令，以取代rsh指令。 –same-owner 尝试以相同的文件拥有者还原文件。 –suffix=&lt;备份字尾字符串&gt; 移除文件前先行备份。 –totals 备份文件建立后，列出文件大小。 –use-compress-program=&lt;执行指令&gt; 通过指定的指令处理备份文件。 –version 显示版本信息。 –volno-file=&lt;编号文件&gt; 使用指定文件内的编号取代预设的卷册编号。 实例压缩文件 非打包123# touch a.c # tar -czvf test.tar.gz a.c //压缩 a.c文件为test.tar.gza.c 列出压缩文件内容12# tar -tzvf test.tar.gz -rw-r--r-- root/root 0 2010-05-24 16:51:59 a.c 解压文件12# tar -xzvf test.tar.gz a.c]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux gunzip 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-gunzip-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux gunzip命令用于解压文件。gunzip是个使用广泛的解压缩程序，它用于解开被gzip压缩过的文件，这些压缩文件预设最后的扩展名为”.gz”。事实上gunzip就是gzip的硬连接，因此不论是压缩或解压缩，都可通过gzip指令单独完成。 语法1gunzip [-acfhlLnNqrtvV][-s &lt;压缩字尾字符串&gt;][文件...] 或 gunzip [-acfhlLnNqrtvV][-s &lt;压缩字尾字符串&gt;][目录] 参数 -a或–ascii 使用ASCII文字模式。 -c或–stdout或–to-stdout 把解压后的文件输出到标准输出设备。 -f或-force 强行解开压缩文件，不理会文件名称或硬连接是否存在以及该文件是否为符号连接。 -h或–help 在线帮助。 -l或–list 列出压缩文件的相关信息。 -L或–license 显示版本与版权信息。 -n或–no-name 解压缩时，若压缩文件内含有远来的文件名称及时间戳记，则将其忽略不予处理。 -N或–name 解压缩时，若压缩文件内含有原来的文件名称及时间戳记，则将其回存到解开的文件上。 -q或–quiet 不显示警告信息。 -r或–recursive 递归处理，将指定目录下的所有文件及子目录一并处理。 -S&lt;压缩字尾字符串&gt;或–suffix&lt;压缩字尾字符串&gt; 更改压缩字尾字符串。 -t或–test 测试压缩文件是否正确无误。 -v或–verbose 显示指令执行过程。 -V或–version 显示版本信息。 实例1234&lt;p&gt;解压文件&lt;/p&gt;&lt;pre&gt;# gunzip ab.gz]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux bzip2recover 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-bzip2recover-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux bzip2recover命令用来修复损坏的.bz2文件。bzip2是以区块的方式来压缩文件，每个区块视为独立的单位。因此，当某一区块损坏时，便可利用bzip2recover，试着将文件中的区块隔开来，以便解压缩正常的区块。通常只适用在压缩文件很大的情况。 语法1bzip2recover [.bz2 压缩文件] 实例修复.bz2文件1# bzip2recover col.bz2]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux bzip2 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-bzip2-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux bzip2命令是.bz2文件的压缩程序。bzip2采用新的压缩演算法，压缩效果比传统的LZ77/LZ78压缩演算法来得好。若没有加上任何参数，bzip2压缩完文件后会产生.bz2的压缩文件，并删除原始的文件。 语法1bzip2 [-cdfhkLstvVz][--repetitive-best][--repetitive-fast][- 压缩等级][要压缩的文件] 参数 -c或–stdout 将压缩与解压缩的结果送到标准输出。 -d或–decompress 执行解压缩。 -f或–force bzip2在压缩或解压缩时，若输出文件与现有文件同名，预设不会覆盖现有文件。若要覆盖，请使用此参数。 -h或–help 显示帮助。 -k或–keep bzip2在压缩或解压缩后，会删除原始的文件。若要保留原始文件，请使用此参数。 -s或–small 降低程序执行时内存的使用量。 -t或–test 测试.bz2压缩文件的完整性。 -v或–verbose 压缩或解压缩文件时，显示详细的信息。 -z或–compress 强制执行压缩。 -L,–license, -V或–version 显示版本信息。 –repetitive-best 若文件中有重复出现的资料时，可利用此参数提高压缩效果。 –repetitive-fast 若文件中有重复出现的资料时，可利用此参数加快执行速度。 -压缩等级 压缩时的区块大小。实例解压.bz2文件1[root@w3cschool.cc ~]# bzip2 -v temp.bz2 //解压文件显示详细处理信息 压缩文件1[root@w3cschool.cc ~]# bzip2 -c a.c b.c c.c 检查文件完整性1[root@w3cschool.cc ~]# bzip2 -t temp.bz2]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux pwd 命令]]></title>
+    <url>%2F2019%2F03%2F28%2FLinux-pwd-%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Linux pwd命令用于显示工作目录。执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。 语法1pwd [--help][--version] 参数说明 –help 在线帮助。 –version 显示版本信息。实例查看当前所在目录：12# pwd/root/test #输出结果]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux df 命令]]></title>
     <url>%2F2019%2F03%2F27%2FLinux-df-%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[Linux df命令用于显示目前在Linux系统上的文件系统的磁盘使用情况统计。 语法1df [选项]... [FILE]... 参数 -a, –all 包含所有的具有 0 Blocks 的文件系统 –block-size={SIZE} 使用 {SIZE} 大小的 Blocks -h, –human-readable 使用人类可读的格式(预设值是不加这个选项的…) -H, –si 很像 -h, 但是用 1000 为单位而不是用 1024 -i, –inodes 列出 inode 资讯，不列出已使用 block -k, –kilobytes 就像是 –block-size=1024 -l, –local 限制列出的文件结构 -m, –megabytes 就像 –block-size=1048576 –no-sync 取得资讯前不 sync (预设值) -P, –portability 使用 POSIX 输出格式 –sync 在取得资讯前 sync -t, –type=TYPE 限制列出文件系统的 TYPE -T, –print-type 显示文件系统的形式 -x, –exclude-type=TYPE 限制列出文件系统不要显示 TYPE -v (忽略) –help 显示这个帮手并且离开 –version 输出版本资讯并且离开 实例显示文件系统的磁盘使用情况统计：1234567# df Filesystem 1K-blocks Used Available Use% Mounted on /dev/sda6 29640780 4320704 23814388 16% / udev 1536756 4 1536752 1% /dev tmpfs 617620 888 616732 1% /run none 5120 0 5120 0% /run/lock none 1544044 156 1543888 1% /run/shm 第一列指定文件系统的名称，第二列指定一个特定的文件系统1K-块1K是1024字节为单位的总内存。用和可用列正在使用中，分别指定的内存量。 使用列指定使用的内存的百分比，而最后一栏”安装在”指定的文件系统的挂载点。 df也可以显示磁盘使用的文件系统信息：123# df test Filesystem 1K-blocks Used Available Use% Mounted on /dev/sda6 29640780 4320600 23814492 16% / 用一个-i选项的df命令的输出显示inode信息而非块使用量。1234567df -i Filesystem Inodes IUsed IFree IUse% Mounted on /dev/sda6 1884160 261964 1622196 14% / udev 212748 560 212188 1% /dev tmpfs 216392 477 215915 1% /run none 216392 3 216389 1% /run/lock none 216392 8 216384 1% /run/shm 显示所有的信息:12345678# df --total Filesystem 1K-blocks Used Available Use% Mounted on /dev/sda6 29640780 4320720 23814372 16% / udev 1536756 4 1536752 1% /dev tmpfs 617620 892 616728 1% /run none 5120 0 5120 0% /run/lock none 1544044 156 1543888 1% /run/shm total 33344320 4321772 27516860 14% 我们看到输出的末尾，包含一个额外的行，显示总的每一列。 -h选项，通过它可以产生可读的格式df命令的输出：1234567# df -h Filesystem Size Used Avail Use% Mounted on /dev/sda6 29G 4.2G 23G 16% / udev 1.5G 4.0K 1.5G 1% /dev tmpfs 604M 892K 603M 1% /run none 5.0M 0 5.0M 0% /run/lock none 1.5G 156K 1.5G 1% /run/shm 我们可以看到输出显示的数字形式的’G’（千兆字节），”M”（兆字节）和”K”（千字节）。 这使输出容易阅读和理解，从而使显示可读的。请注意，第二列的名称也发生了变化，为了使显示可读的”大小”。]]></content>

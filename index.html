@@ -298,6 +298,1249 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-unzip-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-unzip-命令/" itemprop="url">Linux unzip 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T10:57:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-unzip-命令/" class="leancloud_visitors" data-flag-title="Linux unzip 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux unzip命令用于解压缩zip文件<br>unzip为.zip压缩文件的解压缩程序。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip [-cflptuvz][-agCjLMnoqsVX][-P &lt;密码&gt;][.zip文件][文件][-d &lt;目录&gt;][-x &lt;文件&gt;] 或 unzip [-Z]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-c 将解压缩的结果显示到屏幕上，并对字符做适当的转换。</li>
+<li>-f 更新现有的文件。</li>
+<li>-l 显示压缩文件内所包含的文件。</li>
+<li>-p 与-c参数类似，会将解压缩的结果显示到屏幕上，但不会执行任何的转换。</li>
+<li>-t 检查压缩文件是否正确。</li>
+<li>-u 与-f参数类似，但是除了更新现有的文件外，也会将压缩文件中的其他文件解压缩到目录中。</li>
+<li>-v 执行是时显示详细的信息。</li>
+<li>-z 仅显示压缩文件的备注文字。</li>
+<li>-a 对文本文件进行必要的字符转换。</li>
+<li>-b 不要对文本文件进行字符转换。</li>
+<li>-C 压缩文件中的文件名称区分大小写。</li>
+<li>-j 不处理压缩文件中原有的目录路径。</li>
+<li>-L 将压缩文件中的全部文件名改为小写。</li>
+<li>-M 将输出结果送到more程序处理。</li>
+<li>-n 解压缩时不要覆盖原有的文件。</li>
+<li>-o 不必先询问用户，unzip执行后覆盖原有文件。</li>
+<li>-P&lt;密码&gt; 使用zip的密码选项。</li>
+<li>-q 执行时不显示任何信息。</li>
+<li>-s 将文件名中的空白字符转换为底线字符。</li>
+<li>-V 保留VMS的文件版本信息。</li>
+<li>-X 解压缩时同时回存文件原来的UID/GID。</li>
+<li>[.zip文件] 指定.zip压缩文件。</li>
+<li>[文件] 指定要处理.zip压缩文件中的哪些文件。</li>
+<li>-d&lt;目录&gt; 指定文件解压缩后所要存储的目录。</li>
+<li>-x&lt;文件&gt; 指定不要处理.zip压缩文件中的哪些文件。</li>
+<li>-Z unzip -Z等于执行zipinfo指令。</li>
+</ul>
+<h6 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h6><p>查看压缩文件中包含的文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># unzip -l abc.zip </span><br><span class="line">Archive: abc.zip</span><br><span class="line"> Length   Date  Time  Name</span><br><span class="line">--------  ----  ----  ----</span><br><span class="line">  94618 05-21-10 20:44  a11.jpg</span><br><span class="line">  202001 05-21-10 20:44  a22.jpg</span><br><span class="line">    16 05-22-10 15:01  11.txt</span><br><span class="line">  46468 05-23-10 10:30  w456.JPG</span><br><span class="line">  140085 03-14-10 21:49  my.asp</span><br><span class="line">--------          -------</span><br><span class="line">  483188          5 files</span><br></pre></td></tr></table></figure></p>
+<p>-v 参数用于查看压缩文件目录信息，但是不解压该文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Archive: abc.zip</span><br><span class="line">Length  Method  Size Ratio  Date  Time  CRC-32  Name</span><br><span class="line">-------- ------ ------- -----  ----  ----  ------  ----</span><br><span class="line">  94618 Defl:N  93353  1% 05-21-10 20:44 9e661437 a11.jpg</span><br><span class="line"> 202001 Defl:N  201833  0% 05-21-10 20:44 1da462eb a22.jpg</span><br><span class="line">   16 Stored    16  0% 05-22-10 15:01 ae8a9910 ? +-|￥+-? (11).txt</span><br><span class="line">  46468 Defl:N  39997 14% 05-23-10 10:30 962861f2 w456.JPG</span><br><span class="line"> 140085 Defl:N  36765 74% 03-14-10 21:49 836fcc3f my.asp</span><br><span class="line">--------     ------- ---              -------</span><br><span class="line"> 483188      371964 23%              5 files</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-zip-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-zip-命令/" itemprop="url">Linux zip 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T10:52:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-zip-命令/" class="leancloud_visitors" data-flag-title="Linux zip 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux zip命令用于压缩文件。<br>zip是个使用广泛的压缩程序，文件经它压缩后会另外产生具有”.zip”扩展名的压缩文件。</p>
+<h6 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &lt;工作目录&gt;][-ll][-n &lt;字尾字符串&gt;][-t &lt;日期时间&gt;][-&lt;压缩效率&gt;][压缩文件][文件...][-i &lt;范本样式&gt;][-x &lt;范本样式&gt;]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-A 调整可执行的自动解压缩文件。</li>
+<li>-b&lt;工作目录&gt; 指定暂时存放文件的目录。</li>
+<li>-c 替每个被压缩的文件加上注释。</li>
+<li>-d 从压缩文件内删除指定的文件。</li>
+<li>-D 压缩文件内不建立目录名称。</li>
+<li>-f 此参数的效果和指定”-u”参数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。</li>
+<li>-F 尝试修复已损坏的压缩文件。</li>
+<li>-g 将文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。</li>
+<li>-h 在线帮助。</li>
+<li>-i&lt;范本样式&gt; 只压缩符合条件的文件。</li>
+<li>-j 只保存文件名称及其内容，而不存放任何目录名称。</li>
+<li>-J 删除压缩文件前面不必要的数据。</li>
+<li>-k 使用MS-DOS兼容格式的文件名称。</li>
+<li>-l 压缩文件时，把LF字符置换成LF+CR字符。</li>
+<li>-ll 压缩文件时，把LF+CR字符置换成LF字符。</li>
+<li>-L 显示版权信息。</li>
+<li>-m 将文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。</li>
+<li>-n&lt;字尾字符串&gt; 不压缩具有特定字尾字符串的文件。</li>
+<li>-o 以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。</li>
+<li>-q 不显示指令执行过程。</li>
+<li>-r 递归处理，将指定目录下的所有文件和子目录一并处理。</li>
+<li>-S 包含系统和隐藏文件。</li>
+<li>-t&lt;日期时间&gt; 把压缩文件的日期设成指定的日期。</li>
+<li>-T 检查备份文件内的每个文件是否正确无误。</li>
+<li>-u 更换较新的文件到压缩文件内。</li>
+<li>-v 显示指令执行过程或显示版本信息。</li>
+<li>-V 保存VMS操作系统的文件属性。</li>
+<li>-w 在文件名称里假如版本编号，本参数仅在VMS操作系统下有效。</li>
+<li>-x&lt;范本样式&gt; 压缩时排除符合条件的文件。</li>
+<li>-X 不保存额外的文件属性。</li>
+<li>-y 直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之类的系统下有效。</li>
+<li>-z 替压缩文件加上注释。</li>
+<li>-$ 保存第一个被压缩文件所在磁盘的卷册名称。</li>
+<li>-&lt;压缩效率&gt; 压缩效率是一个介于1-9的数值。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure></p>
+<p>如果在我们在 /home/html 目录下，可以执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -q -r html.zip *</span><br></pre></td></tr></table></figure></p>
+<p>从压缩文件 cp.zip 中删除文件 a.c</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -dv cp.zip a.c</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-tar-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-tar-命令/" itemprop="url">Linux tar 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T10:42:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-tar-命令/" class="leancloud_visitors" data-flag-title="Linux tar 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux tar命令用于备份文件。<br>tar是用来建立，还原备份文件的工具程序，它可以加入，解开备份文件内的文件。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar [-ABcdgGhiklmMoOpPrRsStuUvwWxzZ][-b &lt;区块数目&gt;][-C &lt;目的目录&gt;][-f &lt;备份文件&gt;][-F &lt;Script文件&gt;][-K &lt;文件&gt;][-L &lt;媒体容量&gt;][-N &lt;日期时间&gt;][-T &lt;范本文件&gt;][-V &lt;卷册名称&gt;][-X &lt;范本文件&gt;][-&lt;设备编号&gt;&lt;存储密度&gt;][--after-date=&lt;日期时间&gt;][--atime-preserve][--backuup=&lt;备份方式&gt;][--checkpoint][--concatenate][--confirmation][--delete][--exclude=&lt;范本样式&gt;][--force-local][--group=&lt;群组名称&gt;][--help][--ignore-failed-read][--new-volume-script=&lt;Script文件&gt;][--newer-mtime][--no-recursion][--null][--numeric-owner][--owner=&lt;用户名称&gt;][--posix][--erve][--preserve-order][--preserve-permissions][--record-size=&lt;区块数目&gt;][--recursive-unlink][--remove-files][--rsh-command=&lt;执行指令&gt;][--same-owner][--suffix=&lt;备份字尾字符串&gt;][--totals][--use-compress-program=&lt;执行指令&gt;][--version][--volno-file=&lt;编号文件&gt;][文件或目录...]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-A或–catenate 新增文件到已存在的备份文件。</li>
+<li>-b&lt;区块数目&gt;或–blocking-factor=&lt;区块数目&gt; 设置每笔记录的区块数目，每个区块大小为12Bytes。</li>
+<li>-B或–read-full-records 读取数据时重设区块大小。</li>
+<li>-c或–create 建立新的备份文件。</li>
+<li>-C&lt;目的目录&gt;或–directory=&lt;目的目录&gt; 切换到指定的目录。</li>
+<li>-d或–diff或–compare 对比备份文件内和文件系统上的文件的差异。</li>
+<li>-f&lt;备份文件&gt;或–file=&lt;备份文件&gt; 指定备份文件。</li>
+<li>-F&lt;Script文件&gt;或–info-script=&lt;Script文件&gt; 每次更换磁带时，就执行指定的Script文件。</li>
+<li>-g或–listed-incremental 处理GNU格式的大量备份。</li>
+<li>-G或–incremental 处理旧的GNU格式的大量备份。</li>
+<li>-h或–dereference 不建立符号连接，直接复制该连接所指向的原始文件。</li>
+<li>-i或–ignore-zeros 忽略备份文件中的0 Byte区块，也就是EOF。</li>
+<li>-k或–keep-old-files 解开备份文件时，不覆盖已有的文件。</li>
+<li>-K&lt;文件&gt;或–starting-file=&lt;文件&gt; 从指定的文件开始还原。</li>
+<li>-l或–one-file-system 复制的文件或目录存放的文件系统，必须与tar指令执行时所处的文件系统相同，否则不予复制。</li>
+<li>-L&lt;媒体容量&gt;或-tape-length=&lt;媒体容量&gt; 设置存放每体的容量，单位以1024 Bytes计算。</li>
+<li>-m或–modification-time 还原文件时，不变更文件的更改时间。</li>
+<li>-M或–multi-volume 在建立，还原备份文件或列出其中的内容时，采用多卷册模式。</li>
+<li>-N&lt;日期格式&gt;或–newer=&lt;日期时间&gt; 只将较指定日期更新的文件保存到备份文件里。</li>
+<li>-o或–old-archive或–portability 将资料写入备份文件时使用V7格式。</li>
+<li>-O或–stdout 把从备份文件里还原的文件输出到标准输出设备。</li>
+<li>-p或–same-permissions 用原来的文件权限还原文件。</li>
+<li>-P或–absolute-names 文件名使用绝对名称，不移除文件名称前的”/“号。</li>
+<li>-r或–append 新增文件到已存在的备份文件的结尾部分。</li>
+<li>-R或–block-number 列出每个信息在备份文件中的区块编号。</li>
+<li>-s或–same-order 还原文件的顺序和备份文件内的存放顺序相同。</li>
+<li>-S或–sparse 倘若一个文件内含大量的连续0字节，则将此文件存成稀疏文件。</li>
+<li>-t或–list 列出备份文件的内容。</li>
+<li>-T&lt;范本文件&gt;或–files-from=&lt;范本文件&gt; 指定范本文件，其内含有一个或多个范本样式，让tar解开或建立符合设置条件的文件。</li>
+<li>-u或–update 仅置换较备份文件内的文件更新的文件。</li>
+<li>-U或–unlink-first 解开压缩文件还原文件之前，先解除文件的连接。</li>
+<li>-v或–verbose 显示指令执行过程。</li>
+<li>-V&lt;卷册名称&gt;或–label=&lt;卷册名称&gt; 建立使用指定的卷册名称的备份文件。</li>
+<li>-w或–interactive 遭遇问题时先询问用户。</li>
+<li>-W或–verify 写入备份文件后，确认文件正确无误。</li>
+<li>-x或–extract或–get 从备份文件中还原文件。</li>
+<li>-X&lt;范本文件&gt;或–exclude-from=&lt;范本文件&gt; 指定范本文件，其内含有一个或多个范本样式，让ar排除符合设置条件的文件。</li>
+<li>-z或–gzip或–ungzip 通过gzip指令处理备份文件。</li>
+<li>-Z或–compress或–uncompress 通过compress指令处理备份文件。</li>
+<li>-&lt;设备编号&gt;&lt;存储密度&gt; 设置备份用的外围设备编号及存放数据的密度。</li>
+<li>–after-date=&lt;日期时间&gt; 此参数的效果和指定”-N”参数相同。</li>
+<li>–atime-preserve 不变更文件的存取时间。</li>
+<li>–backup=&lt;备份方式&gt;或–backup 移除文件前先进行备份。</li>
+<li>–checkpoint 读取备份文件时列出目录名称。</li>
+<li>–concatenate 此参数的效果和指定”-A”参数相同。</li>
+<li>–confirmation 此参数的效果和指定”-w”参数相同。</li>
+<li>–delete 从备份文件中删除指定的文件。</li>
+<li>–exclude=&lt;范本样式&gt; 排除符合范本样式的问家。</li>
+<li>–group=&lt;群组名称&gt; 把加入设备文件中的文件的所属群组设成指定的群组。</li>
+<li>–help 在线帮助。</li>
+<li>–ignore-failed-read 忽略数据读取错误，不中断程序的执行。</li>
+<li>–new-volume-script=&lt;Script文件&gt; 此参数的效果和指定”-F”参数相同。</li>
+<li>–newer-mtime 只保存更改过的文件。</li>
+<li>–no-recursion 不做递归处理，也就是指定目录下的所有文件及子目录不予处理。</li>
+<li>–null 从null设备读取文件名称。</li>
+<li>–numeric-owner 以用户识别码及群组识别码取代用户名称和群组名称。</li>
+<li>–owner=&lt;用户名称&gt; 把加入备份文件中的文件的拥有者设成指定的用户。</li>
+<li>–posix 将数据写入备份文件时使用POSIX格式。</li>
+<li>–preserve 此参数的效果和指定”-ps”参数相同。</li>
+<li>–preserve-order 此参数的效果和指定”-A”参数相同。</li>
+<li>–preserve-permissions 此参数的效果和指定”-p”参数相同。</li>
+<li>–record-size=&lt;区块数目&gt; 此参数的效果和指定”-b”参数相同。</li>
+<li>–recursive-unlink 解开压缩文件还原目录之前，先解除整个目录下所有文件的连接。</li>
+<li>–remove-files 文件加入备份文件后，就将其删除。</li>
+<li>–rsh-command=&lt;执行指令&gt; 设置要在远端主机上执行的指令，以取代rsh指令。</li>
+<li>–same-owner 尝试以相同的文件拥有者还原文件。</li>
+<li>–suffix=&lt;备份字尾字符串&gt; 移除文件前先行备份。</li>
+<li>–totals 备份文件建立后，列出文件大小。</li>
+<li>–use-compress-program=&lt;执行指令&gt; 通过指定的指令处理备份文件。</li>
+<li>–version 显示版本信息。</li>
+<li>–volno-file=&lt;编号文件&gt; 使用指定文件内的编号取代预设的卷册编号。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>压缩文件 非打包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># touch a.c       </span><br><span class="line"># tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz</span><br><span class="line">a.c</span><br></pre></td></tr></table></figure></p>
+<p>列出压缩文件内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># tar -tzvf test.tar.gz </span><br><span class="line">-rw-r--r-- root/root     0 2010-05-24 16:51:59 a.c</span><br></pre></td></tr></table></figure></p>
+<p>解压文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># tar -xzvf test.tar.gz </span><br><span class="line">a.c</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-gunzip-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-gunzip-命令/" itemprop="url">Linux gunzip 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T10:38:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-gunzip-命令/" class="leancloud_visitors" data-flag-title="Linux gunzip 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux gunzip命令用于解压文件。<br>gunzip是个使用广泛的解压缩程序，它用于解开被gzip压缩过的文件，这些压缩文件预设最后的扩展名为”.gz”。事实上gunzip就是gzip的硬连接，因此不论是压缩或解压缩，都可通过gzip指令单独完成。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gunzip [-acfhlLnNqrtvV][-s &lt;压缩字尾字符串&gt;][文件...] 或 gunzip [-acfhlLnNqrtvV][-s &lt;压缩字尾字符串&gt;][目录]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-a或–ascii 　使用ASCII文字模式。</li>
+<li>-c或–stdout或–to-stdout 　把解压后的文件输出到标准输出设备。</li>
+<li>-f或-force 　强行解开压缩文件，不理会文件名称或硬连接是否存在以及该文件是否为符号连接。</li>
+<li>-h或–help 　在线帮助。</li>
+<li>-l或–list 　列出压缩文件的相关信息。</li>
+<li>-L或–license 　显示版本与版权信息。</li>
+<li>-n或–no-name 　解压缩时，若压缩文件内含有远来的文件名称及时间戳记，则将其忽略不予处理。</li>
+<li>-N或–name 　解压缩时，若压缩文件内含有原来的文件名称及时间戳记，则将其回存到解开的文件上。</li>
+<li>-q或–quiet 　不显示警告信息。</li>
+<li>-r或–recursive 　递归处理，将指定目录下的所有文件及子目录一并处理。</li>
+<li>-S&lt;压缩字尾字符串&gt;或–suffix&lt;压缩字尾字符串&gt; 　更改压缩字尾字符串。</li>
+<li>-t或–test 　测试压缩文件是否正确无误。</li>
+<li>-v或–verbose 　显示指令执行过程。</li>
+<li>-V或–version 显示版本信息。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;解压文件</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;pre&gt;</span><br><span class="line"># gunzip ab.gz</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-bzip2recover-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-bzip2recover-命令/" itemprop="url">Linux bzip2recover 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T10:35:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-bzip2recover-命令/" class="leancloud_visitors" data-flag-title="Linux bzip2recover 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux bzip2recover命令用来修复损坏的.bz2文件。<br>bzip2是以区块的方式来压缩文件，每个区块视为独立的单位。因此，当某一区块损坏时，便可利用bzip2recover，试着将文件中的区块隔开来，以便解压缩正常的区块。通常只适用在压缩文件很大的情况。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bzip2recover [.bz2 压缩文件]</span><br></pre></td></tr></table></figure>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>修复.bz2文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># bzip2recover col.bz2</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-bzip2-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-bzip2-命令/" itemprop="url">Linux bzip2 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T09:11:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-bzip2-命令/" class="leancloud_visitors" data-flag-title="Linux bzip2 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux bzip2命令是.bz2文件的压缩程序。<br>bzip2采用新的压缩演算法，压缩效果比传统的LZ77/LZ78压缩演算法来得好。若没有加上任何参数，bzip2压缩完文件后会产生.bz2的压缩文件，并删除原始的文件。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bzip2 [-cdfhkLstvVz][--repetitive-best][--repetitive-fast][- 压缩等级][要压缩的文件]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-c或–stdout 　将压缩与解压缩的结果送到标准输出。</li>
+<li>-d或–decompress 　执行解压缩。</li>
+<li>-f或–force 　bzip2在压缩或解压缩时，若输出文件与现有文件同名，预设不会覆盖现有文件。若要覆盖，请使用此参数。</li>
+<li>-h或–help 　显示帮助。</li>
+<li>-k或–keep 　bzip2在压缩或解压缩后，会删除原始的文件。若要保留原始文件，请使用此参数。</li>
+<li>-s或–small 　降低程序执行时内存的使用量。</li>
+<li>-t或–test 　测试.bz2压缩文件的完整性。</li>
+<li>-v或–verbose 　压缩或解压缩文件时，显示详细的信息。</li>
+<li>-z或–compress 　强制执行压缩。</li>
+<li>-L,–license,</li>
+<li>-V或–version 　显示版本信息。</li>
+<li>–repetitive-best 　若文件中有重复出现的资料时，可利用此参数提高压缩效果。</li>
+<li>–repetitive-fast 　若文件中有重复出现的资料时，可利用此参数加快执行速度。</li>
+<li>-压缩等级 　压缩时的区块大小。<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5>解压.bz2文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@w3cschool.cc ~]# bzip2 -v temp.bz2 //解压文件显示详细处理信息</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>压缩文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@w3cschool.cc ~]# bzip2 -c a.c b.c c.c</span><br></pre></td></tr></table></figure></p>
+<p>检查文件完整性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@w3cschool.cc ~]# bzip2 -t temp.bz2</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/28/Linux-pwd-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/28/Linux-pwd-命令/" itemprop="url">Linux pwd 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-28T09:09:00+08:00">
+                2019-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/28/Linux-pwd-命令/" class="leancloud_visitors" data-flag-title="Linux pwd 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux pwd命令用于显示工作目录。<br>执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd [--help][--version]</span><br></pre></td></tr></table></figure>
+<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><ul>
+<li>–help 在线帮助。</li>
+<li>–version 显示版本信息。<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5>查看当前所在目录：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># pwd</span><br><span class="line">/root/test           #输出结果</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/27/Linux-df-命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -992,1203 +2235,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-ls-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-ls-命令/" itemprop="url">Linux ls 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:21:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-ls-命令/" class="leancloud_visitors" data-flag-title="Linux ls 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls [-alrtAFR] [name...]</span><br></pre></td></tr></table></figure>
-<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
-<li>-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为”.”的视为隐藏档，不会列出)</li>
-<li>-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出</li>
-<li>-r 将文件以相反次序显示(原定依英文字母次序)</li>
-<li>-t 将文件依建立时间之先后次序列出</li>
-<li>-A 同 -a ，但不列出 “.” (目前目录) 及 “..” (父目录)</li>
-<li>-F 在列出的文件名称后加一符号；例如可执行档则加 “*”, 目录则加 “/“</li>
-<li>-R 若目录下有文件，则以下之文件亦皆依序列出</li>
-</ul>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>列出根目录()下的所有目录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># ls /</span><br><span class="line">bin               dev   lib         media  net   root     srv  upload  www</span><br><span class="line">boot              etc   lib64       misc   opt   sbin     sys  usr</span><br><span class="line">home  lost+found  mnt    proc  selinux  tmp  var</span><br></pre></td></tr></table></figure></p>
-<p>列出目前工作目录下所有名称是 s 开头的文件，越新的排越后面 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -ltr s*</span><br></pre></td></tr></table></figure></p>
-<p>将 /bin 目录以下所有目录及文件详细资料列出 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lR /bin</span><br></pre></td></tr></table></figure></p>
-<p>列出目前工作目录下所有文件及目录；目录于名称后加 “/“, 可执行档于名称后加 “*” :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -AF</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-rmdir-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-rmdir-命令/" itemprop="url">Linux rmdir 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:14:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-rmdir-命令/" class="leancloud_visitors" data-flag-title="Linux rmdir 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux rmdir命令删除空的目录。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir [-p] dirName</span><br></pre></td></tr></table></figure>
-<ul>
-<li>-p 是当子目录被删除后使它也成为空目录的话，则顺便一并删除。<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5>将工作目录下，名为 AAA 的子目录删除 :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir AAA</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在工作目录下的 BBB 目录中，删除名为 Test 的子目录。若 Test 删除后，BBB 目录成为空目录，则 BBB 亦予删除。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir -p BBB/Test</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-cd-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-cd-命令/" itemprop="url">Linux cd 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:06:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-cd-命令/" class="leancloud_visitors" data-flag-title="Linux cd 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux cd命令用于切换当前工作目录至 dirName(目录参数)。<br>其中 dirName 表示法可为绝对路径或相对路径。若目录名称省略，则变换至使用者的 home 目录 (也就是刚 login 时所在的目录)。<br>另外，”~” 也表示为 home 目录 的意思，”.” 则是表示目前所在的目录，”..” 则表示目前目录位置的上一层目录。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd [dirName]</span><br></pre></td></tr></table></figure>
-<ul>
-<li>dirName：要切换的目标目录。</li>
-</ul>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>跳到 /usr/bin/ :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br></pre></td></tr></table></figure></p>
-<p>跳到自己的 home 目录 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br></pre></td></tr></table></figure></p>
-<p>跳到目前目录的上上两层 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ../..</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-mkdir-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-mkdir-命令/" itemprop="url">Linux mkdir 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T16:21:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-mkdir-命令/" class="leancloud_visitors" data-flag-title="Linux mkdir 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux mkdir命令用于建立名称为 dirName 之子目录。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir [-p] dirName</span><br></pre></td></tr></table></figure>
-<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><ul>
-<li>-p 确保目录名称存在，不存在的就建一个。</li>
-</ul>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>在工作目录下，建立一个名为 AAA 的子目录 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir AAA</span><br></pre></td></tr></table></figure></p>
-<p>在工作目录下的 BBB 目录中，建立一个名为 Test 的子目录。 若 BBB 目录原本不存在，则建立一个。（注：本例若不加 -p，且原本 BBB目录不存在，则产生错误。）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p BBB/Test</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-rm-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-rm-命令/" itemprop="url">Linux rm 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T16:18:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-rm-命令/" class="leancloud_visitors" data-flag-title="Linux rm 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux rm命令用于删除一个文件或者目录。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm [options] name...</span><br></pre></td></tr></table></figure>
-<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
-<li>-i 删除前逐一询问确认。</li>
-<li>-f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。</li>
-<li>-r 将目录及以下之档案亦逐一删除。</li>
-</ul>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>删除文件可以直接使用rm命令，若删除目录则必须配合选项”-r”，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># rm  test.txt </span><br><span class="line">rm：是否删除 一般文件 &quot;test.txt&quot;? y  </span><br><span class="line"># rm  homework  </span><br><span class="line">rm: 无法删除目录&quot;homework&quot;: 是一个目录  </span><br><span class="line"># rm  -r  homework  </span><br><span class="line">rm：是否删除 目录 &quot;homework&quot;? y</span><br></pre></td></tr></table></figure></p>
-<p>删除当前目录下的所有文件及目录，命令行为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm  -r  *</span><br></pre></td></tr></table></figure></p>
-<p>文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-mv-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-mv-命令/" itemprop="url">Linux mv 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T15:52:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-mv-命令/" class="leancloud_visitors" data-flag-title="Linux mv 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mv [options] source dest</span><br><span class="line">mv [options] source... directory</span><br></pre></td></tr></table></figure>
-<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><ul>
-<li>-i: 若指定目录已有同名文件，则先询问是否覆盖旧文件;</li>
-<li>-f: 在mv操作要覆盖某已有的目标文件时不给任何指示;<h5 id="mv参数设置与运行结果"><a href="#mv参数设置与运行结果" class="headerlink" title="mv参数设置与运行结果"></a>mv参数设置与运行结果</h5></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令格式</th>
-<th style="text-align:center">运行结果 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>mv 文件名 文件名</td>
-<td style="text-align:center">将源文件名改为目标文件名</td>
-</tr>
-<tr>
-<td>mv 文件名 目录名</td>
-<td style="text-align:center">将文件移动到目标目录</td>
-</tr>
-<tr>
-<td>mv 目录名 目录名</td>
-<td style="text-align:center">目标目录已存在，将源目录移动到目标目录；目标目录不存在则改名</td>
-</tr>
-<tr>
-<td>mv 目录名 文件名</td>
-<td style="text-align:center">出错</td>
-</tr>
-</tbody>
-</table>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>将文件 aaa 更名为 bbb :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv aaa bbb</span><br></pre></td></tr></table></figure></p>
-<p>将info目录放入logs目录中。注意，如果logs目录不存在，则该命令将info改名为logs。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv info/ logs</span><br></pre></td></tr></table></figure></p>
-<p>再如将/usr/student下的所有文件和目录移到当前目录下，命令行为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv /usr/student/*  .</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-grep-命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/Linux-grep-命令/" itemprop="url">Linux grep 命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T14:05:00+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/26/Linux-grep-命令/" class="leancloud_visitors" data-flag-title="Linux grep 命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Linux grep命令用于查找文件里符合条件的字符串。<br>grep指令用于查找内容包含指定的范本样式的文件，如果发现某文件的内容符合所指定的范本样式，预设grep指令会把含有范本样式的那一列显示出来。若不指定任何文件名称，或是所给予的文件名为”-“，则<br>grep指令会从标准输入设备读取数据。</p>
-<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep [-abcEFGhHilLnqrsvVwxy][-A&lt;显示列数&gt;][-B&lt;显示列数&gt;][-C&lt;显示列数&gt;][-d&lt;进行动作&gt;][-e&lt;范本样式&gt;][-f&lt;范本文件&gt;][--help][范本样式][文件或目录...]</span><br></pre></td></tr></table></figure>
-<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
-<li>-a 或 –text : 不要忽略二进制的数据。</li>
-<li>-A&lt;显示行数&gt; 或 –after-context=&lt;显示行数&gt; : 除了显示符合范本样式的那一列之外，并显示该行之后的内容。</li>
-<li>-b 或 –byte-offset : 在显示符合样式的那一行之前，标示出该行第一个字符的编号。</li>
-<li>-B&lt;显示行数&gt; 或 –before-context=&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前的内容。</li>
-<li>-c 或 –count : 计算符合样式的列数。</li>
-<li>-C&lt;显示行数&gt; 或 –context=&lt;显示行数&gt;或-&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前后的内容。</li>
-<li>-d &lt;动作&gt; 或 –directories=&lt;动作&gt; : 当指定要查找的是目录而非文件时，必须使用这项参数，否则grep指令将回报信息并停止动作。</li>
-<li>-e&lt;范本样式&gt; 或 –regexp=&lt;范本样式&gt; : 指定字符串做为查找文件内容的样式。</li>
-<li>-E 或 –extended-regexp : 将样式为延伸的普通表示法来使用。</li>
-<li>-f&lt;规则文件&gt; 或 –file=&lt;规则文件&gt; : 指定规则文件，其内容含有一个或多个规则样式，让grep查找符合规则条件的文件内容，格式为每行一个规则样式。</li>
-<li>-F 或 –fixed-regexp : 将样式视为固定字符串的列表。</li>
-<li>-G 或 –basic-regexp : 将样式视为普通的表示法来使用。</li>
-<li>-h 或 –no-filename : 在显示符合样式的那一行之前，不标示该行所属的文件名称。</li>
-<li>-H 或 –with-filename : 在显示符合样式的那一行之前，表示该行所属的文件名称。</li>
-<li>-i 或 –ignore-case : 忽略字符大小写的差别。</li>
-<li>-l 或 –file-with-matches : 列出文件内容符合指定的样式的文件名称。</li>
-<li>-L 或 –files-without-match : 列出文件内容不符合指定的样式的文件名称。</li>
-<li>-n 或 –line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。</li>
-<li>-o 或 –only-matching : 只显示匹配PATTERN 部分。</li>
-<li>-q 或 –quiet或–silent : 不显示任何信息。</li>
-<li>-r 或 –recursive : 此参数的效果和指定”-d recurse”参数相同。</li>
-<li>-s 或 –no-messages : 不显示错误信息。</li>
-<li>-v 或 –revert-match : 显示不包含匹配文本的所有行。</li>
-<li>-V 或 –version : 显示版本信息。</li>
-<li>-w 或 –word-regexp : 只显示全字符合的列。</li>
-<li>-x –line-regexp : 只显示全列符合的列。</li>
-<li>-y : 此参数的效果和指定”-i”参数相同。</li>
-</ul>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><ol>
-<li>在当前目录中，查找后缀有 file 字样的文件中包含 test 字符串的文件，并打印出该字符串的行。此时，可以使用如下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep test *file</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>结果如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ grep test test* #查找前缀有“test”的文件包含“test”字符串的文件  </span><br><span class="line">testfile1:This a Linux testfile! #列出testfile1 文件中包含test字符的行  </span><br><span class="line">testfile_2:This is a linux testfile! #列出testfile_2 文件中包含test字符的行  </span><br><span class="line">testfile_2:Linux test #列出testfile_2 文件中包含test字符的行</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
-<li>以递归的方式查找符合条件的文件。例如，查找指定目录/etc/acpi 及其子目录（如果存在子目录的话）下所有文件中包含字符串”update”的文件，并打印出该字符串所在行的内容，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -r update /etc/acpi</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>输出结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ grep -r update /etc/acpi #以递归的方式查找“etc/acpi”  </span><br><span class="line">#下包含“update”的文件  </span><br><span class="line">/etc/acpi/ac.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of IO.)  </span><br><span class="line">Rather than  </span><br><span class="line">/etc/acpi/resume.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of  </span><br><span class="line">IO.) Rather than  </span><br><span class="line">/etc/acpi/events/thinkpad-cmos:action=/usr/sbin/thinkpad-keys--update</span><br></pre></td></tr></table></figure></p>
-<ol start="3">
-<li>反向查找。前面各个例子是查找并打印出符合条件的行，通过”-v”参数可以打印出不符合条件行的内容。<br>查找文件名中包含 test 的文件中不包含test 的行，此时，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -v test *test*</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>结果如下所示:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ grep-v test* #查找文件名中包含test 的文件中不包含test 的行  </span><br><span class="line">testfile1:helLinux!  </span><br><span class="line">testfile1:Linis a free Unix-type operating system.  </span><br><span class="line">testfile1:Lin  </span><br><span class="line">testfile_1:HELLO LINUX!  </span><br><span class="line">testfile_1:LINUX IS A FREE UNIX-TYPE OPTERATING SYSTEM.  </span><br><span class="line">testfile_1:THIS IS A LINUX TESTFILE!  </span><br><span class="line">testfile_2:HELLO LINUX!  </span><br><span class="line">testfile_2:Linux is a free unix-type opterating system.</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2238,7 +2289,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

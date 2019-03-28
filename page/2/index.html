@@ -298,6 +298,1198 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-ls-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-ls-命令/" itemprop="url">Linux ls 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:21:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-ls-命令/" class="leancloud_visitors" data-flag-title="Linux ls 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls [-alrtAFR] [name...]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为”.”的视为隐藏档，不会列出)</li>
+<li>-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出</li>
+<li>-r 将文件以相反次序显示(原定依英文字母次序)</li>
+<li>-t 将文件依建立时间之先后次序列出</li>
+<li>-A 同 -a ，但不列出 “.” (目前目录) 及 “..” (父目录)</li>
+<li>-F 在列出的文件名称后加一符号；例如可执行档则加 “*”, 目录则加 “/“</li>
+<li>-R 若目录下有文件，则以下之文件亦皆依序列出</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>列出根目录()下的所有目录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># ls /</span><br><span class="line">bin               dev   lib         media  net   root     srv  upload  www</span><br><span class="line">boot              etc   lib64       misc   opt   sbin     sys  usr</span><br><span class="line">home  lost+found  mnt    proc  selinux  tmp  var</span><br></pre></td></tr></table></figure></p>
+<p>列出目前工作目录下所有名称是 s 开头的文件，越新的排越后面 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -ltr s*</span><br></pre></td></tr></table></figure></p>
+<p>将 /bin 目录以下所有目录及文件详细资料列出 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lR /bin</span><br></pre></td></tr></table></figure></p>
+<p>列出目前工作目录下所有文件及目录；目录于名称后加 “/“, 可执行档于名称后加 “*” :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -AF</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-rmdir-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-rmdir-命令/" itemprop="url">Linux rmdir 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:14:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-rmdir-命令/" class="leancloud_visitors" data-flag-title="Linux rmdir 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux rmdir命令删除空的目录。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir [-p] dirName</span><br></pre></td></tr></table></figure>
+<ul>
+<li>-p 是当子目录被删除后使它也成为空目录的话，则顺便一并删除。<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5>将工作目录下，名为 AAA 的子目录删除 :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir AAA</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在工作目录下的 BBB 目录中，删除名为 Test 的子目录。若 Test 删除后，BBB 目录成为空目录，则 BBB 亦予删除。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir -p BBB/Test</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-cd-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-cd-命令/" itemprop="url">Linux cd 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T20:06:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-cd-命令/" class="leancloud_visitors" data-flag-title="Linux cd 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux cd命令用于切换当前工作目录至 dirName(目录参数)。<br>其中 dirName 表示法可为绝对路径或相对路径。若目录名称省略，则变换至使用者的 home 目录 (也就是刚 login 时所在的目录)。<br>另外，”~” 也表示为 home 目录 的意思，”.” 则是表示目前所在的目录，”..” 则表示目前目录位置的上一层目录。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd [dirName]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>dirName：要切换的目标目录。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>跳到 /usr/bin/ :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br></pre></td></tr></table></figure></p>
+<p>跳到自己的 home 目录 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br></pre></td></tr></table></figure></p>
+<p>跳到目前目录的上上两层 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ../..</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-mkdir-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-mkdir-命令/" itemprop="url">Linux mkdir 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T16:21:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-mkdir-命令/" class="leancloud_visitors" data-flag-title="Linux mkdir 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux mkdir命令用于建立名称为 dirName 之子目录。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir [-p] dirName</span><br></pre></td></tr></table></figure>
+<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><ul>
+<li>-p 确保目录名称存在，不存在的就建一个。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>在工作目录下，建立一个名为 AAA 的子目录 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir AAA</span><br></pre></td></tr></table></figure></p>
+<p>在工作目录下的 BBB 目录中，建立一个名为 Test 的子目录。 若 BBB 目录原本不存在，则建立一个。（注：本例若不加 -p，且原本 BBB目录不存在，则产生错误。）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p BBB/Test</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-rm-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-rm-命令/" itemprop="url">Linux rm 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T16:18:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-rm-命令/" class="leancloud_visitors" data-flag-title="Linux rm 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux rm命令用于删除一个文件或者目录。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm [options] name...</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-i 删除前逐一询问确认。</li>
+<li>-f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。</li>
+<li>-r 将目录及以下之档案亦逐一删除。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>删除文件可以直接使用rm命令，若删除目录则必须配合选项”-r”，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># rm  test.txt </span><br><span class="line">rm：是否删除 一般文件 &quot;test.txt&quot;? y  </span><br><span class="line"># rm  homework  </span><br><span class="line">rm: 无法删除目录&quot;homework&quot;: 是一个目录  </span><br><span class="line"># rm  -r  homework  </span><br><span class="line">rm：是否删除 目录 &quot;homework&quot;? y</span><br></pre></td></tr></table></figure></p>
+<p>删除当前目录下的所有文件及目录，命令行为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm  -r  *</span><br></pre></td></tr></table></figure></p>
+<p>文件一旦通过rm命令删除，则无法恢复，所以必须格外小心地使用该命令。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-mv-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-mv-命令/" itemprop="url">Linux mv 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T15:52:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-mv-命令/" class="leancloud_visitors" data-flag-title="Linux mv 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mv [options] source dest</span><br><span class="line">mv [options] source... directory</span><br></pre></td></tr></table></figure>
+<h5 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h5><ul>
+<li>-i: 若指定目录已有同名文件，则先询问是否覆盖旧文件;</li>
+<li>-f: 在mv操作要覆盖某已有的目标文件时不给任何指示;<h5 id="mv参数设置与运行结果"><a href="#mv参数设置与运行结果" class="headerlink" title="mv参数设置与运行结果"></a>mv参数设置与运行结果</h5></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令格式</th>
+<th style="text-align:center">运行结果 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mv 文件名 文件名</td>
+<td style="text-align:center">将源文件名改为目标文件名</td>
+</tr>
+<tr>
+<td>mv 文件名 目录名</td>
+<td style="text-align:center">将文件移动到目标目录</td>
+</tr>
+<tr>
+<td>mv 目录名 目录名</td>
+<td style="text-align:center">目标目录已存在，将源目录移动到目标目录；目标目录不存在则改名</td>
+</tr>
+<tr>
+<td>mv 目录名 文件名</td>
+<td style="text-align:center">出错</td>
+</tr>
+</tbody>
+</table>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><p>将文件 aaa 更名为 bbb :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv aaa bbb</span><br></pre></td></tr></table></figure></p>
+<p>将info目录放入logs目录中。注意，如果logs目录不存在，则该命令将info改名为logs。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv info/ logs</span><br></pre></td></tr></table></figure></p>
+<p>再如将/usr/student下的所有文件和目录移到当前目录下，命令行为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv /usr/student/*  .</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/26/Linux-grep-命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="庞锦烽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="data science foll">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Linux-grep-命令/" itemprop="url">Linux grep 命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-26T14:05:00+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/26/Linux-grep-命令/" class="leancloud_visitors" data-flag-title="Linux grep 命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linux grep命令用于查找文件里符合条件的字符串。<br>grep指令用于查找内容包含指定的范本样式的文件，如果发现某文件的内容符合所指定的范本样式，预设grep指令会把含有范本样式的那一列显示出来。若不指定任何文件名称，或是所给予的文件名为”-“，则<br>grep指令会从标准输入设备读取数据。</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep [-abcEFGhHilLnqrsvVwxy][-A&lt;显示列数&gt;][-B&lt;显示列数&gt;][-C&lt;显示列数&gt;][-d&lt;进行动作&gt;][-e&lt;范本样式&gt;][-f&lt;范本文件&gt;][--help][范本样式][文件或目录...]</span><br></pre></td></tr></table></figure>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ul>
+<li>-a 或 –text : 不要忽略二进制的数据。</li>
+<li>-A&lt;显示行数&gt; 或 –after-context=&lt;显示行数&gt; : 除了显示符合范本样式的那一列之外，并显示该行之后的内容。</li>
+<li>-b 或 –byte-offset : 在显示符合样式的那一行之前，标示出该行第一个字符的编号。</li>
+<li>-B&lt;显示行数&gt; 或 –before-context=&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前的内容。</li>
+<li>-c 或 –count : 计算符合样式的列数。</li>
+<li>-C&lt;显示行数&gt; 或 –context=&lt;显示行数&gt;或-&lt;显示行数&gt; : 除了显示符合样式的那一行之外，并显示该行之前后的内容。</li>
+<li>-d &lt;动作&gt; 或 –directories=&lt;动作&gt; : 当指定要查找的是目录而非文件时，必须使用这项参数，否则grep指令将回报信息并停止动作。</li>
+<li>-e&lt;范本样式&gt; 或 –regexp=&lt;范本样式&gt; : 指定字符串做为查找文件内容的样式。</li>
+<li>-E 或 –extended-regexp : 将样式为延伸的普通表示法来使用。</li>
+<li>-f&lt;规则文件&gt; 或 –file=&lt;规则文件&gt; : 指定规则文件，其内容含有一个或多个规则样式，让grep查找符合规则条件的文件内容，格式为每行一个规则样式。</li>
+<li>-F 或 –fixed-regexp : 将样式视为固定字符串的列表。</li>
+<li>-G 或 –basic-regexp : 将样式视为普通的表示法来使用。</li>
+<li>-h 或 –no-filename : 在显示符合样式的那一行之前，不标示该行所属的文件名称。</li>
+<li>-H 或 –with-filename : 在显示符合样式的那一行之前，表示该行所属的文件名称。</li>
+<li>-i 或 –ignore-case : 忽略字符大小写的差别。</li>
+<li>-l 或 –file-with-matches : 列出文件内容符合指定的样式的文件名称。</li>
+<li>-L 或 –files-without-match : 列出文件内容不符合指定的样式的文件名称。</li>
+<li>-n 或 –line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。</li>
+<li>-o 或 –only-matching : 只显示匹配PATTERN 部分。</li>
+<li>-q 或 –quiet或–silent : 不显示任何信息。</li>
+<li>-r 或 –recursive : 此参数的效果和指定”-d recurse”参数相同。</li>
+<li>-s 或 –no-messages : 不显示错误信息。</li>
+<li>-v 或 –revert-match : 显示不包含匹配文本的所有行。</li>
+<li>-V 或 –version : 显示版本信息。</li>
+<li>-w 或 –word-regexp : 只显示全字符合的列。</li>
+<li>-x –line-regexp : 只显示全列符合的列。</li>
+<li>-y : 此参数的效果和指定”-i”参数相同。</li>
+</ul>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><ol>
+<li>在当前目录中，查找后缀有 file 字样的文件中包含 test 字符串的文件，并打印出该字符串的行。此时，可以使用如下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep test *file</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>结果如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ grep test test* #查找前缀有“test”的文件包含“test”字符串的文件  </span><br><span class="line">testfile1:This a Linux testfile! #列出testfile1 文件中包含test字符的行  </span><br><span class="line">testfile_2:This is a linux testfile! #列出testfile_2 文件中包含test字符的行  </span><br><span class="line">testfile_2:Linux test #列出testfile_2 文件中包含test字符的行</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li>以递归的方式查找符合条件的文件。例如，查找指定目录/etc/acpi 及其子目录（如果存在子目录的话）下所有文件中包含字符串”update”的文件，并打印出该字符串所在行的内容，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -r update /etc/acpi</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>输出结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ grep -r update /etc/acpi #以递归的方式查找“etc/acpi”  </span><br><span class="line">#下包含“update”的文件  </span><br><span class="line">/etc/acpi/ac.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of IO.)  </span><br><span class="line">Rather than  </span><br><span class="line">/etc/acpi/resume.d/85-anacron.sh:# (Things like the slocate updatedb cause a lot of  </span><br><span class="line">IO.) Rather than  </span><br><span class="line">/etc/acpi/events/thinkpad-cmos:action=/usr/sbin/thinkpad-keys--update</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li>反向查找。前面各个例子是查找并打印出符合条件的行，通过”-v”参数可以打印出不符合条件行的内容。<br>查找文件名中包含 test 的文件中不包含test 的行，此时，使用的命令为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -v test *test*</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>结果如下所示:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ grep-v test* #查找文件名中包含test 的文件中不包含test 的行  </span><br><span class="line">testfile1:helLinux!  </span><br><span class="line">testfile1:Linis a free Unix-type operating system.  </span><br><span class="line">testfile1:Lin  </span><br><span class="line">testfile_1:HELLO LINUX!  </span><br><span class="line">testfile_1:LINUX IS A FREE UNIX-TYPE OPTERATING SYSTEM.  </span><br><span class="line">testfile_1:THIS IS A LINUX TESTFILE!  </span><br><span class="line">testfile_2:HELLO LINUX!  </span><br><span class="line">testfile_2:Linux is a free unix-type opterating system.</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/03/25/Linux-sed-命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -903,1143 +2095,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2019/01/07/散点图矩阵_splom/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/07/散点图矩阵_splom/" itemprop="url">散点图矩阵</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-07T21:52:00+08:00">
-                2019-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/R/" itemprop="url" rel="index">
-                    <span itemprop="name">R</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/01/07/散点图矩阵_splom/" class="leancloud_visitors" data-flag-title="散点图矩阵">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library(lattice)</span><br><span class="line">splom(mtcars[c(1,3,4,5)])</span><br></pre></td></tr></table></figure>
-<p><img src="/images/splom.png" alt="splom.png"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/11/18/power-Bi-预测/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/18/power-Bi-预测/" itemprop="url">power Bi 预测 </a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-18T17:24:00+08:00">
-                2018-11-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Power-BI/" itemprop="url" rel="index">
-                    <span itemprop="name">Power BI</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/11/18/power-Bi-预测/" class="leancloud_visitors" data-flag-title="power Bi 预测 ">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>目前只针对基于时间序列的折线图可用  </p>
-<p><img src="/images/powerbi_折线.png" alt="powerbi_折线.png"></p>
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiY2Q0ZjUyM2ItNjIzNi00YzQyLWI2M2ItNDRiNWMyYjA2YzA4IiwidCI6IjhhMzg3OTFhLTZhZjktNGQwYS05ZDIyLTZkNjg0NTQ1MmE2YyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="true"></iframe>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/11/18/power-bi-pro-发布-web-共享/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/18/power-bi-pro-发布-web-共享/" itemprop="url">power bi pro 发布 web 共享</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-18T16:27:00+08:00">
-                2018-11-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Power-BI/" itemprop="url" rel="index">
-                    <span itemprop="name">Power BI</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/11/18/power-bi-pro-发布-web-共享/" class="leancloud_visitors" data-flag-title="power bi pro 发布 web 共享">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>之前制作的 Power BI 文件都放在 GitHub 里面，可操作性差</p>
-<p>点击 <a href="https://github.com/pangjinfeng/pangjinfeng.github.io" target="_blank" rel="noopener">超链接</a> 进入 GitHub → 选择文件下载 → 本地打开  </p>
-<p>竟然如此麻烦，还是看看效果图片就好</p>
-<p><img src="/images/告辞.bmp" alt="告辞.bmp"></p>
-<p>现在！<br>没错，就是现在！<br>可以网页一步到位，power bi web 共享了解一下？</p>
-<p><img src="/images/还有这种操作.bmp" alt="还有这种操作.jpg"></p>
-<p><img src="/images/powerbipro发布1.png" alt="powerbipro发布1.png"><br><img src="/images/powerbipro发布2.png" alt="powerbipro发布2.png"></p>
-<p><a href="https://powerbi.microsoft.com/zh-cn/power-bi-pro/" target="_blank" rel="noopener">power bi pro</a> 可以实现 web 共享，免费试用60天</p>
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDVlYWRkYWQtNzhkYS00NjM4LTgxNTctZjJlMTkzMjIzZmZhIiwidCI6IjhhMzg3OTFhLTZhZjktNGQwYS05ZDIyLTZkNjg0NTQ1MmE2YyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="true"></iframe>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/29/PPT-渐变字体练习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/29/PPT-渐变字体练习/" itemprop="url">PPT 渐变字体练习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-29T23:57:00+08:00">
-                2018-10-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PPT/" itemprop="url" rel="index">
-                    <span itemprop="name">PPT</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/29/PPT-渐变字体练习/" class="leancloud_visitors" data-flag-title="PPT 渐变字体练习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="https://github.com/pangjinfeng/pangjinfeng.github.io/blob/master/ppt/pangjinfeng_practice.pptx" target="_blank" rel="noopener">点击下载</a></p>
-<p><img src="/images/ppt_typeface1.jpg" alt="ppt_typeface1.jpg"></p>
-<p><img src="/images/ppt_typeface2.jpg" alt="ppt_typeface2.jpg"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/13/Power-BI-第二届可视化大赛/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/13/Power-BI-第二届可视化大赛/" itemprop="url">Power BI 第二届可视化大赛</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:06:00+08:00">
-                2018-10-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Power-BI/" itemprop="url" rel="index">
-                    <span itemprop="name">Power BI</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/13/Power-BI-第二届可视化大赛/" class="leancloud_visitors" data-flag-title="Power BI 第二届可视化大赛">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <center><br><a href="http://www.chinapowerbi.com/" target="_blank" rel="noopener">Power BI 第二届可视化大赛</a><br></center>
-
-<p><img src="/images/powerbi第二届可视化大赛.jpg" alt="powerbi第二届可视化大赛.jpg"></p>
-<p><center><br>   官方提供大赛数据<br>  </center></p>
-<ol>
-<li>虚拟企业示例数据，<a href="http://www.chinapowerbi.com/Uploads/file/20180824/0a2ce069b28c1e226d3625807d47d8e2.rar" target="_blank" rel="noopener">点击下载</a></li>
-</ol>
-<ul>
-<li>微软示例数据库 - <a href="https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks" target="_blank" rel="noopener">Adventure Works</a></li>
-<li>微软Azure SQL Database数据源（使用此数据源，除了其它奖项外，还有机会获得ADS（Azure Data Service）特别奖）：<br>   —服务器：pbicontest.database.chinacloudapi.cn<br>   —数据库：pbiDB<br>   —用户名：pbiguest<br>   —密码：1234#P@sd  </li>
-</ul>
-<p><center><br>  <a href="http://www.chinapowerbi.com/zuopinzhanshi.html" target="_blank" rel="noopener">powerbi第二届可视化大赛作品展示</a></center></p>
-<p>  <br><img src="/images/powerbi第二届可视化大赛作品展示.jpg" alt="powerbi第二届可视化大赛作品展示.jpg"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/09/magrittr-管道操作/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/09/magrittr-管道操作/" itemprop="url">magrittr  管道操作</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-09T12:56:23+08:00">
-                2018-10-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/09/magrittr-管道操作/" class="leancloud_visitors" data-flag-title="magrittr  管道操作">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="magrittr-相关文章收集"><a href="#magrittr-相关文章收集" class="headerlink" title="magrittr 相关文章收集"></a>magrittr 相关文章收集</h3><p>magrittr 管道操作能极大程度的简化数据处理，数据结构清晰明了</p>
-<p><a href="https://blog.csdn.net/fairewell/article/details/72878107" target="_blank" rel="noopener">R语言中管道操作 %&gt;%, %T&gt;%, %$% 和 %&lt;&gt;%</a><br><a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html" target="_blank" rel="noopener">magrittr 官方开发文档</a><br><a href="https://github.com/tidyverse/magrittr" target="_blank" rel="noopener">magrittr GitHub development page</a><br>and more…</p>
-<h3 id="magrittr-Ceci-n’est-pas-un-pipe"><a href="#magrittr-Ceci-n’est-pas-un-pipe" class="headerlink" title="magrittr - Ceci n’est pas un pipe"></a>magrittr - Ceci n’est pas un pipe</h3><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>The magrittr package offers a set of operators which promote semantics that will improve your code by  </p>
-<ol>
-<li>structuring sequences of data operations left-to-right (as opposed to from the inside and out)</li>
-<li>avoiding nested function calls  </li>
-<li>minimizing the need for local variables and function definitions, and</li>
-<li>making it easy to add steps anywhere in the sequence of operations.</li>
-</ol>
-<p>The operators pipe their left-hand side values forward into expressions that appear on the right-hand side, i.e. one can replace f(x) with x %&gt;% f, where %&gt;% is the (main) pipe-operator. </p>
-<p>Consider the example below. Four operations are performed to arrive at the desired data set, and they are written in a natural order: the same as the order of execution. Also, no temporary variables are needed. If yet another operation is required, it is straight-forward to add to the sequence of operations whereever it may be needed. </p>
-<p>For a more detailed introduction see the vignette (vignette(“magrittr”)) or the documentation pages for the available operators:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">%&gt;%	 forward-pipe operator.</span><br><span class="line">%T&gt;%	 tee operator.</span><br><span class="line">%&lt;&gt;%	 compound assignment pipe-operator.</span><br><span class="line">%$%	 exposition pipe-operator.</span><br></pre></td></tr></table></figure></p>
-<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">## Not run: </span><br><span class="line"></span><br><span class="line">the_data &lt;-</span><br><span class="line">  read.csv(&apos;/path/to/data/file.csv&apos;) %&gt;%</span><br><span class="line">  subset(variable_a &gt; x) %&gt;%</span><br><span class="line">  transform(variable_c = variable_a/veraiable_b) %&gt;%</span><br><span class="line">  head(100)</span><br><span class="line"></span><br><span class="line">## End(Not run)</span><br></pre></td></tr></table></figure>
-<h3 id="Introduction-and-basics"><a href="#Introduction-and-basics" class="headerlink" title="Introduction and basics"></a>Introduction and basics</h3><p>At first encounter, you may wonder whether an operator such as %&gt;% can really be all that beneficial; but as you may notice, it semantically changes your code in a way that makes it more intuitive to both read and write.</p>
-<p>Consider the following example, in which the mtcars dataset shipped with R is munged a little.  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">library(magrittr)</span><br><span class="line">car_data &lt;- </span><br><span class="line">  mtcars %&gt;%</span><br><span class="line">  subset(hp &gt; 100) %&gt;%</span><br><span class="line">  aggregate(. ~ cyl, data = ., FUN = . %&gt;% mean %&gt;% round(2)) %&gt;%</span><br><span class="line">  transform(kpl = mpg %&gt;% multiply_by(0.4251)) %&gt;%</span><br><span class="line">  print</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  cyl   mpg   disp     hp drat   wt  qsec   vs   am gear carb       kpl</span><br><span class="line">1   4 25.90 108.05 111.00 3.94 2.15 17.75 1.00 1.00 4.50 2.00 11.010090</span><br><span class="line">2   6 19.74 183.31 122.29 3.59 3.12 17.98 0.57 0.43 3.86 3.43  8.391474</span><br><span class="line">3   8 15.10 353.10 209.21 3.23 4.00 16.77 0.00 0.14 3.29 3.50  6.419010</span><br></pre></td></tr></table></figure>
-<p>We start with a value, here mtcars (a data.frame). Based on this, we first extract a subset, then we aggregate the information based on the number of cylinders, and then we transform the dataset by adding a variable for kilometers per liter as supplement to miles per gallon. Finally we print the result before assigning it. Note how the code is arranged in the logical order of how you think about the task: data-&gt;transform-&gt;aggregate, which is also the same order as the code will execute. It’s like a recipe – easy to read, easy to follow!  </p>
-<p>A horrific alternative would be to write<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">car_data &lt;- transform(aggregate(. ~ cyl, </span><br><span class="line">                      data = subset(mtcars, hp &gt; 100), </span><br><span class="line">                      FUN = function(x) round(mean(x, 2))), </span><br><span class="line">                      kpl = mpg*0.4251)</span><br></pre></td></tr></table></figure></p>
-<p>There is a lot more clutter with parentheses, and the mental task of deciphering the code is more challenging—in particular if you did not write it yourself.  </p>
-<p>Note also how “building” a function on the fly for use in aggregate is very simple in magrittr: rather than an actual value as left-hand side in pipeline, just use the placeholder. This is also very useful in R’s *apply family of functions.  </p>
-<p>Granted: you may make the second example better, perhaps throw in a few temporary variables (which is often avoided to some degree when using magrittr), but one often sees cluttered lines like the ones presented.  </p>
-<p>And here is another selling point. Suppose I want to quickly want to add another step somewhere in the process. This is very easy in the to do in the pipeline version, but a little more challenging in the “standard” example.  </p>
-<p>The combined example shows a few neat features of the pipe (which it is not):  </p>
-<ol>
-<li>By default the left-hand side (LHS) will be piped in as the first argument of the function appearing on the right-hand side (RHS). This is the case in the subset and transform expressions.</li>
-<li>%&gt;% may be used in a nested fashion, e.g. it may appear in expressions within arguments. This is used in the mpg to kpl conversion.</li>
-<li>When the LHS is needed at a position other than the first, one can use the dot,’.’, as placeholder. This is used in the aggregate expression.</li>
-<li>The dot in e.g. a formula is not confused with a placeholder, which is utilized in the aggregate expression.</li>
-<li>Whenever only one argument is needed, the LHS, then one can omit the empty parentheses. This is used in the call to print (which also returns its argument). Here, LHS %&gt;% print(), or even LHS %&gt;% print(.) would also work.</li>
-<li>A pipeline with a dot (.) as LHS will create a unary function. This is used to define the aggregator function.</li>
-</ol>
-<p>One feature, which was not utilized above is piping into anonymous functions, or lambdas. This is possible using standard function definitions, e.g.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">car_data %&gt;%</span><br><span class="line">  (function(x) &#123;</span><br><span class="line">    if (nrow(x) &gt; 2) </span><br><span class="line">      rbind(head(x, 1), tail(x, 1))</span><br><span class="line">    else x</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  cyl mpg disp  hp drat wt qsec vs am gear carb     kpl</span><br><span class="line">1   4  26  108 111    4  2   18  1  1    4    2 11.0526</span><br><span class="line">3   8  15  350 192    3  4   17  0  0    3    4  6.3765</span><br></pre></td></tr></table></figure>
-<p>However, magrittr also allows a short-hand notation:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">car_data %&gt;%</span><br><span class="line">&#123; </span><br><span class="line">  if (nrow(.) &gt; 0)</span><br><span class="line">    rbind(head(., 1), tail(., 1))</span><br><span class="line">  else .</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  cyl mpg disp  hp drat wt qsec vs am gear carb     kpl</span><br><span class="line">1   4  26  108 111    4  2   18  1  1    4    2 11.0526</span><br><span class="line">3   8  15  350 192    3  4   17  0  0    3    4  6.3765</span><br></pre></td></tr></table></figure>
-<p>Since all right-hand sides are really “body expressions” of unary functions, this is only the natural extension the simple right-hand side expressions. Of course longer and more complex functions can be made using this approach.</p>
-<p>In the first example the anonymous function is enclosed in parentheses. Whenever you want to use a function- or call-generating statement as right-hand side, parentheses are used to evaluate the right-hand side before piping takes place.</p>
-<p>Another, less useful example is:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1:10 %&gt;% (substitute(f(), list(f = sum)))</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1] 55</span><br></pre></td></tr></table></figure>
-<h3 id="Additional-pipe-operators"><a href="#Additional-pipe-operators" class="headerlink" title="Additional pipe operators"></a>Additional pipe operators</h3><p>magrittr also provides three related pipe operators. These are not as common as %&gt;% but they become useful in special cases.</p>
-<p>The “tee” operator, %T&gt;% works like %&gt;%, except it returns the left-hand side value, and not the result of the right-hand side operation. This is useful when a step in a pipeline is used for its side-effect (printing, plotting, logging, etc.). As an example (where the actual plot is omitted here):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rnorm(200) %&gt;%</span><br><span class="line">matrix(ncol = 2) %T&gt;%</span><br><span class="line">plot %&gt;% # plot usually does not return anything. </span><br><span class="line">colSums</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1] -4.835279 -5.274882</span><br></pre></td></tr></table></figure>
-<p><img src="/images/magrittr.png" alt="magrittr.png">  </p>
-<p>The “exposition” pipe operator, %$% exposes the names within the left-hand side object to the right-hand side expression. Essentially, it is a short-hand for using the with functions (and the same left-hand side objects are accepted). This operator is handy when functions do not themselves have a data argument, as for example lm and aggregate do. Here are a few examples as illustration:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">iris %&gt;%</span><br><span class="line">  subset(Sepal.Length &gt; mean(Sepal.Length)) %$%</span><br><span class="line">  cor(Sepal.Length, Sepal.Width)</span><br><span class="line"></span><br><span class="line">data.frame(z = rnorm(100)) %$% </span><br><span class="line">  ts.plot(z)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1] 0.3361992</span><br></pre></td></tr></table></figure>
-<p><img src="/images/magrittr_ts.png" alt="magrittr_ts.png"></p>
-<p>Finally, the compound assignment pipe operator %&lt;&gt;% can be used as the first pipe in a chain. The effect will be that the result of the pipeline is assigned to the left-hand side object, rather than returning the result as usual. It is essentially shorthand notation for expressions like foo <- foo="" %="">% bar %&gt;% baz, which boils down to foo %&lt;&gt;% bar %&gt;% baz. Another example is<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iris$Sepal.Length %&lt;&gt;% sqrt</span><br></pre></td></tr></table></figure></-></p>
-<p>The %&lt;&gt;% can be used whenever expr &lt;- … makes sense, e.g.</p>
-<ul>
-<li>x %&lt;&gt;% foo %&gt;% bar  </li>
-<li>x[1:10] %&lt;&gt;% foo %&gt;% bar  </li>
-<li>x$baz %&lt;&gt;% foo %&gt;% bar  </li>
-</ul>
-<h3 id="Aliases"><a href="#Aliases" class="headerlink" title="Aliases"></a>Aliases</h3><p>In addition to the %&gt;%-operator, magrittr provides some aliases for other operators which make operations such as addition or multiplication fit well into the magrittr-syntax. As an example, consider:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rnorm(1000)    %&gt;%</span><br><span class="line">  multiply_by(5) %&gt;%</span><br><span class="line">  add(5)         %&gt;%</span><br><span class="line">  &#123; </span><br><span class="line">    cat(&quot;Mean:&quot;, mean(.), </span><br><span class="line">        &quot;Variance:&quot;, var(.), &quot;\n&quot;)</span><br><span class="line">    head(.)</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Mean: 4.912365 Variance: 24.46778 </span><br><span class="line">[1]  5.853147  3.923652  7.802787 10.208513  2.239128  3.177795</span><br></pre></td></tr></table></figure>
-<p>which could be written in more compact form as<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rnorm(100) %&gt;% `*`(5) %&gt;% `+`(5) %&gt;% </span><br><span class="line">&#123;</span><br><span class="line">  cat(&quot;Mean:&quot;, mean(.), &quot;Variance:&quot;, var(.),  &quot;\n&quot;)</span><br><span class="line">  head(.)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Mean: 5.443435 Variance: 30.92747 </span><br><span class="line">[1] 2.7712630 1.9156065 2.9230592 7.8741192 3.2132655 0.1729982</span><br></pre></td></tr></table></figure>
-<p>To see a list of the aliases, execute e.g. ?multiply_by.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pangjinfeng.github.io/2018/10/08/Markdown-添加在线视频/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="庞锦烽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="data science foll">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/08/Markdown-添加在线视频/" itemprop="url">Markdown 添加在线视频</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-08T23:25:00+08:00">
-                2018-10-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/10/08/Markdown-添加在线视频/" class="leancloud_visitors" data-flag-title="Markdown 添加在线视频">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>通用代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe height=400 width=700 src=&apos;http://music.163.com/m/mv?id=10770095&amp;userid=340573904&apos; frameborder=0 &apos;allowfullscreen&apos;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
-<p>修改的src后的链接即可</p>
-<center><iframe height="400" width="700" src="http://music.163.com/m/mv?id=10770095&userid=340573904" frameborder="0" 'allowfullscreen'=""></iframe></center>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2089,7 +2149,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">61</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
